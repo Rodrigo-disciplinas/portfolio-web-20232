@@ -1,0 +1,46 @@
+/* SECTION */
+
+table tr td {
+    padding: 10px;
+}
+
+
+/* ASIDE */
+
+.box {
+    background-color: #ff0000c7;
+    padding: 20px;
+    margin: 20px;
+    color: #fff
+}
+.box a{
+    font-style: 0;
+    font-size: 15px;
+    font: bold ;
+    text-decoration: none;
+    color: #fff
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    table tr td{
+        padding: 8px;
+        margin-top: 14px;
+    }
+}  
+@media screen and (max-width: 860px) {
+    table tr td{
+        padding: 4px;
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width: 650px) {
+    table tr td{
+        padding: 4px;
+        margin-top: 8px;
+    }
+    table td:first-child img {
+        display: none;
+    }
+}

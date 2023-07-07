@@ -1,0 +1,21 @@
+/* SECTION */
+#gifLuffy {
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+    #gifLuffy {
+        text-align: center;
+    }
+    img {
+        width: 500px;
+    }
+}  
+@media screen and (max-width: 860px) {
+    #gifLuffy {
+        text-align: center;
+    }
+    img {
+        width: 400px;
+    }
+}

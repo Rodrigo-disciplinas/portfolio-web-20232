@@ -1,0 +1,44 @@
+/* SECTION */
+
+.formatarImagem {
+    text-align: center;
+}
+#imagemManga {
+    width: 640px;
+    height: 360px;
+}
+
+@media screen and (max-width: 1300px) {
+    .formatarImagem {
+        text-align: center;
+    }
+    #imagemManga {
+        width: 480px;
+        height: 300px;
+    }
+    video {
+        width: 480px;
+        height: 300px;
+    }
+}  
+@media screen and (max-width: 860px) {
+    .formatarImagem {
+        text-align: center;
+    }
+    #imagemManga {
+        width: 340px;
+        height: 240px;
+    }
+    video {
+        width: 340px;
+        height: 240px;
+    }
+}
+@media screen and (max-width: 650px) {
+   img {
+    display: none;
+   }
+   video {
+    display: none;
+   }
+}

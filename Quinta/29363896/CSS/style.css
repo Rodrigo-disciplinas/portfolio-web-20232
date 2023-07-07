@@ -1,0 +1,259 @@
+/*Geral*/
+
+h1 {
+  margin-top: 5%;
+  margin-left: 300px;
+}
+
+div img {
+  height: 300px;
+  width: 400px;
+}
+
+iframe {
+  width: 50%;
+  height: 415px;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+
+
+nav ul > li {
+  padding: 10px;
+}
+nav > img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+li > a {
+  color: aliceblue;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(108, 93, 15);
+}
+
+button {
+  height: 40px;
+  width: 43px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Atributos*/
+
+#tela_stats {
+  display: flex;
+  justify-content: center;
+}
+
+.stats > div > p {
+  margin: 10px 350px 10px 350px;
+}
+
+.tabelaAtrib{
+  margin: 20px 300px 0px 300px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+/*Modo Escuro*/
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+.dark-mode h1 {
+  color: #ffffff;
+}
+.dark-mode p {
+  color: white;
+}
+
+.dark-mode h2 {
+  color: aliceblue;
+}
+.dark-mode-icon {
+  filter: invert(1);
+}
+
+/*Armas*/
+.arma {
+  padding: 20px;
+}
+
+.arma img {
+  width: 400px;
+  height: 400px;
+}
+
+/*Media Queries*/
+@media (min-width: 400px) {
+  .weapons {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .OqueEsperar {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .weapons {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0px;
+  }
+  nav ul {
+    display: flex;
+  }
+}
+
+/*Home*/
+.OqueEsperar {
+  margin: 0px 300px 0px 300px;
+}
+
+.melee {
+  margin: 0px 300px 0px 300px;
+}
+#combate {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: 700px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+#listaMelee {
+  list-style-type: disc; /* Define o estilo do marcador da lista como um disco */
+  margin-top: 10px; /* Adiciona espaço acima da lista */
+  margin-bottom: 10px; /* Adiciona espaço abaixo da lista */
+}
+
+#listaMelee li {
+  margin-bottom: 8px; /* Adiciona espaço entre os itens da lista */
+}
+
+.spells {
+  margin: 0px 300px 0px 300px;
+}
+#azur {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: 700px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  border: 0;
+}
+
+.listaClasses {
+  list-style-type: disc; /* Define o estilo do marcador da lista como um disco */
+  margin-top: 40px; /* Adiciona espaço acima da lista */
+  margin-bottom: 10px; /* Adiciona espaço abaixo da lista */
+}
+.listaClasses li {
+  margin-bottom: 8px;
+}
+
+/*Sobre Nós*/
+#sobre {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.organizarBotoes {
+  justify-content: baseline;
+  display: flex;
+  flex-direction: column;
+  margin-left: 320px;
+}
+.organizarBotoes button {
+  margin-bottom: 10px;
+}
+
+#videoEasterEgg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*enredo*/
+.divLore{
+  margin-left: 120px;
+}
+
+/*Contato*/
+.contato{
+  margin: 0px 300px 0px 300px;
+}
+#invoc{
+  margin: 0px 300px 0px 300px;
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  width: 600px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+
+/* .background {
+  background-image: url("https://i.redd.it/e8u661wb0gx71.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  .background {
+    background-color: #000000; 
+    color: #000000; 
+  }
+} */
+
+
+
+/* bottom 0 
+position  relative */

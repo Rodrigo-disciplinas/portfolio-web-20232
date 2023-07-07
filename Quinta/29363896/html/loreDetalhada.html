@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>História</title>
+    <script src="../Js/script.js" defer></script>
+    <style>
+      @keyframes texto-aparece {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .transicao {
+        margin-right: 100px;
+      }
+      .transicao ul {
+        opacity: 0;
+      }
+      .transicao:hover ul {
+        transition-duration: 2s;
+        opacity: 1;
+      }
+
+      @media (min-width: 200px) {
+        .h {
+          display: flex;
+          flex-direction: column;
+        }
+        .lore {
+          opacity: 0;
+          animation: texto-aparece 2s forwards;
+          margin-top: 4%;
+          margin-right: 20px;
+          margin-left: 4%;
+        }
+      }
+      @media (min-width: 768px) {
+        .h {
+          display: flex;
+          flex-direction: row;
+        }
+        .lore {
+          opacity: 0;
+          animation: texto-aparece 2s forwards;
+          margin-top: 4%;
+          margin-right: 320px;
+          margin-left: 4%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body id="bodyID">
+    <header>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="home.html">Início</a></li>
+            <li><a href="../html/loreDetalhada.html">Enredo</a></li>
+            <li><a href="../html/armas.html">Armas Lendárias</a></li>
+            <li><a href="../html/stats.html">Atributos</a></li>
+            <li><a href="../html/contato.html">Contato</a></li>
+            <li><a href="../html/sobreNos.html">Sobre Nós</a></li>
+          </ul>
+          <img
+            src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/steel-wire_torch-elden-ring-wiki-guide-200px.png"
+            alt=""
+            id="icon"
+            class="tocha"
+            onclick="toggleDarkMode()"
+          />
+        </nav>
+      </div>
+      <h1>Enredo</h1>
+    </header>
+    <div class="h">
+      <div class="divLore">
+        <p class="lore">
+          Segundo a fala Leitora de Dedos: "Aconteceu há muito tempo. Mas quando
+          me lembro, vejo que é verdade." Assim começa a história da Quebra, uma
+          guerra devastadora entre os filhos de Marika, semideuses das Terras
+          Intermédias.
+          <br />
+          <br />
+          Numa noite sombria, nas profundezas do inverno, um bando de assassinos
+          desconhecidos atravessou as Terras Intermédias. Num ataque simultâneo,
+          este pacto imundo extinguiu as vidas de muitos dos parentes da
+          Rainha-Deus por todo o império, demasiado numerosos e demasiado
+          dispersos para que a sua protecção divina os pudesse salvar. Os alvos
+          dos assassinos eram múltiplos, mas nenhum foi uma perda tão
+          devastadora para a Rainha Eterna quanto a de Godwyn, o Dourado.
+          <br />
+          <br />
+          Após sua morte, o Elden Ring foi de alguma forma quebrado, e a ordem
+          do mundo se quebrou com ele. Desse caos surgiu a guerra. Uma guerra
+          aberta e amarga, colocando sangue contra sangue e parentes contra
+          parentes. O conflito quebrou um vasto e próspero império em fragmentos
+          frágeis. Nenhum dos lados conseguiu encontrar apoio suficiente para
+          manter uma vitória decisiva, mesmo quando alimentado pelo poder de uma
+          Grande Runa. A batalha do General Radahn contra Malenia, demonstrou
+          que nem a força nem a habilidade seriam suficientes para controlar a
+          totalidade das terras que Marika tinha unido. E assim, as Terras
+          Intermédias já não são dominadas por uma guerra aberta, mas sim por um
+          impasse incômodo que parece impossível de resolver. A não ser, claro,
+          que tu fiques com a coroa?
+          <br />
+          <br />
+          Transportado para épocas longínquas, irás reviver a Quebra, uma guerra
+          que trouxe a escuridão às Terras Intermédias, iniciada pela fome de
+          poder dos semideuses. Lutarás ao lado do General Radahn e de Malenia,
+          mas nem mesmo estes dois guerreiros invencíveis conseguiram reunir um
+          mundo tão destruído. Resta apenas uma esperança: a esperança de que um
+          novo Elden Lord se erga e levante o véu de sombras que caiu sobre o
+          domínio de Marika. A espera está quase a terminar. Em breve irás
+          aventurar-te nas Terras Intermédias e lutar para te tornares o seu
+          Elden Lord. Prepara-te, Tarnished (Máculado), e reclama o que o
+          destino te prometeu.
+        </p>
+      </div>
+
+      <div class="transicao">
+        <img
+          src="https://i.pinimg.com/originals/19/fd/e9/19fde9204476ad05dc7e3523b85c3d89.jpg"
+          style="height: 50px; width: 50px"
+          alt="logo elden ring"
+        />
+        <ul>
+          <li>
+            <p>Marika</p>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="marika"
+            />
+          </li>
+          <li>
+            <p>Godwyn, o Dourado</p>
+            <img
+              src="https://respawnfirst.com/wp-content/uploads/2023/01/Godwyn-in-Erdtree-1024x510.jpg"
+              alt="Godwyn, o Dourado"
+            />
+          </li>
+          <li>
+            <p>General Radahn</p>
+            <img
+              src="https://gamerview.uai.com.br/wp-content/uploads/2022/04/Elden-Ring-Bug-Radahn.jpg"
+              alt="General Radahn"
+            />
+          </li>
+          <li>
+            <p>Malenia</p>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFRYYGBgYEhgZGBgYGBgYGBgYGRgZGhoYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHzYrJCs0NDQ0NjY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAEDBAUGB//EADoQAAEDAgQDBwMDAwQCAwEAAAEAAhEDIQQSMUEFUWETIjJxgZGhscHwBkLRFFLhYnKCkiPxM6KyFf/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAnEQACAgICAgAGAwEAAAAAAAAAAQIRITEDEkFRBCIyYXGBE5GhFP/aAAwDAQACEQMRAD8A8vARZUbmIcqizfrQgEiUsiYhAO14HlKU4aiYxFgotjNapGsRhilbTWbkbw4iKEzipHMUREIQSTRC4JgprFC5gVWZteQGlWGsVYhEx5Q0KMqeSyGJ4RMepAVnbOhJNFZz4S7VWA8aEKb+ia4S0weSq0tk9ZP6WZ5em7RT1ME4dUH9O7kqTiZOM09Ah6cPSdRcNlHCKTFclsOeVjzmPfZWKgfBeSDYQcrXxP8At+4UFGplM39In0lX6b2gSGkbnM2NtyGFp9kMl5ZWw2My2LWkTq3uO/6kRty9QrvE256TKgOYB7wTABGcBzQbndr9z5qE4ogktMW3bSFvPs7+gUuBxYu15ZDh3u41s3EEkWMEAg5RopfscXRklGAFquqljsrKzXkkZW5A0ODtDa4g2II+IJvMxZb3XljCAMweScs7uIFghtlJo50MCUBdVVNElvaNpkO8L2wWu5Q9vnvCiq8BpPMUnFjjoHHM0+9/lHb2P8HNEpBWeIcOfRfkqNg7HUHqCqwCtUyHYWZOgATgIoLJWowFG0qRiTLTCayUXZKZgT51Fs2UUlkxtU3Zo8kImwnZn19gMpEpPYpW1Aka4RbH1ilshcDyQ5iFM+qFXc5UsmcqWmTMqqc1VSBRZknFMqPK0i254hQOeosyUpqNClyOQJT5ymJSlVRnYk4KYKRrUAkE1ymY9M2mNx7InYZswHWgXNrwJHvIUNo1jGXgJgU4MXaflVTRI1KlY+NFLNIJ+S125i9/JKBsdfyFAKxF4BCuYbK8WFxFjuoaN037EGRedvRRY3AjKHs0PiH9rv4UzKn7Xco5/K08AwGm8OIyhs5nEAACZklJScRygpLJyz2R5FSYaoGnbTQucD56onvzNLW5XDNIcNbSqRYQZ3+i22efOk8F9+FnvMbmknTvn6R8qnVqOA1dmBIjSPNwsPIe6nZi3mxzv83EAejRf3QPLnjwyZytbEX1kjZo/Dcov2T+A+CZXP8A9cHWzQ0kCQNFr8PcySwhxqQS54DcrzYQXOsQbGDeT1XOvZaWz3TE7vqbx0H5qnbjaotmDrwJaHSRrE2yhDVgnR1VEtLSHtLcz3Nc2O7lykzawkiPNxjZZeDxtShJfmdSZULMwMkCxaSN7E3H2VfCfqLEMhpc17S4Xe0FxAFzMiRaLrX4ljnvYXPyFoazM1jCDvqCTcE6Wi87JNeGUneUdk3CMxeGyEgkslj5lwdaD+bSvM6lMtcWuEFri0jkQYK679B43K00zOdjoGhFwNfaf+Sw/wBRsjE1Org73aL+8rODqTiaNWrMuE8J4ShbkUIKRhQAI2hIZM16KEDQpQEqKtszX1AdFA4FW3MaED3NUxfo0nFvbKrQUTmI3vGyiJWitnO6WBiE0JJ5TJsZJPKZAhwlCZEEDGypdmeSMBSsnb+EmyoxshYwqwy2v3Tl3X0EqJ/VQ3ZrGKiWRXaNQFFUxg/bKrHLuQBuT/G5Wlh+DtczOXuN4hrT88/hCihy5WsGe6uTumzDmt/DcPpg5CyTEw4NzOE7Az9VHi+G0rOyljdDa0k7NaZ53unSJ7sx6b7632lWsHiCyoDNjbyR12NY4MY/NTew6OBBcNRNuYPNZZfIIOoPyEVYLkNrF1of5+35ePRaeAxzGMeHAOY5pljt5ERB859FyzsUXNHMWKrPxJNtlL4rNP8AoSQWIIDyactBJiCbDl5eadmMfpIPmAoZSYLrWjjeXgt0+JOH7B6SFcw3E2DxNc0zqBPwFBiKA7r2CzgLdTsPWyWEYHOgC/I6+yioyRSbi9mw00qwAa5pIkNixE6mNQY3VXFcJI8IOXSf7WNF2tG5J1JVpvBmOEu7p1BaYIJPNI4mpQGV57RlwHDxtPJw39Lqaa+ku09nP1WSYcIkS4f2MGjfM2+Oa1OE44FwZVOTMwEPPhETkLp0nmei0v8A+ayvTBY5rswBJZGZxYfCRqDEa81j4jBOEZherXiNIpsAJF9NR/1TtSwyeri7Ru0KFRjRiKLZdTkPb+2rTzFvdjVzT6/Q1eN1s9QPyvaSwSx7S1zDJ7pHK4um/SvFQCyi8uaxzi5sGBJD2hvMd6IvHeI5J+NseKnfHeyNzXJkjuyCdjAPqpr5jRO1gz06ScLQQ4CJoQhG1IZKwKUBRsCmASGkc9mKUJwE4C0MQQE8IgE8IEBCYhHCaEBQEJ4RQmhAAhGwJBqsUWSk2XGLYzUUpPZCHIT5ZgJncmAo2arGxEkmALkwlXouaYMHy+ivcNpwSSBLXQP3Rz9bwm44IYHjnHkTKKzQnPyYWIeXODBoD7nc/nJdZhqOWi2Q+HGe6YIm4kyNo3XN8Gwoe8ZtPtuft6rpsS5xEtLQADZzScxjaCPe/wB05OsGKt22VsJkc/R+W/fc6XNf4ZBmQDprqOqs1C3MGseX1Q6xMBrdAS5ogG3r5aqvhqhYCHwczjsY6tgztJ/5nkmbVFUZbtDIdYFp0MERECd9yDyS27K0qAx2cOYX5B/5IGQuA0Jd4RI20lc7Xcc7/wDe7Qg78xr5roKj8pb3nOIa57nZgH3AixEOgbLnnPuTuSTpGp+FUSZYDNGbg+f+VA8EG4UjCdfwJOfIuqJbTIg9GEOYIHPVCujb4Q4VGOp7iXN8o+oI/wDspOLU2va14GUgaWtFttwfuqPCS5jw8dZ8jYrc7NskahwJaOYNnD3dPqsZOpGqVxyYeG7We7UeP+RVt9GofFUefVROpupvIOx8hGxWmx4cJQ5FccYvZRFSpRcH03HMNQQIPRwGvnqtPB8Uo1soeMjw14bN2y4R3SbbCxvbdVqtKQqLGsJygOk28MR1up2sluOcF5/C4AgyG0mDMNQW1JcY2kT7osViKjg1tRxeWFzQ4+KxggnfQXRcPx76Qy+Nn9rtQOjtx0KPH4im8FzA5ri6S1w8hqCRshWnkmlWCknCGU4K0JsIKVgULSpWuRQdiwwKywCFTa5T5kqKUjADU8KSEg1URQIanyqQBEGoCiAtTQrJYhyICiDKnDFLCIMSsEiMNUjCjDE7KJJgKTRMYU8xAkAbk6Ac01LCmp4GuAB7rg6Jd/c6dABe252hTvY1oyvlpcbRYFu4J3kxbkFsYZwygzItNuYsJQnREn2ZV/pcgDBAaGX5udN/osbj1YuLGAiAMx5zoPv8LcxPKbG4H55aLLwOGL3PqEEtacreWa0HoQ0/KSebBrFIn4VRDGgQS86jkBoAOl/dTVGsdJEif25nRfUi9t/dUszzUyNjMR4tYbFzH5qq1TBtB/8AkcYu4gOgGdyLBGw1hGmMcLgZi+5c1rTMxDrmG7dfXRWKuCY4Mc4El8XabZcrjlBsdxrrm9FSZiHscGmHzAYQQJ0kSNDcKPEVSxuhZc2LiWkGCcu1yBpupT9Df3KvFaoLnxpYAObB/wBzHC2/ws1on0KfEVCe7JgXIJzDNuQfUoWPjrZbRVIybtkr27/nrdRNCkFTafhA8eyZJDUajw1HMeiJ7NFfwlMAIcqQ4xtlpjA0Kxgn5+6DDmXbOkaEeV49Qq73WVF1QtcHNNwZCyqzoeDoeJYUVKbXDxCY0EwbtPIj81WLha0WOy1MNjO0GcCXQA9k67THPrv9Mfi9P/yF7PC4A72IABBG2iUfTFp2jXoVGndXcfhuzotfmzdoS0W8OWCb+w9SuSoB5MAwtd+LeWMpuMhhJHmY/hJwuS9Frl+VryREoZSlMtjAdEEIRAIAIFG1CAjagCZillQtUkpDRnhiIMUwanypWV1IxTT5UcptUrHQBTZVZZhyVbp4RHYai2ZzaJKmbRC0uxChexKyupUc1ROqFkPETyO4/PorNdsD1uToBuVl0nF7ibwXd2dhbmiyZOsInfVGhGZtrGxHUKzT4i9gzMOdkQTEPAm9tCfNDicjhlNjlGU73HNYjnuY4ibG3QjyTSszbo1MbxjP3gALCf5KXDcZkpluUSXm4PP66rErwbi3MclNhHDmNNBPlJTcVRKk+xc/rHU35huI30JGnsoaOPqts0iI6db89ygqtkeuqrGmeaEk1kG3eC0+tGVoM5Rr6AI6tZ0ZzMCwJEtJiC08rFUmt3m2/wDgboHEuOm23TdCirE5OgqbZPLX8CRYlEImXViRDClbbqgeIKFpvKonRepNB3Vqks+jU0nmtbszlDhcRqspYNuPJE9yqOpkmBqVZeFq8KweRj8Q8WYO6ObiQ1vyQsp8nVX58G6jbzozqWFdSIJs+JjkDsUeLcHiSIO/Irs8BxahiHnD4hjMuWzxEzaAwjcZr31DvXG45+mquHcbZ6c917O8CCCRMaGBdJST+rZD38ujnsI0BzhHipkA8iCHT6hpb/yRqRrIcCZEEE7FNlWkbQNWAnAR5UsqqyOoICMBOAnARY+owCkaEwCMNRY6HajQgJ0rHQwTQna5E1yVl0hMoyrVOiAom1EYepKSRaZATuqKsXoS5ICZ9VQF8pQocfiixjQG6uBJVRVik6RNxemD2ZcANRGxtIJG+m6qdjcci0mJEdJ5KrjMQ9xkmWyHN6bfdXn4tobAZctE7nr5old4M3WSti6XdzOgGQLGZN78gAs6vVHnaCSrVR7nkNGpOk2Hmgxj6TGZGsDnbvMyT05BVFMzerMp4RUHkH509/sk82UTH5TIjfW4uIWvgx0y8X7Bo+bfKBxAPePQga3Eg/RV+3dsY10tqIPwEDWkmFPUfYN9QutEDkJjSCRymFpcOweYd2CZIcP3C2wjcb7fCjwdBg8bwHHQcuqE1XU8zGneHEbi3wQh6pAt2yLEUw15aDIGh5/l1FPNFiqsuLiIdN48MbADb3TC4n3TQ7CLJ+xUYtZHTfeCjedxYhANWrIGD0W9wfEvc4NkWBEQCfWyxS/SBorHDeIvovzt166ew9R6pTTccBCVM3jw8ipk1vt9F2WP4IX4CsxviFLO0DUmmWvyjzDSPVYWE/UuGe0Z6ZY/MDmHejYk89BYAbevT0v1jg2BoL3kjWG28lwTjNzi60d3ePRpPZ46yo4GQT57+66bh/6rxDLGo9zACCHRpaIJnmR+Qr1Y8J7UwytkzE910AW0A5dFPxHgeALQcNiYcHCRU7wiHaWmSY/6ldTae0cyVaZqU6DcfSa97MjzmyVWDunvEBj+oiPy/N8S4LWoeNndmA8XYbTYro+H0cHSa1tSs9xabua7I0EPmYAiPCJnYHqupqcVwbqbqD6kCSAXy499urXbmHWPUclmm4ulouzyPKnDF3eJ/RbDBoVQ6Q2A6Lz/AKh/Cy+IfpmrRkkBzRqWyYEC5G2v1VKaZSic0GIxTV3skuzVdh9CoGIsis9kn7FHYOhVypQrXYJf0xR2DqzLa9G1A1qkCTZSj7JGlSNKglOKinJapFmU5eAJJgDUrPxGLDBLj5DcqnhHHEOLXuLWhubK2JN4Ak7XVRg5ES5Yxx5NHEYwGmXsv4hJnayhxWEc9jSLHK2QSdAAE2FYWMLWgP77jAItpufJX2YuHNBFjYefMnzC0l8qXX9mMX3vt+ilXwpa0z+8G/56LMdU5nof4XSVamYBx5AHUid7qlV4OHOzZsoMGI+ihci8jlxPwUKbHNYajQSZytjbmT7QqGIqZnT0hbOPhjXMyxkaMp113lc+5y1iYzxgTigSKcBWZCaJWjh306bZOZzzaABAG5MqkHxp7/whj/KTyNOiziMpcX5wQYgDxWgXGyTGF0uIsf8A0qziiZUcNCY5bJAPUBGt+RTHpyRtqtM5w7QxljxbTOyRZYHZAJATKbMQmhLPzVBZKH8vb7hDmQEDYpZigGGbfVO6ogLibIjTIEkJBkJrr+o01tuEbXGJ1/IUWaCip1LwdPuigsNtUg6k8/8AIVmpUeQ0kzl5HcExIVR9XW3P6ykK+vW/58pUOze4T+pqtBwDTyBLpJAtYX8l1XCf1Q6cmbPIAyTckvNo3cWkTzgRyXmofud1q8FrA1W5jAuQb2LO8CCIvH8brPkgmrNITd0d7x7DsJZVY0tbUaTkIEtLYBmLDb5WRlXS1uJPFG3emqWAZWzmu4tAbMyIv196eMwdw4CA5odGkHcLmulk7YPtgyW01IKKutw6mbTCXY06mZ2abs1rdkOSHswjuPocd2aXZqeFHWqNYJcQArTslxS2B2azsbjg3usu74Cgx3FC7uss3nuf4WaASYAknYalbxg9yOTl5lqP9ic4kyTJK28BwxzWF7pDiIDdO7YnN1MaIuwYxoawtc9ze84GQ2dSToDyAWlg2S0Z80X87BOU60ZKFvJl0MQATaL6z4VYfiswB5HZV+JYSHS2zXEEXG/krWGwswCbbxcqZOO/ZpxqTx6FUqttMiI1vKB2OmMpkRJ25jRNjMK4Ei8tI2jyWdUMAggg7qowi0TPklFix+LzNgCAT5zCzlLXfMbqJaJJKkYyk5O2JOAmCIJkhAJGwTyhcgYyRSKZAhKfDv8A2nT6HmoQNlLWeyBkaWkakunN1jbySY06yM9hBhM9m/NGysDZ2m3RE4WtcJFUnorQnRZUbWAXPsqJoJjA0Sddun+UDjJuhe9BKVDb8Ejz0QnpMp2DdPCYqBAP5ClD4FrJgExKkawS4ennOXn9kn0n0zJEFrvtI9DBRYN+V4PVdjQ4WyrBqh2TuhwaYMatIPORB8ys58nV50dEOJTjjY/6EqvruFLNAYQ4l0/uc6wjYAfK6vibznLTtbr6qHhr8Ph8ppU3SBfMZBmAR5KtisSXvc86kyuKc+zbR18HFKH1E7QOaOG81nZimMqKfs6rXo1A8RCHIOazZKWYo6/cfZeji8dxcAZWXP8AdsPJYtWs593EnzQwmhelGEY6PF5OaU3kFdDgWsaJYRprYu8jP00VTA8PY5mZxJJIECwAO5I33UmN4PAzUsxgSWm59DuiTTxZMU1mjSZSBgnc28hvHJaeDoiJJu29r2OliuRYx7Y7zpi+Vx1R/wBbVZ+4kToenMjVZyg3pmkZpbRs/qBxbkmHDMTMAGCTaOXsgw2IbksQCbmdx/FljYniBqeLX6x/7VWjXLdbhH8XZZKjz9XjR1rahg3nTLyhBUptfZwDiW67dZm8rPo4kFkSDyG4/wAb3U2ciLEbxMEg6XWLUos6U4yRkcR4cWGRJZz3Cz12L3Ne3Y90A6gzpsbrHx3CbywbTG0fYreHLeGcvJwNZiYycJ3sLTBEHkUy3OYOUKU2TFACSSSQAlov4q8syQwNtcMAdYRZ2qoMTJNJ7Gm1oWVJryFMxkiVL2YAkz0I3PJFhRAa7lG5xKdyBMG2OEmhKETNUCRJCSJqZzVJoMmATlNKCS3SpwW+YP3XbcHrkucw/wBt+UgB1vb5XGUqm/UfELr+GNirn2yH/wDMaeq4/iHjJ6HwyV4NQM6p8qTqo5JhV6Lh7M9OojlvRNB5JdoiDyl2kFRAvyQqbMnhPuxdUeTkImMLiAASeQElJJe0fPeToGYdzWABrj3m6i4GYEm20A+6u0apaSYInbQwPP0SSXLbOiilxHCkHMNTcgbjmI0OsjoqmOY1rG3uRPp1/N0klcW8GcvJmUaJe4jYNLieg1jmf5UdVoDiAZANj0SSXQtmD0PTqlpsrzMWDrr1TpKZJGkJMt08ToIGo0+VI3HkGHA2Noj3SSWcYpmsuSSJKtJj295ouJtOZp+2yysTwt7bslw8rpkkuzTwXKClHsygQRY26FJJJdBxsSSSSACCYpJIAlYeRTveRrEkcrhMkgZCnhJJAhI2BJJA1smplPNikkpZoiJ9go5SSTRDL2FZLCf9Q+IXoODwxcMx308rfwnSXk/HzaqvZ6/wUV/iLIwqcUAkkvMfLI9CkSNohEGDkkks/wCSQwm00XYJJJObA//Z"
+              alt="Malenia"
+            />
+          </li>
+          <li>
+            <p>Black Knife Assassins</p>
+            <img
+              src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2022/04/elden_ring_numen.jpg"
+              alt="Black Knife Assassins"
+            />
+          </li>
+          <li>
+            <p>Elden Lord</p>
+            <img
+              src="https://64.media.tumblr.com/864ea0842b3222444c53f6fcda7dbabf/b78de3a697a8268b-d7/s540x810/e6d11aa9343623d4f41bb69e0564cca05affeee1.gif"
+              alt="trono vazio"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Compre Elden Ring hoje
+        <a
+          href="https://store.steampowered.com/agecheck/app/1245620/"
+          target="_blank"
+        >
+          Steam</a
+        >
+
+        <a
+          href="https://www.nuuvem.com/do-pt/item/elden-ring?gclid=CjwKCAjwv8qkBhAnEiwAkY-ahibHpUEw8gHnNnxF0oBaMIAKxFYRyDTFhGynCQWYWM4tQ1tZRkDPlBoCscgQAvD_BwE"
+          target="_blank"
+          >Nuuvem</a
+        >
+
+        <a
+          href="https://store.playstation.com/pt-br/concept/10000333"
+          target="_blank"
+          >PSN</a
+        >
+
+        <a href="https://www.xbox.com/pt-BR/games/elden-ring" target="_blank"
+          >XBOX.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

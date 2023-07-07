@@ -1,0 +1,125 @@
+/* Estilos de todas as páginas */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fff; /* Cor de fundo padrão */
+  color: #000; /* Cor do texto padrão */
+}
+
+body.dark-mode {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #333; /* Cor de fundo do modo escuro */
+  color: #fff; /* Cor do texto do modo escuro */
+}
+
+#modoBtn {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#modoBtn:hover {
+  background-color: #888;
+}
+
+nav>ul>li {
+    border: 1px solid black;
+    background-color: rgb(141, 53, 53);
+}
+
+nav>ul>li>a:hover {
+  background-color: #c44040;
+}
+  
+nav>ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+a {
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  color: #000000;
+}
+
+footer {
+    background-color: #b17a9f;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Estilo do GRID */
+.gridclasses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas de tamanho igual */
+  grid-gap: 20px; /* espaço entre os itens */
+}
+
+/* Modelo BOX aplicado juntamente com o GRID */
+.negrito {
+  background-color: #ababab;
+  padding: 10px;
+  width: 500px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0px;
+}
+
+/* Estilo do link de download */
+main>section>p>a{
+  display: inline;
+  padding: 5px;
+  background-color: white;
+}
+
+/* Transição de cor do link */
+.transicao{
+  color: #000000;
+  transition: background-color 1s ease;
+}
+
+.transicao:hover {
+  background-color: green;
+}
+
+header {
+  background-color: rgb(220, 217, 160);
+  padding: 10px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 16%;
+  height: 23%;
+  background-image: url('./img/hat.gif');
+  animation: moveBackground 100s infinite linear;
+  z-index: 0;
+}
+
+@keyframes moveBackground {
+
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+a.easteregg {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: none;
+}

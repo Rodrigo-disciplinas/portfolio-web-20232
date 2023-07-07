@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Loja de Açaí - Localização</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      body {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Cabeçalho da página -->
+      <h1>Minha Loja de Açaí</h1>
+    </header>
+
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="fabrica.html">Fábrica</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
+    </nav>
+
+    <main class="localizacao-page">
+      <section class="localizacao">
+        <h2>Localização</h2>
+        <p>Nosso endereço:</p>
+        <p>
+          Universidade Positivo - Praça Osório - Praça Gen. Osório, 125 - 3 -
+          Centro, Curitiba - PR, 80020-010
+        </p>
+        <button onclick="toggleDarkMode()" class="button">
+          Escurecer / Clarear
+        </button>        
+        <div id="map">
+          <a href="#" id="mystery-link">
+            <img
+              src="../fotos/mapa.jpg"
+              alt="mapa"
+              style="width: 350px; transition: transform 0.5s ease"
+            />
+          </a>
+        </div>
+        <center><p class="mystery">°</p></center>
+      </section>
+    </main>
+
+    <footer>
+      <p>Todos os direitos reservados &copy; 2023 Minha Loja de Açaí</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

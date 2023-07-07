@@ -1,0 +1,16 @@
+body{
+    color: white;
+    overflow-x: hidden;
+    background-color: rgb(26, 25, 25);
+}
+
+@media screen and (min-width: 200px) and (max-width:400px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    
+
+}

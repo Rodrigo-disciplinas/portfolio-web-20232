@@ -1,0 +1,27 @@
+/* SECTION */
+
+table tr td{
+    padding: 10px;
+    margin-top: 20px;
+}
+table .textoTD {
+    padding-top: 30px;
+}
+table tr td h2 {
+    font-size: 20px;
+    font: bold;
+}
+
+
+@media screen and (max-width: 1300px) {
+    table tr td{
+        padding: 8px;
+        margin-top: 14px;
+    }
+}  
+@media screen and (max-width: 860px) {
+    table tr td{
+        padding: 4px;
+        margin-top: 8px;
+    }
+}

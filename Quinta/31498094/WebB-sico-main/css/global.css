@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace; 
+}
+body {
+   background-image: url("../imagens/fundoConteudo.jpg");
+   z-index: 0;
+}
+/* ======================================================== */
+/* CABECALHO */
+/* ======================================================== */
+
+header{
+   background-color: rgba(202, 248, 248, 0.558);
+}
+#centralizarimagem {
+    text-align: center;
+}
+#logoImagem {
+   width: 280px;
+   height: 130px;
+   margin-bottom: 30px;
+}
+#barcoMerry {
+    margin-top: 10px;
+    width: 130px;
+    height: 130px;
+}
+#barcoSunny {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+}
+#imagensCabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ======================================================== */
+/* MENU  */
+/* ======================================================== */
+
+#menu {
+    list-style: none;
+    background-color: #ff0000c7;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+ul li a:hover {
+    transform: scale(1.05);
+}
+ul li a {
+    display: block;
+    padding: 11px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* ======================================================== */
+/* SUBMENU */
+/* ======================================================== */
+
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 130px;
+    height: max-content;
+    background-color: #ff0000c7;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: rgb(180, 9, 9);
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+/* ======================================================== */
+/* SECTION */
+/* ======================================================== */
+
+#conteudo {
+    font-size: 18px;
+}
+#fundoConteudo{
+    z-index:22;
+    margin-right: 80px;
+    margin-left: 80px;
+    padding: 20px 40px 20px 40px;
+    align-items: center;
+    background-color: rgba(202, 248, 248, 0.921);
+}
+
+/* ======================================================== */
+/* FOOTER */
+/* ======================================================== */
+footer {
+    background-color: #ff0000c7;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 10pxç
+}
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer-content p {
+    margin: 0;
+}
+#footer-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer-content ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+#footer-content ul li a {
+    text-decoration: none;
+    font-size: 10px;
+}
+#footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ======================================================== */
+/* MODO ESCURO */
+/* ======================================================== */
+
+.dark-mode body {
+    background-color: #000000;
+} 
+
+.dark-mode #fundoConteudo{
+    background-color: #1f1f1ffa;
+    color: #ffffff;
+}
+
+.dark-mode header{
+    background-color: #1f1f1ffa;
+    color: #ffffff;
+}
+
+.dark-mode #menu{
+    background-color: rgba(85, 4, 4, 0.979);
+    color: #ffffff;
+}
+
+.dark-mode footer{
+    background-color: rgba(85, 4, 4, 0.904);
+    color: #ffffff;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-label {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.checkbox-label:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.checkbox:checked + .checkbox-label:before {
+    opacity: 1;
+}
+
+
+/* ======================================================== */
+/* REAJUSTE DE TELA */
+/* ======================================================== */
+
+@media screen and (max-width: 1300px) {
+    #fundoConteudo {
+      margin: 0px 30px 0px 30px; 
+    }
+    #logoImagem {
+      width: 200px;
+      height: 90px; 
+      margin-bottom: 20px;
+    }
+    #barcoMerry {
+      width: 90px;
+      height: 90px; 
+    }
+    #barcoSunny {
+      width: 80px;
+      height: 80px; 
+    }
+    #menu {
+      font-size: 16px; 
+    }
+    #conteudo {
+      font-size: 16px; 
+    }
+    footer {
+      font-size: 8px; 
+    }
+  }
+  
+  
+@media screen and (max-width: 860px) {
+    #fundoConteudo {
+        margin: 0px 15px 0px 15px; 
+    }
+    #logoImagem {
+      width: 200px;
+      height: 90px; 
+      margin-bottom: 20px;
+    }
+    #barcoMerry {
+      width: 90px;
+      height: 90px; 
+    }
+    #barcoSunny {
+      width: 80px;
+      height: 80px; 
+    }
+    #menu {
+      font-size: 12px; 
+    }
+    #conteudo {
+      font-size: 14px; 
+    }
+    footer {
+      font-size: 8px; 
+    }
+  }
+  
+@media screen and (max-width: 650px) {
+    #fundoConteudo {
+        margin: 0px 15px 0px 15px; 
+    }
+    #logoImagem {
+      width: 200px;
+      height: 90px; 
+      margin-bottom: 20px;
+    }
+    #barcoMerry {
+      width: 90px;
+      height: 90px; 
+    }
+    #barcoSunny {
+      width: 80px;
+      height: 80px; 
+    }
+    #menu {
+      font-size: 12px; 
+    }
+    #conteudo {
+      font-size: 14px; 
+    }
+    footer {
+      font-size: 8px; 
+    }
+  }
+  
