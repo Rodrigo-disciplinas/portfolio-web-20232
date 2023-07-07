@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Easter Egg</title>
+    <script>
+        var clickCount = 0;
+
+        function handleClick() {
+            clickCount++;
+
+            if (clickCount === 5) {
+                var image = document.getElementById('img-egg');
+                image.src = '/img/folhas.webp';
+
+                // Reinicia o contador de cliques
+                clickCount = 0;
+            }
+        }
+    </script>
+</head>
+<body  onclick="handleClick()">
+    <header>
+        <nav>
+            <button class="dark-mode-button" onclick="toggleDarkMode()">Alternar Modo</button>
+            <a class="logo" href="/index.html">Home</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div> 
+                <div class="line3"></div>             
+            </div>
+            <ul class="nav-list">
+                <li><a href="tiposlixo.html">Tipos Lixo</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="" id="img-egg">
+    </main>
+    <script src="/mobile-navbar.js"></script>
+    <footer>
+        <p>Meu Site - Todos os direitos Reservados - 2022</p>
+      </footer>
+</body>
+</html>

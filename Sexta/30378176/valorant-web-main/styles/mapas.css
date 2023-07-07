@@ -1,0 +1,64 @@
+body{
+    background-image: url(../imagens/mapas/mapa-fracture.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.menu{
+    margin-left: 43vw;
+    margin-right: 43vw;
+    border: 3px solid rgba(6, 73, 73, 0.149);
+    opacity: 80%;
+    border-radius: 16px;
+    transition: 1.9s;
+    font-size: 34px;
+    text-decoration: dashed;
+
+}
+
+nav a{
+    color: white;
+    font-size: 52px;
+    text-decoration: dotted;
+    filter: blur(0.1px);
+    
+}
+.maps-table{
+    border: 3px solid rgba(159, 219, 219, 0.149);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: arial,georgia,sans-serif;
+    font-size: 16px;
+    background-color: rgba(178, 189, 235, 0.211);
+    border-radius: 35px;
+    color: white;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+/*Colocar o ascent dentro da classe imagem*/
+
+.mapas-img{
+    margin-top: 30px;
+    image-resolution: 720px,740px;
+    height: 420px;
+    width: 740px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+.mapas-img:hover{
+    transform: scale(1.1) translateY(-10px);
+    cursor: crosshair;
+}
+
+
+
+

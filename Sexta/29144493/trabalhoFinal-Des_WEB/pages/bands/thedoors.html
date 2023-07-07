@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <!-- Importação de fontes e ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>The Doors</title>
+
+    <style>
+
+.container{
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .first-div{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100vw;
+
+        }
+
+        p{
+            width: 90vw;
+            text-align: center;
+        }
+
+        img{
+            height: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .second-div{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100vw;
+        }
+
+        .third-div{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            width: 100vw;
+        }
+
+    </style>
+</head>
+<body id="body-band"> 
+
+    <header id="home-header">
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../bands/bands.html">Bandas</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <i id="mode-icon" class="fa-solid fa-sun" style="color: #000000; padding: 5px; font-size: 20px;"></i>
+
+    <main class="container">
+        <div class="first-div">
+            <img align="left" src="../../assets/images/the-doors/thedoors-band.JPG" alt="Foto da banda The Doors" id="img-doors">
+            <p>The Doors foi uma banda de rock norte-americana, fundada em 1965, em Los Angeles, Califórnia. O grupo era composto por Jim Morrison (voz), Ray Manzarek (teclados), Robby Krieger (guitarra) e John Densmore (bateria). Canções como "Break on Through (To the Other Side)", "Light My Fire", "People Are Strange" ou "Riders on the Storm", aliadas à personalidade e escândalos grandiosos protagonizados por Jim Morrison, contribuíram de sobremaneira para o aumento da fama do grupo.</p>
+        </div>
+
+        <div class="second-div">
+            <!-- Importando vídeo da banda no YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q76QBhKHQGc?start=2327" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="third-div">
+            <!-- Importando página da banda no Spotify -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/22WZ7M8sxp5THdruNY3gXt?utm_source=generator" width="75%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <!-- Chamando script -->
+    <script type="text/javascript" src="../../assets/js/script.js"></script>
+
+</body>
+</html>

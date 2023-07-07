@@ -1,0 +1,71 @@
+/* Configurando Conteúdo da Página */
+
+section{
+
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(00, 00, 00, 0.);
+    font-weight: 500;
+
+    overflow: scroll;
+
+}
+
+/* Organização do Conteúdo */
+
+.caixa{
+
+    display: flex;
+    flex-direction:column;
+    align-content: flex-start;
+    background-color: rgba(00, 00, 00, 0.3);
+    border: 1px solid black;    
+    margin: 20px;
+
+}
+
+.caixa>h2, h3, h4, h5{
+
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+
+.caixa>p{
+
+    text-align: justify;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+.caixa>ul>p{
+    
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40vw;
+}
+
+.event{
+
+    margin-left: 40px;
+    width: 50vw;
+    height: 50vh;
+
+}
+
+.banner{
+
+    margin-left: 60px;
+    width: 40vw;
+    height: 40vh;
+
+}
+

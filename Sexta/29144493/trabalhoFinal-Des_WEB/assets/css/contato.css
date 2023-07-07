@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(78, 78, 78);
+    overflow-x: hidden;
+}
+
+.light#body-contact{
+    background-color: aliceblue;
+    animation: dark-to-light 0.5s ease-in-out;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.light#header-contact{
+    background-color: rgb(177, 177, 177);
+    color: black;
+    animation: dark-to-light-header 0.5s ease-in-out;
+}
+
+.light#header-contact a{
+    color: black;
+    animation: dark-to-light-header 0.5s ease-in-out;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 10em;
+    margin-right: 50px;
+}
+
+.menu a{
+    font-size: 22px;
+    color: white;
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.menu li:hover{
+    animation: hover-menu 0.8s ease-in-out;
+    transform: scale(1.2);
+}
+
+@keyframes hover-menu{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+#main-container{
+    background-color: rgb(78, 78, 78);
+    color: black;
+    border: solid 2px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.light#main-container{
+    background-color: aliceblue;
+}
+
+#aside{
+    background-color: rgb(78, 78, 78);
+    color: black;
+    border: solid 2px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.light#aside{
+    background-color: aliceblue;
+    color: black;
+    animation: dark-to-light 0.5s ease-in-out;
+}
+
+#footer{
+    background-color: rgb(78, 78, 78);
+    color: black;
+    border: solid 2px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.light#footer{
+    background-color: aliceblue;
+    color: black;
+    animation: dark-to-light 0.5s ease-in-out;
+}
+
+.table{
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.table tr{
+    margin-top: 10px;
+}
+
+.table a{
+    text-decoration: none;
+    color: black;
+}
+
+.table i{
+    font-size: 24px;
+}
+
+.table tr:hover{
+    animation: hover-menu 0.8s ease-in-out;
+    transform: scale(1.2);
+}
+
+@keyframes hover-menu{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes dark-to-light{
+    0%{
+        background-color: rgb(78, 78, 78)
+    }
+
+    100%{
+        background-color: aliceblue
+    }
+}
+
+@keyframes light-to-dark{
+    0%{
+        background-color: aliceblue
+    }
+
+    100%{
+        background-color: rgb(78, 78, 78)
+    }
+}
+
+@keyframes dark-to-light-header{
+    0%{
+        background-color: rgb(177, 177, 177)
+    }
+
+    100%{
+        background-color: aliceblue
+    }
+}
+
+@keyframes light-to-dark-header{
+    0%{
+        background-color: rgb(177, 177, 177)
+    }
+
+    100%{
+        background-color: rgb(78, 78, 78)
+    }
+}
+
+
+@media screen and (min-width: 900px){
+
+    
+}
+
+@media screen and (max-width: 1030px){
+
+    #main-container h1{
+        font-size: 22px;
+    }
+    #main-container h2{
+        font-size: 18px;
+    }
+    #main-container p{
+        font-size: 16px;
+    }
+
+    #aside h3{
+        font-size: 20px;
+    }
+    #aside p{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    #main-container h1{
+        font-size: 18px;
+    }
+    #main-container h2{
+        font-size: 14px;
+    }
+    #main-container p{
+        font-size: 10px;
+    }
+
+    #aside h3{
+        font-size: 16px;
+    }
+    #aside p{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+
+    #main-container{
+        gap: 2em;
+    }
+
+    #main-container h1{
+        font-size: 14px;
+    }
+    #main-container h2{
+        font-size: 10px;
+    }
+    #main-container p{
+        font-size: 8px;
+    }
+
+    #aside h3{
+        font-size: 12px;
+    }
+    #aside p{
+        font-size: 8px;
+    }
+
+    #aside{
+        gap: 1.5em;
+    }
+
+    #footer{
+        font-size: 16px;
+    }
+
+    .menu {
+        gap: 8em;
+        margin-right: 12px;
+    }
+    
+    .menu a {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 470px) {
+
+    #main-container{
+        gap: 2em;
+    }
+
+        #main-container h1{
+            font-size: 12px;
+        }
+        #main-container h2{
+            font-size: 8px;
+        }
+        #main-container p{
+            font-size: 6px;
+        }
+    
+        #aside h3{
+            font-size: 12px;
+        }
+        #aside p{
+            font-size: 8px;
+        }
+    
+        #aside{
+            gap: 1.5em;
+        }
+    
+        #footer{
+            font-size: 16px;
+        }
+    
+        .menu {
+            gap: 8em;
+            margin-right: 12px;
+        }
+        
+        .menu a {
+            font-size: 16px;
+        }
+        
+}
+
+@media screen and (max-width: 400px) {
+
+    #main-container{
+        gap: 2em;
+    }
+
+    #main-container h1{
+        font-size: 12px;
+    }
+    #main-container h2{
+        font-size: 8px;
+    }
+    #main-container p{
+        font-size: 6px;
+    }
+
+    #aside h3{
+        font-size: 12px;
+    }
+    #aside p{
+        font-size: 8px;
+    }
+
+    #aside{
+        gap: 1.5em;
+    }
+
+    #footer{
+        font-size: 16px;
+    }
+
+    .menu {
+        gap: 6em;
+        margin-right: 10px;
+    }
+    
+    .menu a {
+        font-size: 12px;
+    }
+ 
+}
+
+@media screen and (max-width: 300px) {
+
+    .menu{
+        gap: 3em;
+    }
+
+    #main-container{
+        gap: 3em;
+    }
+}

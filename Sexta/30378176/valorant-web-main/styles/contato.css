@@ -1,0 +1,53 @@
+*{
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-image: url(../imagens/background/contato-fundo.png);
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    /*filter: blur(6px);Quero deixar o fundo desfocado, procurar quando tiver mais tempo*/
+}
+.perfil{
+    
+    height: 35vh;
+    width: 25vw;
+    border: 1px solid black;
+    border-radius: 70px;
+    margin-top: 10vh;
+    filter: blur(0);
+    cursor: wait;
+}
+.icones{
+    height: 2vh;
+    width: 1vw;
+    opacity: 60%;
+}
+h1{
+    
+    font-size: 66px;
+    color: black;
+}
+h2{
+    font-size: 26px;
+    color: black;
+}
+h3{
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: dotted;
+}
+/* .teste{
+    display: flex;
+     Pode ser uma opção também de estetica flex-direction: row;
+}*/

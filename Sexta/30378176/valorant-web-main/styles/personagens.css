@@ -1,0 +1,142 @@
+body, ul, li p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 26px;
+    font-style: arial;
+}
+
+body{
+    background-image: url(../imagens/personagens/all-character.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: rgb(31, 30, 31,87%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding-left: 10px;
+    
+}
+
+h1 ,h2 , div > p{
+    color: white;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease ;
+}
+img:hover{
+    transform: scale(1.1) translateY(-10px);
+}
+
+video{
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+    display: none;
+   
+    
+}
+video:hover{
+  max-width: 100%;
+  display: block;
+  border-radius: 20px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 1100px;
+    margin: 0 auto;
+}
+
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+    
+}
+
+
+.controladores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    
+}
+
+.duelistas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.iniciadores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    
+}
+
+.sentinelas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px;
+
+
+}
+
+@media (max-width: 600px) {
+    .controladores{
+        grid-template-columns: 1fr;   
+    }
+
+    .duelistas{
+        grid-template-columns: 1fr;   
+    }
+    .iniciadores{
+        grid-template-columns: 1fr;   
+    }
+    .sentinelas{
+        grid-template-columns: 1fr;   
+    }
+}

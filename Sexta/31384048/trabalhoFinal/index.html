@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Genshin</title>
+    <script src="./projectJS/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./projectIMG/Main_Page_IMG/favicon.ico">
+    <link rel="stylesheet" href="./projectCSS/global.css">
+    <link rel="stylesheet" href="./projectCSS/home.css">
+    <!-- CSS Interno Menu Interno -->
+    <style>
+        .menuInterno{
+
+            background-color: rgba(00, 00, 00, 0.8);
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            position: sticky;
+            top: 0px;
+            
+        }        
+    </style>
+
+</head>
+<body>
+    <div id="page"> 
+        <div id="mode">
+            <button onclick="toggleDarkMode()">&#127774 / &#127773</button>
+        </div>   
+    <header>
+            <img id="logo" src="./projectIMG/Main_Page_IMG/logo.png" alt="logoGenshin">            
+    </header>
+    <nav>
+        <table>
+            <tr>
+                <td class="navItem"><a href="./regioes.html" class="link">Mundo</a></td>
+                <td class="navItem"><a href="./contato.html" class="link">Contato</a></td>
+            </tr>
+        </table>
+    </nav>
+    <section>
+        <table class="menuInterno">
+            <tr>
+                <td><a href="#sobre" class="link">Sobre</a></td>
+                <td><a href="#novidades" class="link">Novidades</a></td>
+                <td><a href="#rodape" class="link"> Fim da Página</a></td>
+        </tr>
+        </table>
+
+        <div class="caixa">
+
+        <h2 id="sobre">Sobre: </h2>
+        
+        <p>
+            Genshin Impact é um RPG mundo aberto desenvolvido em 2020, pela Hoyoverse (antiga Mihoyo),
+            com mecânicas de jogo inspiradas no aclamado jogo da Nintendo, <em>Zelda: Breath of The Wild</em> e
+            com o Sistema de <em>GACHAPON</em> muito popular entre jogos mobile, um sistema do qual
+            a empresa ja havia trabalhado em seu primeiro jogo o Honkai Impact.
+        </p>        
+        <p>
+            O jogo inicia contando a história de dois irmãos gêmeos que viajavam entre os universos visitando 
+            diversos mundos, quando em uma de suas viagens eles são interrompidos por uma deusa desconhecida, neste 
+            momento os irmãos lutam para se defender. O jogo então libera para o jogador escolher um dos gêmeos como o <em>Main Character</em>, 
+            Aether(irmão) ou Lumine(irmã) assim definindo o gênero do protagonista, após a escolha do seu protagonista, 
+            a Deusa captura o outro irmão e remove os poderes do personagem do jogador, e o 
+            teletransporta para um mundo desconhecido.
+        <br>
+        <br>
+            O jogador então vaga por uma praia nesse novo mundo, quando vê alguém se afogando, ao salvar ela 
+            somos apresentados a nossa fiel guia <em>Paimon</em>. Após o viajante (como os NPCs se referêm ao Protagonista) 
+            contar o ocorrido a ela, a mesma nos informa que estamos no mundo de Teyvat e que nesse mundo haviam sete nações,
+            essas governadas por sete Arcontes, ao descobrir a existência dos sete, o viajante decide se encontrar com cada um deles
+            para descobrir se fora um deles o responsável por prender seu irmão, ou se eles conhecem a deusa que o fez.
+        </p>
+
+        </div>
+
+        <div class="caixa">
+        <h2 id="novidades">Novidades: </h2>
+        <h3>Atualização 3.7:</h3>
+            <img class="event" src="./projectIMG/Main_Page_IMG/att3.7_banner.png" alt="att3.7">
+        <h4>Banners :</h4>
+            <ul style="list-style-type: none;">
+                <h5>Primeira Fase:</h5>
+                <h5>Personagens :</h5>
+                    <li><img class="banner" src="./projectIMG/Main_Page_IMG/crbanner1_ph1.png" alt=""></li>
+                    <li><img class="banner" src="./projectIMG/Main_Page_IMG/crbanner2_ph1.png" alt=""></li>
+                <h5>Armas :</h5>
+                    <li><img class="banner" src="./projectIMG/Main_Page_IMG/wp_banner_ph1.png" alt=""></li>
+                <h5>Segunda Fase:</h5>
+                <h5>Personagens :</h5>
+                    <li><img class="banner" src="./projectIMG/Main_Page_IMG/crbanner1_ph2.png" alt="crbanner1"></li>
+                    <li><img class="banner" src="./projectIMG/Main_Page_IMG/crbanner2_ph2.png" alt="crbanner2"></li>
+                <h5>Armas :</h5> 
+                    <li><img class="banner" src="./projectIMG/Main_Page_IMG/wp_banner_ph2.png" alt=""></li>
+            </ul>
+        <h4>Eventos :</h4>
+            <ul style="list-style-type: none;">
+                <h5>Duelo das Invocações!</h5>
+                <img class="event" src="./projectIMG/Main_Page_IMG/event3.7_1.jpg" alt="evento1">
+                <p>
+                    O popular "Grande Torneio do Rei do Chamado Sagrado dos Sete" já começou!
+                    Sobre a mesa, ferozes duelos de cartas se desenrolam sucessivamente, 
+                    enquanto embaixo da mesa parece haver uma grande e traiçoeira notícia esperando ser descoberta...
+                </p>
+                <h5>Engenhosidade Divina: Capítulo de Colecionador</h5>
+                <img class="event" src="./projectIMG/Main_Page_IMG/event3.7_2.jpg" alt="evento2">
+                <p>
+                    A Guilda de Aventureiros criou 5 Designs de Domínio. A partir do início do evento, um novo Design de Domínio será aberto a cada dia. 
+                    Complete o desafio do Design de Domínio e alcance o número designado de Pontos Divinos para obter Gemas Essenciais, Materiais de Elevação de Talento, Materiais de Ascensão de Armas, Minério de Refinamento Místico, 
+                    Mora, entre outras recompensas.
+                </p>
+            </ul>
+        </div>            
+    </section>
+    <footer id="rodape">    
+        <a href="https://genshin.hoyoverse.com/pt/" target="_blank"><img id="footerLogo" src="./projectIMG/Main_Page_IMG/footerLogo.png" alt="footerLogo"></a>         
+        <img id="hoyoLogo" src="./projectIMG/Main_Page_IMG/hoyoverseLogo.png" alt="hoyoLogo">        
+        <p>Copyright © COGNOSPHERE. All Rights Reserved.</p> 
+    </footer>
+    </div>
+</body>
+</html>

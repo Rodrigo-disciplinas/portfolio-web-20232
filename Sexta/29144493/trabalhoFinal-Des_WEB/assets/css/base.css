@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', Verdana, sans-serif;
+    text-decoration: none;
+}
+
+img{
+    height: 65px;
+}
+
+body{
+    background-color: rgb(78, 78, 78);
+    overflow-x: hidden;
+    animation: light-to-dark-body 0.5s ease-in-out;
+}
+
+.light#body-band{
+    background-color: aliceblue;
+    animation: dark-to-light-body 0.5s ease-in-out;
+}
+
+.main-home{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Metal Mania', sans-serif;
+    color: #212121;
+    font-size: 80px;
+    padding: 25px;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgba(145, 145, 145, 0.59);
+    width: fit-content;
+    text-shadow: black 1px 2px;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.light#home-header{
+    background-color: rgb(177, 177, 177);
+    color: black;
+    animation: dark-to-light 0.5s ease-in-out;
+}
+
+.light#home-header a{
+    color: black;
+    animation: dark-to-light 0.5s ease-in-out;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 10em;
+    margin-right: 50px;
+}
+
+.menu a{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    animation: light-to-dark 0.5s ease-in-out;
+}
+
+.menu li:hover{
+    animation: hover-menu 0.8s ease-in-out;
+    transform: scale(1.2);
+}
+
+@keyframes hover-menu{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px; 
+    border-radius: 10px;
+    color: black;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+
+@keyframes dark-to-light{
+    0%{
+        background-color: rgb(78, 78, 78)
+    }
+
+    100%{
+        background-color: rgb(177, 177, 177)
+    }
+}
+
+@keyframes light-to-dark{
+    0%{
+        background-color: rgb(177, 177, 177)
+    }
+
+    100%{
+        background-color: rgb(78, 78, 78)
+    }
+}
+
+@keyframes dark-to-light-body{
+    0%{
+        background-color: rgb(78, 78, 78)
+    }
+
+    100%{
+        background-color: aliceblue
+    }
+}
+
+@keyframes light-to-dark-body{
+    0%{
+        background-color: aliceblue
+    }
+
+    100%{
+        background-color: rgb(78, 78, 78)
+    }
+}
+
+
+@media screen and (min-width: 900px){
+
+    .title {
+        font-size: 60px;
+      }
+    
+      p {
+        font-size: 26px;
+      }
+    
+      .menu {
+        gap: 10em;
+        margin-right: 20px;
+      }
+    
+      .menu a {
+        font-size: 22px;
+      }
+  
+      .first-div img{
+          height: 450px;
+      }
+  
+      .second-div iframe{
+          width: 75%;
+          height: 500px;
+      }
+  
+}
+
+@media screen and (max-width: 900px){
+
+    .title {
+        font-size: 60px;
+      }
+    
+      .first-div p {
+        font-size: 22px;
+      }
+    
+      .menu {
+        gap: 5em;
+        margin-right: 20px;
+      }
+    
+      .menu a {
+        font-size: 22px;
+      }
+  
+      .first-div img{
+          height: 300px;
+      }
+  
+      .second-div iframe{
+          width: 75%;
+          height: 300px;
+      }
+  
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+      font-size: 40px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    .menu {
+      gap: 5em;
+      margin-right: 20px;
+    }
+  
+    .menu a {
+      font-size: 18px;
+    }
+
+    .first-div img{
+        height: 220px;
+    }
+
+    .second-div iframe{
+        width: 75%;
+        height: 300px;
+    }
+
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .title {
+      font-size: 28px;
+    }
+  
+    .first-div p {
+      font-size: 12px;
+    }
+  
+    .menu {
+      gap: 2em;
+      margin-right: 12px;
+    }
+  
+    .menu a {
+      font-size: 12px;
+    }
+
+    .first-div img{
+        height: 125px;
+    }
+
+    .second-div iframe{
+        width: 75%;
+        height: 200px;
+    }
+
+    .third-div iframe{
+        width: 80%;
+        height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 200px) {
+
+    .title {
+      font-size: 18px;
+    }
+  
+    .first-div p {
+        font-size: 10px;
+      }
+  
+    .menu {
+      gap: 1em;
+      margin-right: 6px;
+    }
+  
+    .menu a {
+      font-size: 12px;
+    }
+
+    .first-div img{
+        height: 100px;
+    }
+
+    .second-div iframe{
+        width: 75%;
+        height: 80px;
+    }
+
+    .third-div iframe{
+        width: 80%;
+        height: 100px;
+    }
+  }

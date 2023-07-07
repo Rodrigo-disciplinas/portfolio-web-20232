@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/personagens.css">
+    <title>Personagens</title>
+    <script src="../javascript/personagens.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="./index.html">Menu</a>
+        <nav>
+            <ul class="menu" >
+                <li>
+                    <a href="./sobrejogo.html">Sobre o jogo</a>
+                </li>
+                <li>
+                    <a href="./mapas.html">Mapas</a>
+                </li>
+                <li>
+                    <a href="./arsenal.html">Arsenal</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+                <!--Aqui temos grid na que estrutura 100% pagina, e com @media query no css-->
+                <!--Dividido em section cada classe de personagens do jogo-->
+                <!--Ao clicar nos personagens é reproduzido um video apresentando como ele é, e assim que ele finzaliza fecha o video e retorna a imagem inicial-->
+                <h1>Personagens</h1>
+    <h2>Controladores</h2>
+    <section class="controladores">
+
+        <div>
+            <img src="../imagens/personagens/astra.jpg" 
+            onclick="abrirVideo('astra')" id="astra-imagem" alt="Astra">
+
+            <video src="../imagens/personagens/astra-video.mp4" 
+            onended="fecharVideo('astra')" id="astra-video" alt="Video Astra" controls>
+
+        </video>
+            <p>Astra</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/omen.jpg" onclick="abrirVideo('omen')" id="omen-imagem" alt="omen">
+            <video src="../imagens/personagens/omen-video.mp4" onended="fecharVideo('omen')" id="omen-video" controls></video>
+            <p>Omen</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/viper.jpg" onclick="abrirVideo('viper')" id="viper-imagem" alt="viper">
+            <video src="../imagens/personagens/viper-video.mp4" onended="fecharVideo('viper')" id="viper-video" controls></video>
+            <p>Viper</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/brimstone.jpg" onclick="abrirVideo('brimstone')" id="brimstone-imagem" alt="brimstone">
+            <video src="../imagens/personagens/brimstone-video.mp4" onended="fecharVideo('brimstone')" id="brimstone-video" controls></video>
+            <p>Brimstone</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/harbor.webp" onclick="abrirVideo('harbor')" id="harbor-imagem" alt="harbor">
+            <video src="../imagens/personagens/harbor-video.mp4" onended="fecharVideo('harbor')" id="harbor-video" controls></video>
+            <p>Harbor</p>
+        </div>
+        </section>
+
+
+                                <h2>Duelista</h2>
+        <section class="duelistas">
+        <div>
+            <img src="../imagens/personagens/raze.jpg" alt="Raze"onclick="abrirVideo('raze')" id="raze-imagem" alt="raze">
+            <video src="../imagens/personagens/raze-video.mp4" onended="fecharVideo('raze')" id="raze-video" controls></video>
+            <p>Raze</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/jet.jpg" alt="jett"onclick="abrirVideo('jett')" id="jett-imagem" alt="jett">
+            <video src="../imagens/personagens/jett-video.mp4" onended="fecharVideo('jett')" id="jett-video" controls></video>
+            <p>Jett</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/reyna-dark.jpg" alt="reyna" onclick="abrirVideo('reyna')" id="reyna-imagem">
+            <video src="../imagens/personagens/reyna-video.mp4" onended="fecharVideo('reyna')" id="reyna-video" controls></video>
+            <p>Reyna</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/neon.webp" alt="neon"onclick="abrirVideo('neon')" id="neon-imagem" alt="neon">
+            <video src="../imagens/personagens/neon-video.mp4" onended="fecharVideo('neon')" id="neon-video" contneon></video>
+            <p>Neon</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/yoru.jpg" alt="yoru"onclick="abrirVideo('yoru')" id="yoru-imagem" alt="yoru">
+            <video src="../imagens/personagens/yoru-video.mp4" onended="fecharVideo('yoru')" id="yoru-video" controls></video>
+            <p>Yoru</p>
+        </div>
+
+        <div>
+            <img src="../imagens/personagens/phoenix.jpg" alt="phoenix"onclick="abrirVideo('phoenix')" id="phoenix-imagem">
+            <video src="../imagens/personagens/phoenix-video.mp4" onended="fecharVideo('phoenix')" id="phoenix-video" controls></video>
+            <p>Phoenix</p>
+        </div>
+        </section>
+
+                                <h2>Iniciador</h2>
+        <section class="iniciadores">
+
+            <div>
+                <img src="../imagens/personagens/fade.webp" alt="fade"onclick="abrirVideo('fade')" id="fade-imagem">
+                <video src="../imagens/personagens/fade-video.mp4" onended="fecharVideo('fade')" id="fade-video" controls></video>>
+                <p>Fade</p>
+            </div>
+
+            <div>
+                <img src="../imagens/personagens/skye.jpg" alt="skye"onclick="abrirVideo('skye')" id="skye-imagem">
+                <video src="../imagens/personagens/skye-video.mp4" onended="fecharVideo('skye')" id="skye-video" controls></video>>
+                <p>Skye</p>
+            </div>
+    
+            <div>
+                <img src="../imagens/personagens/sova.jpg" alt="sova"onclick="abrirVideo('sova')" id="sova-imagem">
+                <video src="../imagens/personagens/sova-video.mp4" onended="fecharVideo('sova')" id="sova-video" controls></video>>
+                <p>Sova</p>
+            </div>
+    
+            <div>
+                <img src="../imagens/personagens/breach.jpg" alt="breach"onclick="abrirVideo('breach')" id="breach-imagem">
+                <video src="../imagens/personagens/breach-video.mp4" onended="fecharVideo('breach')" id="breach-video" controls></video>>
+                <p>Breach</p>
+            </div>
+    
+            <div>
+                <img src="../imagens/personagens/gekko.webp" alt="gekko"onclick="abrirVideo('gekko')" id="gekko-imagem">
+                <video src="../imagens/personagens/gekko-video.mp4" onended="fecharVideo('gekko')" id="gekko-video" controls></video>>
+                <p>Gekko</p>
+            </div>
+    
+            <div>
+                <img src="../imagens/personagens/kayo.webp" alt="kay/o"onclick="abrirVideo('kayo')" id="kayo-imagem">
+                <video src="../imagens/personagens/kayo-video.mp4" onended="fecharVideo('kayo')" id="kayo-video" controls></video>>
+                <p>Kay/o</p>
+            </div>
+
+        </section>
+
+                                <h2>Sentinelas</h2>
+
+        <section class="sentinelas">
+
+            <div>
+                <img src="../imagens/personagens/killljoy.png" alt="killjoy" onclick="abrirVideo('killjoy')" id="killjoy-imagem">
+                <video src="../imagens/personagens/killjoy-video.mp4" onended="fecharVideo('killjoy')" id="killjoy-video" controls></video>>
+                <p>Killjoy</p>
+            </div>
+            
+            <div>
+                <img src="../imagens/personagens/sage.jpg" alt="sage" onclick="abrirVideo('sage')" id="sage-imagem">
+                <video src="../imagens/personagens/sage-video.mp4" onended="fecharVideo('sage')" id="sage-video" controls></video>>
+                <p>Sage</p>
+            </div>
+    
+           
+            <div>
+                <img src="../imagens/personagens/chamber.jpg" alt="chamber" onclick="abrirVideo('chamber')" id="chamber-imagem">
+                <video src="../imagens/personagens/chamber-video.mp4" onended="fecharVideo('chamber')" id="chamber-video" controls></video>>
+                <p>Chamber</p>
+            </div>
+
+            <div>
+                <img src="../imagens/personagens/cypher.jpg" alt="cypher" onclick="abrirVideo('cypher')" id="cypher-imagem">
+                <video src="../imagens/personagens/cypher-video.mp4" onended="fecharVideo('cypher')" id="cypher-video" controls></video>>
+                <p>Cypher</p>
+            </div>
+
+        </section>
+</body>
+</html>

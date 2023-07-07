@@ -1,0 +1,106 @@
+body{
+    background-image: url("../imagens/background/arsenal-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+  
+.conteiner{
+    display: flex;    
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.menu{
+    position: relative;
+    right: 8vw;
+    justify-content: left;
+    margin-left: 40vw;
+    margin-right: 43vw;
+    opacity: 50%;
+    border-radius: 5px;
+    font-size: 60px;
+    text-decoration: dashed;
+
+}
+
+nav a{
+    color: rgb(255, 70, 84);
+    font-size: 72px;
+    text-decoration: dotted;
+    filter: blur(0.1px);
+    border-bottom: 5px solid #d73054;
+    position: relative;
+    right: 370px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.item{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 8px;
+    border: 1px solid purple;
+    width: 660px;
+    height: 200px;
+    
+
+}
+.item>img{
+    padding-top: 50px;
+    width: 320px;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+.item>img:hover{
+transform: scale(1.4) translate(-10px);
+}
+
+aside{
+    margin-top: 15px;
+    border: 1px solid purple;
+    background-color: rgb(128, 0, 128,20%);
+    border-radius: 5px;
+    width: 22vw;
+    height: 96vh;
+    position: fixed;
+    right: 1.3%;
+    
+}
+aside a {
+    padding-top: 10px;
+    font-size: 53px;
+    font-family: arial,georgia,sans-serif;
+    text-decoration: dashed;
+    
+}
+.separadores{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left: 45px;
+        border-radius: 80px;
+        margin: 20px;
+        padding: 8px;
+        border: 1px solid purple;
+        width: 65vw;
+        height: 100px;
+}
+
+.separadores h1{
+    color: purple;
+    font-family: arial,georgia,sans-serif;
+    transition: 3s;
+}

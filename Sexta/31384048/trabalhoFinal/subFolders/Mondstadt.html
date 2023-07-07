@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondstadt</title>    
+    <script src="../projectJS/main.js" defer></script>
+    <script src="../projectJS/venti.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="../projectIMG/Main_Page_IMG/favicon.ico">
+    <link rel="stylesheet" href="../projectCSS/mon.css">
+    <link rel="stylesheet" href="../projectCSS/global.css">
+    <link rel="stylesheet" href="../projectCSS/subpages.css">
+</head>
+<body>
+    <div id="page">
+        <div id="mode">
+            <button onclick="toggleDarkMode()">&#127774 / &#127773</button>
+        </div> 
+        <header>
+            <img id="logo" src="../projectIMG/Main_Page_IMG/logo.png" alt="logoGenshin">
+        </header>
+        <nav>
+            <div>
+                <table>
+                    <tr>
+                        <td class="navItem"><a href="../index.html" class="link">Home</a></td>
+                        <td class="navItem"><a href="../regioes.html" class="link">Mundo</a></td>
+                        <td class="navItem"><a href="../contato.html" class="link">Contato</a></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+        <section>
+                <img id="city" src="../projectIMG/Mondstadt/MondstadtCity.jpg" alt="mondstadtCity">
+                <p>
+                    A capital da liberdade, ao nordeste de Teyvat. Entre cadeias de montanhas e as vastas planícies, o vento da liberdade traz consigo o aroma
+                    de Dandelion e acaricia o lago de Cidra, trazendo à cidade, no meio do lago, a bênção de Barbatos.
+                </p>
+                <div id="videocaixa">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SY3XGzDousM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+               
+                <table id="tbchar">
+                    <tr>
+                        <th>Personagem</th>
+                        <th>Nome</th>
+                        <th>Arma</th>
+                        <th>Elemento</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../projectIMG/Mondstadt/characters/venti.png" alt="venti" onclick="exibirGif()"></td>
+                        <td>Venti</td>
+                        <td>Arco</td>
+                        <td>Anemo</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../projectIMG/Mondstadt/characters/anemo_travaler.png" alt="travaler"></td>
+                        <td>Aether / Lumine</td>
+                        <td>Espada Curta</td>
+                        <td>Anemo</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../projectIMG/Mondstadt/characters/eula.png" alt="eula"></td>
+                        <td>Eula</td>
+                        <td>Espada Longa</td>
+                        <td>Cryo</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../projectIMG/Mondstadt/characters/fischl.png" alt="fischl"></td>
+                        <td>Fischl</td>
+                        <td>Arco</td>
+                        <td>Eletro</td>
+                    </tr>
+                </table>
+        </section>
+        <footer id="rodape">            
+            <a href="https://genshin.hoyoverse.com/pt/" target="_blank"><img id="footerLogo" src="../projectIMG/Main_Page_IMG/footerLogo.png" alt="footerLogo"></a>
+            <img id="hoyoLogo" src="../projectIMG/Main_Page_IMG/hoyoverseLogo.png" alt="hoyoLogo">
+            <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

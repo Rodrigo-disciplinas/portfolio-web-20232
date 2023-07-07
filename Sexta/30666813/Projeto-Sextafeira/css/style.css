@@ -1,0 +1,453 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*Colocar fonte */
+}
+
+/*Estilizando o Body*/
+body {
+    width: 100%;
+    height: 100%;
+
+    background-color: #1a1a1a;
+}
+
+/*Estilizando o Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Colocando sombra no header X Y Blur*/
+    box-shadow: 0px 5px 20px #000000;
+
+    /*Responsividade*/
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100px;
+    background-color: #101010;
+    padding: 10px;
+}
+
+
+/*Estilizando o FOOTER*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Responsividade*/
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100px;
+    background-color: #101010;
+    padding: 10px;
+    margin-top: auto;
+}
+
+footer h1 {
+    color: white;
+
+}
+
+/*Estilizando Menu*/
+.menu {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Estilizando os Links do Menu*/
+.menu li a {
+    display: block;
+
+    text-decoration: none;
+    color: #fff;
+
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 10px 20px 10px 20px;
+
+}
+
+/*Links Do menu quando passado em cima*/
+.menu li a:hover {
+    display: block;
+
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+
+    margin-left: 15px;
+
+}
+
+/*Estilizando a Logo*/
+.logo {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 10px;
+    background-color: #333;
+}
+
+
+/*Estilizando a imagem da logo*/
+.logo img {
+    width: 100%;
+    border-radius: 25px;
+    background-color: #000000;
+}
+
+
+/*---------------------------Pagina HOME---------------------------*/
+
+/*Conteiner home*/
+.conteiner_home {
+
+    max-width: 1200px;
+    height: 100vh;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: block;
+
+    flex-wrap: wrap;
+
+}
+
+/*Titulo*/
+.conteiner_home h1 {
+    margin-top: 30px;
+
+    color: #fff;
+    text-align: center;
+
+}
+
+/*Paragrafo*/
+.conteiner_home p {
+    margin-top: 60px;
+
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------Pagina CAMPEOES---------------------------*/
+
+/*Texto*/
+.texto_campeoes h1 {
+    margin-top: 30px;
+
+    color: #fff;
+    text-align: center;
+}
+
+/*Conteiner_Campeoes*/
+.conteiner_campeoes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+/*Divs dentro do Conteiner_Campeoes*/
+.conteiner_campeoes div {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+/*Imagens*/
+.conteiner_campeoes img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.conteiner_campeoes h2 {
+    color: azure;
+    text-align: center;
+}
+
+
+
+/*---------------------------Pagina CBLOL---------------------------*/
+
+/*Estilizando Conteiner CBLOL*/
+.conteiner_cblol {
+    max-width: 1200px;
+    height: 100vh;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: block;
+
+    flex-wrap: wrap;
+
+}
+
+/*Titulo CBLOL*/
+.conteiner_cblol h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*Estilizando a TABLE*/
+.conteiner_cblol .tabela {
+
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: blue;
+
+}
+
+/*Estilizando o HEADER da tabela e as linhas */
+.tabela th,td {
+    text-align: left;
+    padding: 8px;
+}
+
+.tabela th {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Estilizando Linhas da Tabela*/
+.tabela tr:nth-child(even) {
+    background-color: black;
+}
+
+
+/*Conteiner_Times*/
+.conteiner_times {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+/*Divs dentro do Conteiner_Times*/
+.conteiner_times div {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+/*Imagens*/
+.conteiner_times img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/*Textos h2*/
+.conteiner_times h2 {
+    color: azure;
+    text-align: center;
+}
+
+
+
+
+
+/*---------------------------Pagina Curiosidades---------------------------*/
+
+/*Estilizando conteiner de curiosidades*/
+.conteiner_curiosidades {
+    max-width: 1200px;
+    height: 100vh;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+    flex-wrap: wrap;
+
+}
+/*estilizando h1 dentro do conteiner*/
+.conteiner_curiosidades h1 {
+    margin-top: 50px;
+    color: white;
+
+}
+/*Estilizando os paragrafos*/
+.curiosidade_1 p {
+    margin-top: 30px;
+    color: white;
+}
+/*Estilizando as imagens*/
+.curiosidade_1img img {
+    margin-top: 20px;
+    width: 200px;
+    flex: 1 1 300px;
+    margin: 10px;
+
+}
+
+.curiosidade_3 {
+    max-width: 1200px;
+    height: 100vh;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/*Estiliando o video*/
+.curiosidade_3 .video {
+    height: 650px;
+}
+
+
+
+
+/*---------------------------Pagina Contato---------------------------*/
+
+.conteiner_contato {
+    max-width: 1200px;
+    height: 100vh;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+    flex-wrap: wrap;
+
+    color: #fff;
+
+}
+
+.conteiner_contato h1 {
+    margin-top: 30px;
+}
+
+
+
+/*---------------------------Pagina Sobre---------------------------*/
+
+
+.conteiner_sobre {
+    max-width: 1200px;
+    height: 100vh;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+    flex-wrap: wrap;
+
+    color: #fff;
+
+}
+
+.conteiner_sobre h1 {
+    margin-top: 30px;
+}
+
+.conteiner_sobre p {
+    margin-top: 30px;
+}
+
+/*---------------------------Modo Claro---------------------------*/
+
+body.claro {
+    background-color: white;
+    color: black;
+}
+
+.claro header {
+    background-color: white;
+    color: black;
+}
+
+.claro header a {
+    color: black;
+}
+
+.claro footer {
+    background-color: white;
+}
+
+.claro p {
+    color: black;
+}
+
+.claro a {
+    color: black;
+}
+
+.claro h1 {
+    color: black;
+}
+
+.claro h2 {
+    color: black;
+}
+
+
+/*---------------------------Animação---------------------------*/
+
+.animacao {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background-image: url("/imagens/warwick.jpg");
+    background-size: 200px 150px;
+
+    animation-name: andar;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+
+}
+
+@keyframes andar {
+    0% {
+        left: -180px;
+        top: 0px;
+    }
+
+    20% {
+        left: 50vw;
+        top: 50vh;
+    }
+
+    59.99% {
+        background-image: url("/imagens/warwick.jpg");
+    }
+
+    60% {
+        border: 15px yellow solid;
+        border-radius: 100%;
+        background-image: url(https://streamie.com.br/wp-content/uploads/2017/01/img-warwick-vovozinha-capa.jpg)
+    }
+
+    100% {
+        left: 95vw;
+        top: 0px;
+    }
+}
