@@ -1,0 +1,86 @@
+.body-dark-theme {
+  background: rgb(23, 23, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 23, 23, 1) 0%,
+    rgba(28, 28, 28, 1) 100%
+  );
+  color: #ffffff;
+
+  transition: all 1.5s;
+}
+
+.nav-dark-theme {
+  background: rgb(240, 240, 240);
+  color: #000;
+
+  transition: all 1.5s;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  transition: all 1.5s;
+}
+
+header {
+  background: rgba(23, 23, 23, 1);
+  padding: 20px;
+  text-align: left;
+}
+
+header #theme {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fd7525;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  padding: 1rem;
+  text-align: center;
+
+}
+
+nav a {
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: #fd7525;
+  border-bottom: 1px solid #fd7525;
+  transition: all 0.1s;
+}
+
+main {
+  margin: 20px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content p {
+  font-size: 1.1rem;
+}
+
+.content a {
+  align-self: end;
+  color: #fd7525;
+  font-size: 1.1rem;
+}

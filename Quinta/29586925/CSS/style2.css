@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&family=Roboto&family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+:root{
+    --gray:#dedede;
+    --black:#000;
+}
+html, body{
+    width: 100%;
+    height:2662px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body.dark{
+background-color:#121212 ;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:#bfbfbf;
+    position:fixed;
+    z-index: 10;
+}
+body.dark header{
+    background:#363636;
+}
+header2 .header-block{
+    max-width: 97%;
+    min-width:1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    z-index: 1;
+}
+.conteudo-header{
+    max-width:1400px;
+    min-width:1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    width: 10%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+nav h6{
+font-size: 7px;
+}
+.logo{
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--black);
+    padding-left: 10px;
+}
+body.dark .logo{
+    color: white;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 800px;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+    background-color: black;
+}
+.label{
+    width: 40px;
+    height: 17px;
+    background-color:var(--gray);
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+}
+.ball{
+    width: 22px;
+    height:22px ;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear ;
+}
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+}
+body.dark nav ul li a {
+    color: white;
+}
+body.dark nav ul li a:hover{
+    transition:color 0.4s;
+    color:dimgray ;
+}
+nav ul li a:hover{
+    color: var(--gray);
+    transition: color 0.4s;
+}
+.header-block{
+    width:100%;
+    height: 600px;
+    background-color: var(--gray);
+    position:absolute;
+    padding: 10px;
+    border-radius: 10px;
+    bottom:190px;
+}
+body.dark .header-block{
+    background: #363636;
+}
+.header-block img{
+    display: row;
+    align-items:flex;
+}
+.header-text h1{
+    position: absolute;
+    font-size:40px;
+    bottom: 500px;
+    right: 1260px;
+    z-index: 3;
+}
+body.dark .header-text h1{
+    color: white;
+}
+.header-text h5{
+    position: absolute;
+    font-size: 17px;
+    bottom: 200px;
+    width: 340px;
+    padding: 15px;
+    z-index: 3;
+}
+body.dark .header-text h5{
+    color: white;
+}
+section .catalog{
+    width: 100vw;
+    padding: 100px;
+}
+.title-obras{
+    font-size: 25px;
+    cursor: pointer;
+    bottom: 1000px;
+}
+body.dark .title-obras{
+    color: white;
+}
+section .content .card-wrapper .card-text{
+    position: relative;
+    top:950px;
+    left: 30.6%;
+    align-items: flex;
+    flex-direction: row;
+    background-color: var(--gray);
+    border-radius: 5px;
+    z-index: 3;
+}
+body.dark section .content .card-wrapper .card-text{
+    color: white;
+    background: #363636;
+}
+.card-wrapper img{
+    position:relative;
+    top: 800px;
+    left:20%;
+    z-index: 1;
+}
+section .content .card-wrapper2 .card-text2{
+position: relative;
+top: 660px;
+left:1000px;
+background-color: var(--gray);
+border-radius: 5px;
+z-index: 3;
+}
+body.dark section .content .card-wrapper2 .card-text2{
+    color: white;
+    background: #363636;
+}
+.card-wrapper2 img{
+    position: relative;
+width: 486px;
+height: 580px;
+top: -38px;
+left: 805px;
+}
+.final-image img{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    top: 350px;
+    z-index: 3;
+}
+.final-text{
+    padding: 20px;
+    padding-top: 100px;
+    background-color: var(--gray);
+    border-radius: 15px;
+    left: 1000px;
+    top: 2100px;
+    z-index: 4;
+}
+body.dark .final-text{
+    color: white;
+    background: #363636;
+}
+.final-titulo{
+    left: 1050px;
+    top:2130px;
+    z-index: 5;
+}
+body.dark{
+    color: white;
+}
+section .map iframe{
+    position: relative;
+    top: 900px;
+    left: 150px;
+    z-index: 4;
+}
+.card-text2 sup a {
+    cursor: pointer;
+    color: #000;
+    
+}

@@ -1,0 +1,31 @@
+#princ {
+    background: url(/img/001/001-X.jpg);
+    background-size: cover;
+    height: 85vh;
+}
+
+#zero {
+    float: right;
+    height: 80vh;
+}
+
+#texto {
+    align-items: center;
+    max-width: 800px; 
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+h1 {
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 25px;
+}
+
+a {
+    color: #f0f0f0;
+}
+

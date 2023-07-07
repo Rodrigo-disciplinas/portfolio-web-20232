@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-color: #dadada;;
+  }
+  
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #d49462;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+
+  .episodes-table {
+    width: 1200px;
+    border-collapse: collapse;
+    background-color: lightyellow;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .episodes-table th,
+  .episodes-table td {
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid blue;
+  }
+  
+  .episodes-table th:first-child,
+  .episodes-table td:first-child {
+    border-left: none;
+  }
+  
+  .episodes-table th:last-child,
+  .episodes-table td:last-child {
+    border-right: none;
+  }
+  
+  @media screen and (min-width: 801px) and (max-width:1000px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  }
+  
+    @media screen and (max-width: 800px) and (max-width:800px) {
+      body {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+  }

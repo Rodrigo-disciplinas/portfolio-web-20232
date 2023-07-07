@@ -1,0 +1,24 @@
+#fundo {
+  background: url(/img/Contato/fundo.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+table {
+  color: #eca4a4;
+  padding: 15px;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+}
+
+th {
+  font-size: 25px;
+}
+
+td {
+  font-size: 20px;
+  padding-left: 10px;
+}

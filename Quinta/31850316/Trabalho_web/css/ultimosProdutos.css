@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+*{
+    font-family:  'Poppins', sans-serif;
+}
+
+body{
+    font-size: 14px;
+    overflow-x: hidden;
+
+}
+
+header {
+    background-color: #000;
+    width: 100vw;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    font-size: 1.7em;
+}
+
+nav a:hover {
+    color: #555;
+    background-color: #e6e6e6;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline;
+    display: none;
+}
+
+.dropdown-button {
+    background-color: #292929;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: #000;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+.dropdown-links {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-links a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 23px;
+  }
+
+
+.dropdown-login:hover .dropdown-login-links {
+    display: flex; /*Infos raoidas para o projeto*/
+    flex-direction: column;
+}
+
+  
+
+  /*DropDown MENU*/
+.dropdown-login {
+    position: relative;
+    display: inline;
+}
+
+.dropdown-login-button {
+    background-color: #292929;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+
+  .dropdown-login-links {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-login-links a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 23px;
+  }
+  
+  .dropdown-menu:hover .dropdown-login-links {
+    display: flex; /*Infos raoidas para o projeto*/
+    flex-direction: column;
+  }
+
+
+@media (max-width: 900px){
+    .dropdown-menu{
+        position: relative;
+        display: inline;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+/* Bloco responsavel pelo menu-dropdown */
+@media (max-width: 700px) {
+
+    .dropdown-button {
+        cursor: pointer;
+        margin-right: 80px;
+    }
+
+    .dropdown-links{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+}
+
+
+/* MAIN */
+main{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#tenis-ex{
+    width: 100vw;
+    margin: 30px 0px;
+}
+
+#peitas-ex{
+    width: 100vw;
+    margin: 30px 0px;
+}
+
+.titulo-peças{
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+
+
+/* Rodapé do site */
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg); 
+    width: 100vw;    
+}
+
+#foo-p{
+    color: #F0F0F0;
+}
+
+@media (min-width: 401px){
+    #f-logo-150{
+        display: none;
+    }
+}
+
+
+@media (max-width: 400px){
+    #f-logo-400{
+        display: none;
+    }
+}

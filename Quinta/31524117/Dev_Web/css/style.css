@@ -1,0 +1,316 @@
+body {
+    margin: 0%;
+    padding: 0;
+    background-color: #000000;
+    height: 400vh;
+    margin: 0%;
+    overflow: auto;
+}
+
+#easteregg {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.header-menu {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    background-color: #000000;
+}
+
+.header-menu li {
+    margin-right: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    animation: shake 2.5s infinite;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: #FFDF2B;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(3deg);
+    }
+
+    20% {
+        transform: rotate(3deg);
+    }
+
+    10% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+header {
+    display: flex;
+
+}
+
+/* USANDO NOS ASIDE EM, HOME, BLOCKCHAIN, CRIPTOGRAFIA, CRIPTOMOEDAS. */
+
+.aside {
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 2%;
+    display: inline-block;
+    float: left;
+    background-color: #FFDF2B;
+}
+
+.bit img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-position: 0%;
+    background-image: url("img/bit");
+}
+
+.aside2 {
+    border-color: #f7f7f7;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 2%;
+    display: inline-block;
+    float: right;
+    background-color: #FFDF2B;
+}
+
+p {
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.content {
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* BLOCKCHAIN CSS */
+
+#blockchainstyle {
+    color: #2ea4c2;
+    padding: 30px;
+    font-size: 300%;
+}
+
+.oquefazblockchain {
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: right;
+    margin: 0%;
+    display: 0%;
+}
+
+.imgblackchain {
+    max-width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.imgblackchain2 {
+    max-width: 20%;
+    height: auto;
+    display: flex;
+}
+
+#params {
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 2%;
+    display: inline-block;
+    float: left;
+    background-color: #2ea4c2;
+}
+
+/* criptomoedas css */
+
+.criptostyle {
+    color: hwb(150 1% 19% / 0.685);
+    padding: 30px;
+    font-size: 300%;
+}
+
+.imgcripto {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.oquefazcripto {
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
+
+#criptoaside {
+    border-color: #04500e;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 2%;
+    display: inline-block;
+    float: left;
+    background-color: hwb(150 1% 19% / 0.685);
+}
+
+.tablecripto {
+    border-color: #04500e;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 2%;
+    display: inline-block;
+    float: left;
+    background-color: hwb(150 1% 19% / 0.685);
+}
+
+table {
+    border-collapse: collapse;
+    width: 600px;
+    margin: 20px;
+    border-color: #04500e;
+    border-style: solid;
+    border-radius: 20px;
+    display: inline-block;
+    float: left;
+    background-color: hwb(150 1% 19% / 0.685);
+    margin-top: 20px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* css dos jogos  */
+.jogosnft {
+    text-align: center;
+    font-weight: 40%;
+    font-style: italic;
+}
+
+.criptografiastyle {
+    color: rgb(249, 98, 55);
+    padding: 30px;
+    font-size: 300%;
+}
+
+#params2 {
+    border-color: rgb(249, 98, 55);
+    border-style: inset;
+    border-radius: 20px;
+    margin: 2%;
+    display: inline-block;
+    float: left;
+    background-color: black
+}
+
+.oquefazcriptografia {
+    font-size: 20px;
+    color: rgb(146, 225, 245);
+    margin: 20px;
+}
+
+.criptp {
+    color: rgb(249, 98, 55);
+}
+
+#params3 {
+    border-color: rgb(255, 255, 255);
+    border-style: inset;
+    border-radius: 20px;
+    margin: 2%;
+    display: inline-block;
+    float: left;
+    background-color: #FFDF2B
+}
+
+.oquefaznft {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.jogosstyle {
+    color: #FFDF2B;
+    padding: 30px;
+    font-size: 300%;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode-toggle::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,70 @@
+Lista de requisitos para o site
+
+
+( OK ) ● - Desenvolvido utilizando HTML, CSS e JavaScript puros.
+    - sim
+
+( OK ) ● Páginas: Seu site deve apresentar ao menos 6 páginas com conteúdos e objetivos distintos (home, contato, sobre nós, etc…)
+
+( OK ) ● Contato: Dentre as 6 páginas mínimas, deve existir uma página de contato, identificando quem é você (usada para dar nota depois).
+
+( OK ) ● CSS: Deve-se utilizar CSS externo, porém deve existir pelo menos um estilo interno e um inline.
+    -Trailer
+
+( OK ) ● Vídeo: Seu site deve apresentar ao menos 1 vídeo, seja local ou importado de sites como o YouTube.
+    -Video no index (Local)
+
+
+( OK ) ● Imagens: Seu site deve apresentar ao menos 5 figuras, ao menos 3 delas devem ser locais (estar na pasta do seu projeto).
+    - Index (Imagem no css)
+    - Personagem
+    - Contato
+
+( OK ) ● Tabelas: Seu site deve apresentar ao menos 1 tabela.
+    - Tabela na pagina contato
+
+( OK ) ● Listas: Seu site deve apresentar ao menos 1 lista (nem que seja a do menu).
+    -Lista menu em todas as paginas
+
+
+( OK ) ● Menu: Deve existir um menu para transitar entre suas páginas.
+    -Lista menu em todas as paginas
+
+
+( OK ) ● Organização: Os arquivos devem estar organizados, com uma pasta para arquivos HTML, uma pasta para CSS, outra para JS, outra para imagens, etc…
+    -Cada pasta com o seu tipo de arquivo.
+
+
+( OK ) ● Flex: O flex deve ser utilizado ao menos uma vez para posicionar seus elementos.
+    -Sinopse
+
+
+( OK ) ● Grid: O grid deve ser utilizado ao menos uma vez para posicionar seus elementos.
+    -Pesonagens
+
+( OK ) ● Transições: Deve existir ao menos uma transição em seu site. (na dúvida implemente transições nos botões do menu).
+    -Global css
+
+
+( OK ) ● Animações: Deve existir ao menos uma animação em seu site.
+    - Animação de entreda na pagina sinpose
+
+(  ) ● Responsividade: Seu site deve ser responsivo, funcionando para dispositivos de diferentes tamanhos. Considere o menor tamanho possível como 200px. (caso não seja possível, defina um tamanho mínimo e evite que o site quebre com menos que isso…)
+
+
+( OK ) ● Boas práticas: Seu código deve seguir as boas práticas, utilizar tags semânticas e utilizar tags para definir as partes da página (header, main/section/article, aside, footer, …)
+    -Todas as paginas
+
+( OK ) ● Comentários: Seu código deve ser comentado para fácil compreensão.
+    - Todas as paginas
+
+( OK ) ● Modelo BOX: É necessário utilizar ao menos uma vez (cada uma) das propriedades do modelo BOX (width, height, padding, border e margin).
+    - Praticamente em todo os cantos 
+
+( OK ) ● Modo escuro: Deve existir ao menos um botão para, utilizando JS, alterar as propriedades da página para um modo escuro (e depois voltar ao modo normal ao apertar novamente).
+    - Só n contem na pagina inicial 
+    - White mode 
+
+( OK ) ● Easter egg: Deve existir ao menos 1 easter egg em sua página. Por exemplo, uma combinação de elementos que, se apertados em ordem, mostram alguma mensagem ou criam um novo elemento na 
+    - Na pagina personagem é possivel clicar na logo aonde é redirecionado para uma pagina sobre o suposto vilão
+    - Na pagina sinopse é possivel baixa a foto da zero two apenas clicando nela (Esteja usando o go live)

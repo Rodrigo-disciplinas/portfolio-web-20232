@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="">
+
+    <script src="/js/script.js" defer></script>
+
+    <link rel="icon" href="/img/Global/Icon.png" type="image/png">
+    <title>Darling Home</title>
+</head>
+
+<style>
+/* Arrumando a possição e largura do video */
+video {
+    height: 720px;
+    width: 1280px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    z-index: 0;
+}
+
+</style>
+
+<body>
+
+    <header>
+        <nav>
+
+            <p class="logo">Darling in the Franxx</p>
+
+            <ul class="menu-lista">
+                
+                <li><a href="Index.html">Inicio</a></li>
+
+                <li>
+                    <a href="">Informações</a>
+                    <ul class="submenu">
+                        <li><a href="Sinopse.html">Sinopse</a></li>
+                        <li><a href="Personagens.html">Personagens</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="Contato.html">Contato</a></li>
+                
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" id="switch" onclick="toggleTheme()">
+                        <span class="slider"></span>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="trailer" style="padding-top: 40px;">
+            <video controls src="/img/Trailer/Trailer.mp4"></video>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

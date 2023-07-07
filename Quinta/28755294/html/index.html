@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <span>Review</span>
+      <nav>
+        <a href="#">Início</a>
+        <a href="../html/contact.html">Contato</a>
+
+        <!-- botão para ativar a função toggleTheme() -->
+        <button id="toggle-theme">Alterar tema</button>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Seja bem-vindo. Aqui está o que temos assistido…</h2>
+
+      <section>
+        <span>Populares por aqui</span>
+
+        <div class="new-movies-container">
+          <a
+            href="../html/movies/spider-man-across-the-spider-verse.html"
+            class="movie-card"
+          >
+            <img src="../assets/spider-man-cover.jpg" />
+
+            <div class="movie-card-footer">
+              <span>Homem aranha: através ...</span>
+            </div>
+          </a>
+          <a href="../html/movies/interstellar.html" class="movie-card">
+            <img src="../assets/interstellar-cover.jpg" />
+
+            <div class="movie-card-footer">
+              <span>Interestelar</span>
+            </div>
+          </a>
+          <a href="../html/movies/the-social-network.html" class="movie-card">
+            <img src="../assets/the-social-network-cover.jpg" />
+
+            <div class="movie-card-footer">
+              <span>A rede social</span>
+            </div>
+          </a>
+          <a href="../html/movies/whiplash.html" class="movie-card">
+            <img
+              src="https://cdna.artstation.com/p/assets/images/images/032/117/680/large/amin-lashgari-05-whiplash.jpg?1605536973"
+            />
+
+            <div class="movie-card-footer">
+              <span>Whiplash</span>
+            </div>
+          </a>
+          <a href="../html/movies/drive.html" class="movie-card">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/96992a2371134.56363fc014035.jpg"
+            />
+
+            <div class="movie-card-footer">
+              <span>Drive</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <span>Últimos comentários da crítica</span>
+
+        <ul class="last-comments-container">
+          <li class="last-comments">
+            <strong>A Essência do Éter</strong>
+            <span>Uma reflexão transcendental sobre a natureza humana</span>
+            <p>
+              A Essência do Éter é uma obra cinematográfica profundamente
+              filosófica, que nos leva a questionar a nossa existência e
+              explorar os limites da consciência.
+            </p>
+          </li>
+          <li class="last-comments">
+            <strong>O Silêncio dos Murmúrios</strong>
+            <span>Um mergulho nas profundezas da alma humana</span>
+            <p>
+              O Silêncio dos Murmúrios é um filme de arte magistral, que utiliza
+              o silêncio como expressão máxima da dor e da solidão.
+            </p>
+          </li>
+          <li class="last-comments">
+            <strong>A Valsa das Sombras</strong>
+            <span>Uma sinfonia visual que transcende o tempo</span>
+            <p>
+              A Valsa das Sombras é uma obra-prima do cinema, que combina
+              harmoniosamente elementos de fantasia, drama e surrealismo.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <span>Última review relevante</span>
+
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/sJjH3vtf7Co"
+          title="The Flash - Movie Review"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+
+    <footer style="display: block; position: relative">
+      <span>© 2023 Todos os direitos reservados. </span>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

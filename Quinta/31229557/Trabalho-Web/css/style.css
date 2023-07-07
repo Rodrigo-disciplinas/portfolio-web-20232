@@ -1,0 +1,229 @@
+/* CSS BASE PARA TODAS AS PÁGINAS */
+
+/* REQUISITOS QUEM CONTEM NESTA PAGINA: 
+    - Menu
+    - Css para modo claro
+*/
+
+/* White-mode */
+
+:root { 
+    --body-bc: #242424;
+    --body-color: #f0f0f0;
+    --body-mn: rgba(0, 0, 0, 0.452);
+    
+} /*Variaveis css*/
+
+.white-mode:root{
+    --body-bc: #f0f0f0;
+    --body-color: #000000;
+    --body-mn: rgba(0, 0, 0, 0.075);
+}
+
+
+/* Formatação geral das paginas */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, p, h1, h2{
+    color: var(--body-color);
+}
+
+body {
+    background-color: var(--body-bc);
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    min-width: 400px;
+}
+
+
+/* Definições do menu */
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Posicionando a logo e fazendo modificações de tamanho */
+.logo {
+    color: var(--body-color);
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+/* Definição principal do menu */
+nav {
+    position: fixed; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+
+    /* Menu transparente com blur */
+    background-color: var(--body-mn);
+    backdrop-filter: blur(10px);
+
+    z-index: 10;
+}
+
+/* Ajustando a posição correta do menu */
+.menu-lista {
+    list-style: none;
+    display: flex;
+    position: relative; 
+}
+
+.menu-lista li {
+    letter-spacing: 3px;
+    margin-left: 25px;
+    position: relative;
+}
+
+/* Adicionando o submenu */
+.submenu {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 20px;
+    list-style: none;
+    border-radius: 10px;
+
+    /* Deixando o submenu transparente igual o menu principal */
+    background-color: var(--body-mn);
+    backdrop-filter: blur(10px);
+
+    /* Colocando uma transição de opacidade e a visibilidade atrasada de 0.3 segundos para melhor utilização */
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+}
+
+/* Define o espaçamento e tamanho da fonte do submenu */
+.submenu li {
+    margin: 10px;
+}
+
+.submenu a {
+    font-size: 14x;
+}
+
+/* Remove o atraso quando o mouse é posicionado para abrir o submenu */
+.menu-lista li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+/* Quando o mouse está no menu principal para abrir o submenu, ele muda para block, tendo uma melhor utilização */
+.menu-lista li:hover .submenu {
+    display: block;
+}
+
+  /* Estilo do botão de alternância */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #f3214f;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #f3214f;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Esconde o input checkbox */
+.switch input {
+    display: none;
+}
+
+
+/* MEMU RESPONSIVO */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        height: 5vh;
+        flex-wrap: wrap;
+    }
+    
+    .menu-lista li {
+        margin-left: 10px;
+    }
+    
+    .submenu {
+        margin-top: 10px;
+    }
+    
+    .submenu a {
+        font-size: 12px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 400px) {
+    nav {
+        height: 5vh;
+        flex-wrap: wrap;
+    }
+    
+    .menu-lista li {
+        margin-left: 10px;
+    }
+    
+    .submenu {
+        margin-top: 10px;
+    }
+    
+    .submenu a {
+        font-size: 12px;
+    }
+
+    .logo {
+        display: none; /* Oculta a logo quando o menu não couber */
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      main {
+        color: #09090b;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+      }
+
+      .contact-info {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .contact-info img {
+        border-radius: 4px;
+        width: 180px;
+        border: 2px solid #3f3f46;
+      }
+
+      .contact-info div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .contact-info div > p {
+        display: flex;
+        flex-direction: row;
+      }
+
+      /* animação para efeito RGB das palavras */
+      @keyframes colorAnimation {
+        0% {
+          color: red;
+        }
+        14.28% {
+          color: orange;
+        }
+        28.56% {
+          color: yellow;
+        }
+        42.84% {
+          color: green;
+        }
+        57.12% {
+          color: blue;
+        }
+        71.4% {
+          color: indigo;
+        }
+        85.68% {
+          color: violet;
+        }
+        100% {
+          color: red;
+        }
+      }
+
+      .elementWithAnimation {
+        animation: colorAnimation 2s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>Review</span>
+      <nav>
+        <a href="../html/index.html">Início</a>
+        <a href="#">Contato</a>
+
+        <!-- botão para ativar a função toggleTheme() -->
+        <button id="toggle-theme">Alterar tema</button>
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        Para sugestões entre em contato com o desenvolvedor do site
+        <span class="elementWithAnimation" style="color: #711616; font-weight: bold"
+          >Vinícius de Carvalho</span
+        >
+      </p>
+
+      <div class="contact-info">
+        <img
+          src="https://github.com/viniscrv.png"
+          alt="Foto de perfil do desenvolvedor"
+        />
+        <div>
+          <p>
+            Github:
+            <a
+              href="https://github.com/viniscrv"
+              target="_blank"
+              class="elementWithAnimation"
+              style="color: #711616; font-weight: bold; margin-left: 4px"
+              >https://github.com/viniscrv</a
+            >
+          </p>
+          <p>E-mail: viniscrv@gmail.com</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>© 2023 Todos os direitos reservados. </span>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

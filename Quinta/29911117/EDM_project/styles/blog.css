@@ -1,0 +1,123 @@
+body {
+  font-family: Mont-Serrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main-content {
+  width: 900px;
+  margin: 0 auto; /* As margens automáticas centralizam o elemento */
+}
+
+.index-back {
+  background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-luzes-de-neon-com-copyspace-no-topo_23-2147815399.jpg?size=626&ext=jpg&uid=R107487134&ga=GA1.2.1136216754.1687383019&semt=ais");
+  color: white;
+}
+
+.contato-back {
+  background-image: url("https://img.freepik.com/vetores-gratis/circulo-azul-abstrato-na-tecnologia-de-fundo-preto_1142-12634.jpg?size=626&ext=jpg&uid=R107487134&ga=GA1.1.1136216754.1687383019&semt=ais");
+  color: white;
+}
+
+.black-back {
+  background-color: black;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.techno-back {
+  background-image: url("https://img.freepik.com/fotos-gratis/quarto-escuro-vazio-fundo-futurista-moderno-sci-fi-ilustracao-3d_35913-2372.jpg?w=1060&t=st=1687387332~exp=1687387932~hmac=2145177833466deaba9ba03f370236f62ea874b51f7544ea1fced9d9b3c6c33e");
+  color: white;
+}
+
+.tech-back {
+  background-image: url("https://img.freepik.com/vetores-gratis/abstrato-de-conceito-de-grande-volume-de-dados_23-2148314008.jpg?w=996&t=st=1687384760~exp=1687385360~hmac=11e0c4a0c18cf6c9508fbc35b4cafe8e54cd7e015f0c79e782e47b598b16b733");
+  color: white;
+}
+
+.house-back {
+  background-image: url("https://img.freepik.com/vetores-gratis/banner-abstrato-com-design-de-pixel-de-ondas-sonoras_1048-13174.jpg?size=626&ext=jpg&uid=R107487134&ga=GA1.2.1136216754.1687383019&semt=ais");
+  color: white;
+  /* background-size: ; */
+}
+
+.deep-back {
+  background-image: url("https://img.freepik.com/fotos-gratis/luz-rosa-com-efeito-bokeh_1208-130.jpg?size=626&ext=jpg&uid=R107487134&ga=GA1.1.1136216754.1687383019&semt=ais");
+  color: white;
+}
+
+.nav-tabs li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #415;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav li:hover {
+  background-color: #586;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #537;
+}
+
+ /* Estilos do título */
+#animated-title {
+  position: relative;
+  animation-name: moveTitle;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Animação */
+@keyframes moveTitle {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+} 

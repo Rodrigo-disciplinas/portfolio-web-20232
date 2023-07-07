@@ -1,0 +1,533 @@
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 40px 30px;
+  }
+
+  .menu li a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  .menu li:first-child a {
+    border-left: none;
+  }
+
+  .menu li:last-child a {
+    border-right: none;
+  }
+
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #modoEscuro {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 65px;
+    height: 45px;
+  }
+
+  #modoEscuro:hover {
+    background-color: #666;
+  }
+  /*Imagem de fundo*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 75);
+  }
+
+  /*Imagem da logo*/
+  .logo img {
+    width: 270px;
+    height: 250px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 20px;
+    z-index: 2;
+  }
+
+  @keyframes animacao-logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Aplicando a animação quando o mouse passa por cima */
+  .logo img:hover {
+    animation: animacao-logo 0.8s ease-in-out;
+  }
+
+  /* Estilizando a tabela */
+
+  table {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    border: none;
+  }
+
+  th {
+    background-color: #f5f5f5; /* Cor de fundo dos cabeçalhos */
+    color: black;
+  }
+
+  tr {
+    background-color: #000;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  tr:hover {
+    transform: scale(1.1);
+  }
+
+  /*Conteudo da pagina top 5*/
+
+  .titulo-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+
+  .titulo {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  /*Botão onde assistir*/
+  .assistir {
+    background-color: #000000;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+  }
+
+  img {
+    width: 60px;
+    height: 50px;
+  }
+  img:hover {
+    animation: animacao-logo 0.7s ease-in-out;
+  }
+
+  footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    margin-top: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: #fbf0f0e3;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1205px) {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
+  .menu li a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  .menu li:first-child a {
+    border-left: none;
+  }
+
+  .menu li:last-child a {
+    border-right: none;
+  }
+
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #modoEscuro {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 7px;
+    margin-top: 15px;
+    width: 50px;
+    height: 35px;
+  }
+
+  #modoEscuro:hover {
+    background-color: #666;
+  }
+  /*Imagem de fundo*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 75);
+  }
+
+  /*Imagem da logo*/
+  .logo img {
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 0;
+    z-index: 2;
+  }
+
+  @keyframes animacao-logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Aplicando a animação quando o mouse passa por cima */
+  .logo img:hover {
+    animation: animacao-logo 0.8s ease-in-out;
+  }
+
+  /* Estilizando a tabela */
+
+  table {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    border: none;
+  }
+
+  th {
+    background-color: #f5f5f5; /* Cor de fundo dos cabeçalhos */
+    color: black;
+  }
+
+  tr {
+    background-color: #000;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  tr:hover {
+    transform: scale(1.1);
+  }
+
+  /*Conteudo da pagina top 5*/
+
+  .titulo-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+
+  .titulo {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  /*Botão onde assistir*/
+  .assistir {
+    background-color: #000000;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+  }
+
+  img {
+    width: 60px;
+    height: 50px;
+  }
+  img:hover {
+    animation: animacao-logo 0.7s ease-in-out;
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fbf0f0e3;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+  }
+
+  .menu li a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  .menu li:first-child a {
+    border-left: none;
+  }
+
+  .menu li:last-child a {
+    border-right: none;
+  }
+
+  /*Imagem de fundo*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 75);
+  }
+
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #modoEscuro {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 7px;
+    margin-top: 15px;
+    width: 50px;
+    height: 35px;
+  }
+
+  #modoEscuro:hover {
+    background-color: #666;
+  }
+
+  /*Imagem da logo*/
+  .logo img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 0;
+    z-index: 2;
+  }
+
+  @keyframes animacao-logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Aplicando a animação quando o mouse passa por cima */
+  .logo img:hover {
+    animation: animacao-logo 0.8s ease-in-out;
+  }
+
+  /* Estilizando a tabela */
+
+  table {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    border: none;
+  }
+
+  th {
+    background-color: #f5f5f5; /* Cor de fundo dos cabeçalhos */
+    color: black;
+  }
+
+  tr {
+    background-color: #000;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  tr:hover {
+    transform: scale(1.1);
+  }
+
+  /*Conteudo da pagina top 5*/
+
+  .titulo-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+
+  .titulo {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  /*Botão onde assistir*/
+  .assistir {
+    background-color: #000000;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+  }
+
+  img {
+    width: 60px;
+    height: 50px;
+  }
+  img:hover {
+    animation: animacao-logo 0.7s ease-in-out;
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fbf0f0e3;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+}

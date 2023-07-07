@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&family=Roboto&family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+:root{
+    --gray:#dedede;
+    --black:#000;
+}
+html, body{
+    width: 100%;
+    height: 945px;
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:#bfbfbf;
+    position:fixed;
+    z-index: 10;
+}
+.conteudo-header{
+    max-width:1400px;
+    min-width:1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    width: 10%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logo{
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--black);
+    padding-left: 10px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 800px;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: var(--gray);
+    transition: color 0.4s;
+}
+.sof-image img{
+position: relative;
+top: 55px;
+height: 941px;
+z-index: 2;
+}
+.text-tqs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 300px;
+    z-index: 3;
+    border-radius: 15px;
+    background-color: var(--gray);
+    top: -600px;
+    left: 950px;
+    padding-top: 150px;
+}
+.text-title{
+    position: relative;
+    z-index: 4;
+    width: 300px;
+    top: -450px;
+    left:960px;
+}
+.title{
+    position: relative;
+    z-index: 5;
+    top: -480px;
+    left: 960px;
+}

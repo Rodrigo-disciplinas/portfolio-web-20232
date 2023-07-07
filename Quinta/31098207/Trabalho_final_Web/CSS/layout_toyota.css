@@ -1,0 +1,643 @@
+/*Tirando as margens da página*/
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    background-color: black;
+}
+
+/**/
+/*Inicio do CSS da barra de navegação*/
+/**/
+nav > div{
+   
+    height: 50px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+nav > div > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center; 
+    position: relative;
+    top: 30%;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 50px;
+}
+/**/
+/*Fim do CSS da barra de navegação*/
+/**/
+
+/**/
+/*Inicio do CSS do vídeo como plano de fundo*/
+/**/
+#bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background-size: cover;
+    opacity: .5; 
+}
+/**/
+/*Fim do CSS do vídeo como plano de fundo*/
+/**/
+
+
+/**/
+/*Inicio do CSS do  conteúdo*/
+/**/
+
+/*Definindo o tamanho das divs*/
+.bloco{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100vw;
+}
+
+.conteudo{
+    height: 500px;
+    width: 70vw;
+}
+
+.img{
+    height: 500px;
+    width: 30vw;
+}
+
+.conteudo_l{
+    height: 500px;
+    width: 60vw;
+}
+
+.img_l{
+    height: 500px;
+    width: 40vw;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.bloco_meio{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+    width: 100vw;
+}
+
+#img_meio{
+    height: 500px;
+    width: 30vw;
+}
+
+#conteudo_meio{
+    height: 500px;
+    width: 70vw;
+}
+
+.conteudo > h1{
+    margin-left: 15px;
+    font-size: 70px;
+    color: aliceblue;
+    opacity: .8;
+}
+
+.conteudo > p{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    color:rgb(255, 247, 234);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: .8;
+}
+
+.conteudo_l > h1{
+    margin-left: 15px;
+    font-size: 70px;
+    color: aliceblue;
+    opacity: .8;
+}
+
+.conteudo_l > p{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    color:rgb(255, 247, 234);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: .8;
+}
+
+
+/*Definindo a posição das divs na página*/
+section > div{
+    position: relative;
+    top: 100vh;
+}
+/**/
+/*Inicio do CSS do  conteúdo*/
+/**/
+
+
+/*Tela menor que 2001px será aplicado esse CSS*/
+@media Screen and (max-width: 2001px) {
+
+    .bloco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2000px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    .conteudo{
+        height: 300px;
+        width: 60vw;
+    }
+    
+    .img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 800px;
+        width: 100vw;
+    }
+
+    .conteudo_l{
+        height: 300px;
+        width: 60vw;
+    }
+    
+    .img_l{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 700px;
+        width: 100vw;
+    }
+
+    
+    img{
+        height: 100%;
+        width: 60%;
+    }
+    
+    .bloco_meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1500px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    #img_meio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 800px;
+        width: 100vw;
+    }
+    
+    #conteudo_meio{
+        height: 300px;
+        width: 60vw;
+    }
+    
+    .conteudo > h1{
+        margin-left: 15px;
+        font-size: 70px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    .conteudo > p{
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > h1{
+        margin-left: 15px;
+        font-size: 70px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > p{
+        padding: 10px;
+        margin:10px;
+        font-size: 20px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    /*Definindo a posição das divs na página*/
+    section > div{
+        position: relative;
+        top: 100vh;
+    }
+}
+
+
+/*Tela menor que 1401px vai aplicar esse CSS*/
+@media Screen and (max-width: 1401px) {
+    .bloco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2000px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    .conteudo{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 800px;
+        width: 100vw;
+    }
+    
+    .conteudo_l{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .img_l{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 700px;
+        width: 100vw;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bloco_meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1500px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    #img_meio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 800px;
+        width: 100vw;
+    }
+    
+    #conteudo_meio{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .conteudo > h1{
+        margin-left: 15px;
+        font-size: 70px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    .conteudo > p{
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > h1{
+        margin-left: 15px;
+        font-size: 70px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > p{
+        padding: 10px;
+        margin:10px;
+        font-size: 20px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    /*Definindo a posição das divs na página*/
+    section > div{
+        position: relative;
+        top: 100vh;
+    }
+}
+
+
+
+/*Tela menor que 1001px vai aplicar esse CSS*/
+@media Screen and (max-width: 1001px) {
+    .bloco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    .conteudo{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 500px;
+        width: 100vw;
+    }
+    
+    .conteudo_l{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .img_l{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 450px;
+        width: 100vw;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bloco_meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    #img_meio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 500px;
+        width: 100vw;
+    }
+    
+    #conteudo_meio{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .conteudo > h1{
+        margin-left: 15px;
+        font-size: 70px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    .conteudo > p{
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > h1{
+        margin-left: 15px;
+        font-size: 70px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > p{
+        padding: 10px;
+        margin:10px;
+        font-size: 20px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    /*Definindo a posição das divs na página*/
+    section > div{
+        position: relative;
+        top: 100vh;
+    }
+}
+
+
+/*Tela menor que 701px vai aplicar esse CSS*/
+@media Screen and (max-width: 701px) {
+    .bloco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    .conteudo{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 400px;
+        width: 100vw;
+    }
+    
+    .conteudo_l{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .img_l{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 350px;
+        width: 100vw;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bloco_meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+        width: 100vw;
+        background-color: rgb(255, 228, 196, .1);
+    }
+    
+    #img_meio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 400px;
+        width: 100vw;
+    }
+    
+    #conteudo_meio{
+        height: 300px;
+        width: 100vw;
+    }
+    
+    .conteudo > h1{
+        margin-left: 15px;
+        font-size: 60px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    .conteudo > p{
+        padding: 10px;
+        margin: 10px;
+        font-size: 18px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > h1{
+        margin-left: 15px;
+        font-size: 60px;
+        color: aliceblue;
+        opacity: .8;
+    }
+    
+    #conteudo_meio > p{
+        padding: 10px;
+        margin:10px;
+        font-size: 18px;
+        color:rgb(255, 247, 234);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: .8;
+    }
+    
+    /*Definindo a posição das divs na página*/
+    section > div{
+        position: relative;
+        top: 100vh;
+    }
+}
+
+
+@media Screen and (max-width: 1600px){
+    
+    /**/
+    /*Inicio do CSS do vídeo como plano de fundo*/
+    /**/
+    #bg_video{
+        position: fixed; 
+        right: -15vw; 
+        bottom: 0px;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto; 
+        height: auto; 
+        z-index: -1000;
+        background-size: cover;
+        opacity: .5; 
+    }
+    /**/
+    /*Fim do CSS do vídeo como plano de fundo*/
+    /**/
+
+}
+
+@media Screen and (max-width: 1500px){
+    
+    /**/
+    /*Inicio do CSS do vídeo como plano de fundo*/
+    /**/
+    #bg_video{
+        position: fixed; 
+        right: -25vw; 
+        bottom: 0px;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto; 
+        height: auto; 
+        z-index: -1000;
+        background-size: cover;
+        opacity: .5; 
+    }
+    /**/
+    /*Fim do CSS do vídeo como plano de fundo*/
+    /**/
+
+}
+
+@media Screen and (max-width: 1200px){
+    
+    /**/
+    /*Inicio do CSS do vídeo como plano de fundo*/
+    /**/
+    #bg_video{
+        position: fixed; 
+        right: -35vw; 
+        bottom: 0px;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto; 
+        height: auto; 
+        z-index: -1000;
+        background-size: cover;
+        opacity: .5; 
+    }
+    /**/
+    /*Fim do CSS do vídeo como plano de fundo*/
+    /**/
+
+}

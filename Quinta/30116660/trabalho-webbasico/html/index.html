@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Receitas Na Hora</h1> <!-- Nome do site -->
+      <button id="theme">Mudar o Tema</button> <!-- Botao para trocar de tema-->
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="./sobre-nos.html">Sobre Nós</a>
+      <a href="./contact.html">Contato</a>
+    </nav>
+    <main>
+      <h2>Receitas Populares</h2>
+
+      <!-- 6 receitas disponiveis -->
+      <div class="recipes">
+        <div class="recipe">
+          <img src="../assets/imagens/sushi.jpg" alt="Imagem de Sushi" />
+          <div class="recipe-content">
+            <h2>Sushi</h2>
+            <p>Prato japonês com arroz temperado e peixe cru ou frutos do mar. Popular em todo o mundo.</p>
+            <a href="./recipes/sushi.html">Veja a Receita!</a>
+          </div>
+        </div>
+        <div class="recipe">
+          <img src="../assets/imagens/paella.jpg" alt="Imagem de Paella" />
+          <div class="recipe-content">
+            <h2>Paella</h2>
+            <p>Prato espanhol com arroz, frutos do mar, carnes, legumes e temperos. Associado a festividades.</p>
+            <a href="./recipes/paella.html">Veja a Receita!</a>
+          </div>
+        </div>
+        <div class="recipe">
+          <img src="../assets/imagens/hamburguer.jpg" alt="Imagem de Hamburger" />
+          <div class="recipe-content">
+            <h2>Hamburger</h2>
+            <p>Bife de carne moída grelhado, servido em pão com acompanhamentos. Ícone da culinária americana.</p>
+            <a href="./recipes/hamburguer.html">Veja a Receita!</a>
+          </div>
+        </div>
+        <div class="recipe">
+          <img src="../assets/imagens/padthai.jpg" alt="Imagem de Pad Thai" />
+          <div class="recipe-content">
+            <h2>Pad Thai</h2>
+            <p>Prato tailandês com macarrão de arroz frito, camarão ou frango, legumes e molho agridoce. Sabor equilibrado.</p>
+            <a href="./recipes/padthai.html">Veja a Receita!</a>
+          </div>
+        </div>
+        <div class="recipe">
+          <img src="../assets/imagens/curry.jpg" alt="Imagem de Curry" />
+          <div class="recipe-content">
+            <h2>Curry</h2>
+            <p>
+              Prato indiano com especiarias, legumes e carne cozidos em molho de leite de coco ou iogurte. Apreciado globalmente.
+            </p>
+            <a href="./recipes/curry.html">Veja a Receita!</a>
+          </div>
+        </div>
+        <div class="recipe">
+          <img src="../assets/imagens/feijoada.jpg" alt="Imagem de Feijoada" />
+          <div class="recipe-content">
+            <h2>Feijoada</h2>
+            <p>
+              Prato brasileiro com feijão preto, carnes defumadas, acompanhamentos como arroz, farofa, couve e laranja. Considerado prato nacional.
+            </p>
+            <a href="./recipes/feijoada.html">Veja a Receita!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- tabela com informações sobre cada receita (tempo de preparo e quantidade de pessoas que serve) -->
+      <h2>Tabela de receitas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Receita</th>
+            <th>Tempo de Preparo</th>
+            <th>Quantidade Servida</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sushi</td>
+            <td>30 minutos</td>
+            <td>1-2 Pessoas</td>
+          </tr>
+          <tr>
+            <td>Paella</td>
+            <td> 1 Hora</td>
+            <td>4-6 Pessoas</td>
+          </tr>
+          <tr>
+            <td>Hamburger</td>
+            <td>20-30 Minutos</td>
+            <td>1 Pessoa</td>
+          </tr>
+          <tr>
+            <td>Pad Thai</td>
+            <td>30-40 minutos</td>
+            <td>2-3 Pessoas</td>
+          </tr>
+          <tr>
+            <td>Curry</td>
+            <td>45 Minutos</td>
+            <td>4-6 Pessoas</td>
+          </tr>
+          <tr>
+            <td>Feijoada</td>
+            <td>2 Horas e 30 Minutos</td>
+            <td>8-10 Pessoas</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Vídeo Da Ultima Receita</h2>
+      <div class="video-container">
+        <iframe
+          width="1900"
+          height="700"
+          src="https://www.youtube.com/embed/auzJ4qLftBw"
+          title="Brazilian Feijoada - Black Bean & Pork Stew Recipe"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+<!--o easteregg -->
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

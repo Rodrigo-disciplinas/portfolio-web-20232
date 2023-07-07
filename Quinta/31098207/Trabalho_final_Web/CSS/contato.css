@@ -1,0 +1,54 @@
+/*tirando as margens da página*/
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    background-color: black;
+}
+
+/**/
+/*JavaScript*/
+/**/
+:root { 
+    --body-bc: aliceblue;
+    --body-color: rgb(255, 228, 196, .1);
+    
+} /*Variaveis css*/
+
+.white-mode:root{
+    --body-bc: #f0f0f0;
+    --body-color: #00000073;
+}
+
+
+/**/
+/*Inicio do CSS da barra de navegação*/
+/**/
+nav > div{
+   
+    height: 50px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+nav > div > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center; 
+    position: relative;
+    top: 30%;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 50px;
+}
+/**/
+/*Fim do CSS da barra de navegação*/
+/**/

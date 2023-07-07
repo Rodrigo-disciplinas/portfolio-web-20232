@@ -1,0 +1,544 @@
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 40px 30px;
+  }
+
+  .menu li a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  .menu li:first-child a {
+    border-left: none;
+  }
+
+  .menu li:last-child a {
+    border-right: none;
+  }
+
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #modoEscuro {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 65px;
+    height: 45px;
+  }
+
+  #modoEscuro:hover {
+    background-color: #666;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 180px 1fr; /*  Duas colunas: uma para o menu e outra para o conteúdo */
+    grid-gap: 10px; /* Espaçamento entre as colunas */
+  }
+
+  .menu-vertical {
+    background-color: #000000;
+    width: 150px;
+    height: auto;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+  }
+
+  .menu-vertical li {
+    margin-bottom: 15px;
+  }
+
+  .menu-vertical a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  .menu-vertical a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  /*Imagem de fundo*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 75);
+  }
+
+  /*Imagem da logo*/
+  .logo img {
+    width: 270px;
+    height: 250px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 20px;
+    z-index: 2;
+  }
+
+  @keyframes animacao-logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Aplicando a animação quando o mouse passa por cima */
+  .logo img:hover {
+    animation: animacao-logo 0.8s ease-in-out;
+  }
+
+  /*Conteúdo da pagina sinopse*/
+
+  /*Organizar o tamanho do video chamando pela URL*/
+  iframe {
+    width: 75%;
+    height: 400px;
+    margin-left: 60px;
+    padding: 30px;
+    border: none;
+  }
+
+  .conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fbf0f0e3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+  }
+
+  p {
+    color: #666;
+  }
+  /*o easter egg é acionado quando  pressionadas teclas "Ctrl + Shift + M" ao mesmo tempo.*/
+  #botao {
+    display: none;
+    background-color: #fa0404;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  .mensagemEscondida {
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #fbf0f0e3;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1205px) {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
+  .menu li a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  .menu li:first-child a {
+    border-left: none;
+  }
+
+  .menu li:last-child a {
+    border-right: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 180px 1fr; /*  Duas colunas: uma para o menu e outra para o conteúdo */
+    grid-gap: 10px; /* Espaçamento entre as colunas */
+  }
+
+  .menu-vertical {
+    background-color: #000000;
+    width: 125px;
+    height: auto;
+    padding: 18px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+  }
+
+  .menu-vertical li {
+    margin-bottom: 15px;
+  }
+
+  .menu-vertical a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  .menu-vertical a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  /*Imagem de fundo*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 75);
+  }
+
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #modoEscuro {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 7px;
+    margin-top: 15px;
+    width: 50px;
+    height: 35px;
+  }
+
+  #modoEscuro:hover {
+    background-color: #666;
+  }
+  /*Imagem da logo*/
+  .logo img {
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 0;
+    z-index: 2;
+  }
+
+  @keyframes animacao-logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Aplicando a animação quando o mouse passa por cima */
+  .logo img:hover {
+    animation: animacao-logo 0.5s ease-in-out;
+  }
+
+  /*Conteúdo da pagina sinopse*/
+
+  /*Organizar o tamanho do video chamando pela URL*/
+  iframe {
+    width: 75%;
+    height: 400px;
+    margin-left: 60px;
+    padding: 30px;
+    border: none;
+  }
+
+  .conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fbf0f0e3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+  }
+
+  p {
+    color: #666;
+  }
+
+  #botao {
+    display: none;
+    background-color: #fa0404;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  .mensagemEscondida {
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #fbf0f0e3;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+  }
+
+  .menu li a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  .menu li:first-child a {
+    border-left: none;
+  }
+
+  .menu li:last-child a {
+    border-right: none;
+  }
+
+  .menu-vertical {
+    background-color: #000000;
+    width: 150px;
+    height: auto;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+  }
+
+  .menu-vertical li {
+    margin-bottom: 15px;
+  }
+
+  .menu-vertical a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  .menu-vertical a:hover {
+    color: rgb(192, 214, 240);
+  }
+
+  /*Imagem de fundo*/
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 75);
+  }
+
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #modoEscuro {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 7px;
+    margin-top: 15px;
+    width: 50px;
+    height: 35px;
+  }
+
+  #modoEscuro:hover {
+    background-color: #666;
+  }
+
+  .logo img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 0;
+    z-index: 2;
+  }
+
+  @keyframes animacao-logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Aplicando a animação quando o mouse passa por cima */
+  .logo img:hover {
+    animation: animacao-logo 0.5s ease-in-out;
+  }
+  /*Organizar o tamanho do video chamando pela URL*/
+  iframe {
+    width: 60%;
+    height: auto;
+    margin-left: 60px;
+    padding: 30px;
+    border: none;
+  }
+
+  .conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fbf0f0e3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+  }
+
+  p {
+    color: #666;
+  }
+  #botao {
+    display: none;
+    background-color: #fa0404;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  .mensagemEscondida {
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #fbf0f0e3;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+}

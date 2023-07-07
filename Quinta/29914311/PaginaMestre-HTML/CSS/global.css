@@ -1,0 +1,474 @@
+/* Estilos de página do site */
+body {
+    background: rgb(24, 24, 24);
+}
+
+/* Estilos utilizados no Menu do site */
+.menu > nav{
+    display: flex;
+    background-color: #000401;
+    justify-content: start;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    width: 98.5vw;
+}
+
+.menu div:not(:first-child) {
+    padding-left: 50px;
+}
+
+.menu div:first-child {
+    padding-left: 15px;
+    padding-top: 4.5px;
+}
+
+.menu p, a{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans Bold', Arial;
+    text-align: center;
+    font-weight: bold;
+    transition: color 1s, transform 0.5s ease;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu > nav div:nth-child(2) p:hover{
+    transition: color 0.5s, transform 1s ease;
+    transform: scale(1.2);
+    color: rgb(105, 36, 195);
+}
+
+.menu > nav div:nth-child(3) p:hover{
+    transition: color 0.5s, transform 1s ease;
+    transform: scale(1.2);
+    color: rgb(183, 0, 0);
+}
+
+.menu > nav div:nth-child(4) p:hover{
+    transition: color 0.5s, transform 1s ease;
+    transform: scale(1.2);
+    color: rgb(122, 122, 122);
+}
+
+.menu > nav div:nth-child(5) p:hover{
+    transition: color 0.5s, transform 1s ease;
+    transform: scale(1.2);
+    color: rgb(189, 183, 1);
+}
+
+#TemaEscuro {
+    margin-left: auto;
+    padding-right: 15px;
+}
+
+#TemaEscuro > a {
+    text-decoration: none;
+}
+
+/* Estilos do corpo do site na página inicial */
+
+#homePG .corpo {
+    width: 98.5vw;
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    grid-gap: 250px;
+}
+
+#homePG .corpo section, aside {
+    color: whitesmoke;
+}
+
+/* Estilos de section na pagina inicial*/
+
+#homePG .corpo section {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#homePG .corpo > section > div > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#homePG .corpo section h4 {
+    font-size: 20px;
+    color: rgb(0, 167, 0);
+}
+
+#homePG .corpo section p {
+    border-bottom: 2px dotted black;
+    padding-bottom: 10px;
+}
+
+/* Estilos de aside na pagina inicial*/
+
+#homePG .corpo aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    text-align: right;
+}
+
+#homePG .corpo aside > div:not(:last-child) {
+    border-bottom: 2px dotted black;
+}
+
+#homePG .corpo aside > h3 {
+    color: rgb(38, 144, 38);
+    padding-bottom: 10px;
+    border-bottom: 2px dotted black;
+}
+
+#homePG .corpo aside h4 {
+    color: rgb(0, 167, 0);
+}
+
+#homePG .corpo aside > h3, h4, p {
+    padding-right: 15px;
+}
+
+#homePG .corpo aside a {
+    text-decoration: none;
+    color: rgb(14, 96, 14);
+    font-size: 15px;
+    transition: color 0.5s ease-in-out;
+}
+
+#homePG .corpo aside a:hover {
+    color: rgb(97, 216, 97);
+    transition: color 1s ease-in-out;
+}
+
+/* Estilos do corpo do site na página de contato */
+
+#contatoPG .corpo {
+    width: 98.5vw;
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    grid-gap: 250px;
+}
+
+#contatoPG .corpo section, aside {
+    color: whitesmoke;
+}
+
+/* Estilos de section na pagina de contato */
+
+#contatoPG .corpo section {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#contatoPG .corpo > section > div > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#contatoPG .corpo section h4 {
+    font-size: 20px;
+    color: rgb(0, 167, 0);
+}
+
+/* Estilos de aside na pagina de contato*/
+
+#contatoPG .corpo aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    text-align: right;
+}
+
+#contatoPG .corpo aside h4 {
+    color: rgb(0, 167, 0);
+}
+
+#contatoPG .corpo aside > h3, h4, p {
+    padding-right: 15px;
+}
+
+#contatoPG .corpo img{
+    transition: transform 1s ease-in-out;
+}
+
+#contatoPG .corpo img:hover{
+    transform: scale(1.2);
+}
+
+/* Estilos da página sobre mim */
+
+#sobre_mim .corpo {
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    
+}
+
+#sobre_mim section{
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#sobre_mim aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    margin-left: auto;
+}
+
+#sobre_mim aside > div > img {
+    margin-right: 35px;
+    border-radius: 50%;
+    animation: ondinha 10s infinite ease-in-out both;
+}
+
+#sobre_mim .corpo aside > div:nth-child(2) {
+    animation-delay: 1s;
+}
+
+#sobre_mim .corpo aside > div:nth-child(3) {
+    animation-delay: 2s;
+}
+
+#sobre_mim .corpo aside > div:nth-child(4) {
+    animation-delay: 3s;
+}
+
+#sobre_mim .corpo aside > div:nth-child(5) {
+    animation-delay: 4s;
+}
+
+#sobre_mim .corpo aside > div:nth-child(6) {
+    animation-delay: 5s;
+}
+
+@keyframes ondinha {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+#sobre_mim .corpo section h4 {
+    font-size: 30px;
+    color: rgb(0, 167, 0);
+}
+
+#sobre_mim .corpo p {
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+/* Estilo da página de projetos do site */
+
+#projetos .corpo{
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+}
+
+#projetos section{
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#projetos .corpo p {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+#projetos a {
+    text-decoration: none;
+    color: rgb(143, 255, 201);
+    transition: color 0.5s ease-in-out;
+}
+
+#projetos a:hover {
+    text-decoration: none;
+    color: rgb(6, 160, 86);
+    transition: color 1s ease-in-out;
+}
+
+#projetos .corpo #lista_boa {
+    font-size: 16px;
+    color: rgb(67, 218, 67);
+}
+
+#projetos .corpo #lista_ruim {
+    font-size: 16px;
+    color: rgb(207, 41, 41);
+}
+
+#projetos .corpo section h4 {
+    font-size: 24px;
+    color: rgb(0, 167, 0);
+}
+
+#projetos .corpo section h3 {
+    font-size: 24px;
+    color: rgb(25, 76, 25);
+}
+
+/* Estilo da página do Darkness */
+
+#darkness .corpo{
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    grid-gap: 200px;
+}
+
+#darkness section{
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#darkness aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    margin-left: auto;
+}
+
+#darkness .corpo aside{
+    text-align: right;
+}
+
+#darkness .corpo p {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+#darkness .corpo h4 {
+    font-size: 24px;
+    color: rgb(0, 167, 0);
+}
+
+#darkness .corpo h3 {
+    font-size: 24px;
+    color: rgb(38, 144, 38);
+}
+
+#darkness .corpo table {
+    text-align: left;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#darkness .corpo section > div{
+    border-bottom: 2px dotted black;
+}
+
+/* Estilos da página de Contratados */
+
+#contratados .corpo {
+    display: grid;
+    grid-template-columns: auto auto 35%;
+    grid-template-rows: repeat(2, max-content);
+    
+}
+
+#contratados section{
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    padding-left: 10px;
+    height: fit-content;
+}
+
+#contratados aside {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    margin-left: auto;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#contratados .corpo h4 {
+    font-size: 24px;
+    color: rgb(0, 167, 0);
+}
+
+#contratados .corpo h3 {
+    font-size: 24px;
+    color: rgb(38, 144, 38);
+}
+
+#contratados .corpo p {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+#contratados .corpo section > div{
+    border-bottom: 2px dotted black;
+}
+
+#contratados .corpo aside p{
+    border-bottom: 2px dotted black;
+    padding-bottom: 10px;
+}
+ 
+#contratados .corpo a{
+    text-decoration: none;
+    color: rgb(66, 222, 66);
+    transition: color 0.5s ease-in-out;
+}
+
+#contratados .corpo a:hover{
+    color: rgb(11, 118, 11);
+    transition: color 0.5s ease-in-out;
+}
+
+/* Estilo da página de Renascer */
+
+
+/* Estilos do Rodapé do site */
+
+.rodape {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: auto;
+    width: 98.5vw;
+}
+
+.rodape div {
+    padding-left: 15px;
+}
+
+.rodape p{
+    color: whitesmoke;
+    font-size: 10px;
+    font-family: 'IBM Plex Sans Bold', Arial;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.6s ease;
+}
+
+.rodape a{
+    text-decoration: none;
+}
+
+.rodape p:hover{
+    color: green;
+    transition: color 1s ease;
+}
+
+/* Estilo do tema claro */
+
+/* Incompleto */

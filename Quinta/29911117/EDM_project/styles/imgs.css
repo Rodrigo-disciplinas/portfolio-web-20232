@@ -1,0 +1,11 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Define 3 colunas com larguras iguais */
+  grid-gap: 10px; /* Define um espaço de 10 pixels entre as imagens */
+}
+
+.grid-container img {
+  max-width: 120%; /* Define uma largura máxima de 100% para as imagens */
+  height: auto; /* Mantém a proporção de aspecto original */
+  margin: 5px; /* Adiciona uma margem de 5 pixels ao redor de cada imagem */
+}

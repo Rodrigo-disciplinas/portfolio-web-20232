@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&family=Roboto&family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+:root{
+    --gray:#dedede;
+    --black:#000;
+}
+html, body{
+    width: 100%;
+    height: 3600px;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:#bfbfbf;
+    position:fixed;
+    z-index: 10;
+}
+.conteudo-header{
+    max-width:1400px;
+    min-width:1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    width: 10%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logo{
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--black);
+    padding-left: 10px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 800px;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: var(--gray);
+    transition: color 0.4s;
+}
+.catalog-obras{
+    position: relative;
+    background-color: var(--gray);
+    top: 200px;
+    left: 200px;
+    width: 214px;
+    padding-top: 30px;
+    padding-right: 500px;
+    padding-left: 500px;
+    padding-bottom: 3338px;
+    z-index: 1;
+}
+.leroy img{
+    position: relative;
+    z-index: 2;
+    top: -3100px;
+    left: 280px;
+    cursor: pointer;
+}
+.confianca img{
+    position: relative;
+    z-index: 2;
+    top: -3401px;
+    left: 850px;
+}
+.dutra img{
+    position: relative;
+    z-index: 2;
+    top: -3350px;
+    left: 280px;
+}
+.parksul img{
+    position: relative;
+    z-index: 2;
+    top: -3650px;
+    left: 850px;
+}
+.giassi img{
+    position: relative;
+    z-index: 2;
+    top: -3590px;
+    left: 280px;
+}
+.parklagos img{
+    position: relative;
+    z-index: 2;
+    top: -3891px;
+    left: 850px;
+}
+.camboriu img{
+    position: relative;
+    z-index: 2;
+    top: -3830px;
+    left: 280px;
+}
+.europeu img{
+    position: relative;
+    z-index: 2;
+    top: -4131px;
+    left: 850px;
+}
+.blumenau img{
+    position: relative;
+    z-index: 2;
+    top: -4070px;
+    left: 280px;
+}
+.edificio img{
+    position: relative;
+    z-index: 2;
+    top:-4371px;
+    left: 850px;
+}
+.angeloni img{
+    position: relative;
+    z-index: 2;
+    top:-4310px ;
+    left: 280px;
+}
+.catalog-industriais h1{
+    position: relative;
+    z-index: 3;
+    top: -4260px;
+    left: 700px;
+}
+.repar img{
+    position: relative;
+    z-index: 2;
+    top: -4210px;
+    left: 280px;
+}
+.cst img{
+    position: relative;
+    z-index: 2;
+    top: -4505px;
+    left: 850px;
+}
+.catalog-especiais h1{
+    position: relative;
+    z-index: 3;
+    top: -4460px;
+    left: 610px;
+}
+.arena img{
+    position: relative;
+    z-index: 2;
+    top: -4430px;
+    left: 280px;
+}
+.faculdade img{
+    position: relative;
+    z-index: 2;
+    top: -4725px;
+    left: 850px;
+}
+.campus img{
+    position: relative;
+    z-index: 2;
+    top: -4650px;
+    left: 280px;
+}

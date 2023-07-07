@@ -1,0 +1,129 @@
+/*tirando as margens da página*/
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    background-color: black;
+}
+
+
+/**/
+/*Inicio do CSS da barra de navegação*/
+/**/
+nav > div{
+   
+    height: 50px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+nav > div > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center; 
+    position: relative;
+    top: 30%;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 50px;
+}
+/**/
+/*Fim do CSS da barra de navegação*/
+/**/
+
+
+/**/
+/*Inicio do CSS do vídeo como plano de fundo*/
+/**/
+#bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background-size: cover;
+    opacity: .5; 
+}
+/**/
+/*Fim do CSS do vídeo como plano de fundo*/
+/**/
+
+
+/**/
+/*Inicio do CSS da imagem da página home*/
+/**/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > img{
+    opacity: 1;
+}
+/**/
+/*Fim do CSS da imagem da página home*/
+/**/
+
+
+/**/
+/*Inicio do CSS do EasterEgg*/
+/**/
+footer{   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, .0);
+
+}
+
+footer > div{
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 150px;
+    opacity: 0;
+}
+
+footer > div:hover{
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 150px;
+    opacity: 1;
+}
+
+footer > div > a > img{
+    position: fixed;
+	bottom: 0;
+    width: 150px;
+    height: 100px;
+    opacity: 0;
+}
+
+footer > div > a > img:hover{
+    position: fixed;
+	bottom: 0;
+    width: 150px;
+    height: 100px;
+    opacity: 1;
+    transition-duration: 3s;
+}
+/**/
+/*Fim do CSS do EasterEgg*/
+/**/

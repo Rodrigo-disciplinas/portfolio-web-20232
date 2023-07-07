@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pagCadastro.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="https://kit.fontawesome.com/b5a5be75eb.js"
+    crossorigin="anonymous"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+        <header>
+            <div class="caixa">
+                <h1>
+                    <a href="home.html">
+                        <img src="../img/logo-legas2.png" alt="Logo Da Legas">
+                    </a>
+                </h1>
+                
+
+                <nav>
+                    <div class="menu">
+                            <a href="home.html">Home</a>
+                        
+                            <a href="produtos.html">Ultimos Produtos</a>
+                        
+                            
+                        
+                            <a href="sobre.html">Sobre nós</a>
+                    </div> 
+                    
+                </nav>
+                
+                <div>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-button">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        
+                        <div class="dropdown-links">
+                                <a href="home.html" class="links">Home</a>
+            
+                                <a href="produtos.html" class="links">Ultimos Produtos</a>
+            
+                                
+            
+                                <a href="sobre.html" class="links">Sobre nós</a>
+    
+                        </div>
+                    </div>
+        
+                    <div button class="dropdown-login">
+                        <button class="dropdown-login-button">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </button>
+        
+                        <div class="dropdown-login-links">
+                            <a href="pagCadastro.html">Criar conta</a>
+    
+                            <a href="pagLogin.html" class="links-login" target="_blank">Login</a>
+    
+                        </div>
+    
+                     </div>
+                </div>    
+            </div>    
+        </header>
+
+        <main>
+            <div id="caixa">
+
+                <form action="" id="form">
+
+                    <div id="header-form">
+                        <h1 id="titulo-form">
+                            Faça seu cadastro
+                        </h1>
+
+                        <i class="fa-regular fa-sun" id="mode_icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="nome">Nome e Sobrenome:</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="nome" class="input-padrao" required>
+                        </div>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="email">Email:</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                        </div>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="telefone">Telefone:</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                    </div>
+    
+    
+                    <fieldset>
+                        <div class="fieldset-ctt">
+                            <legend id="legend-ctt">Como prefere o nosso contato?</legend>
+                            <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </label>
+                        </div>
+                        
+                        <div class="fieldset-ctt">
+                            <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone"> 
+                                <i class="fa-solid fa-phone"></i>
+                            </label>
+
+                        </div>
+                        
+                        <div class="fieldset-ctt">
+                            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </label>
+
+                        </div>
+                    </fieldset>
+    
+                    <div id="checkbox">
+                        <label class="checkbox" for="checkbox"><input type="checkbox" id="checkbox-label">Gostaria de receber nossas novidades por email?</label>
+                    </div>
+    
+                    <button id="button-form">
+                        Enviar
+                    </button>
+                </form>
+    
+            </div>
+
+            <h1 id="titulo-table">
+                Confira os horários de funcionamento:
+            </h1>
+
+            <div id="tabela-ctt">
+                <table>
+                    <thead>
+                        <tr>
+                            <th >Dias</th>
+                            <th >Horarios</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="coluna">Segunda</td>
+                            <td class="coluna">11:00 - 21:00</td>
+                        </tr>
+                        <tr>
+                            <td class="coluna">Terca</td>
+                            <td class="coluna">11:00 - 21:00</td>
+                        </tr>
+                        <tr>
+                            <td class="coluna">Quarta</td>
+                            <td class="coluna">09:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td class="coluna">Quinta</td>
+                            <td class="coluna">09:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td class="coluna">Sexta</td>
+                            <td class="coluna">09:00 - 19:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <img src="../img/logo-legas-le.png" id="f-logo-400">
+            <img src="../img/logo-legas-letra-150.png" id="f-logo-150">
+            <p id="foo-p">Legas Company - 2021</p>
+        </footer>
+
+    <script src="../js/pagCadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* CSS DA PAGINA PERSONAGEM */
+
+/* REQUISITOS QUEM CONTEM NESTA PAGINA: 
+    - Grid
+*/
+
+/* colocando mais para baixo*/
+section{
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 25px;
+}
+h2 {
+    font-size: 16px;
+}
+
+p {
+    padding-top: 10px;
+}
+
+/* grid */
+#perso {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(25 , 5vw);
+    grid-gap: 15px;
+}
+
+#perso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Strelizia, Zero two e Hiro */
+#strelizia {
+    grid-column: 1 / 5;
+    grid-row: 1 / 6;
+}
+
+#zerotwo {
+    grid-column: 5 / 7;
+    grid-row: 1 / 4;
+    grid-gap: 30px;
+}
+
+#infoZero{
+    grid-column: 7 / 9;
+    grid-row: 1 / 8;
+}
+
+#hiro {
+    grid-column: 7 / 9;
+    grid-row: 3 / 6;
+    grid-gap: 30px;
+    float: left;
+}
+
+#infoHiro{
+    grid-column: 5 / 7;
+    grid-row: 4 / 6;
+    text-align: right;
+}
+
+/* Delphinium, Ichigo, Goro */
+#delphinium {
+    grid-column: 5 / 9;
+    grid-row: 6 / 11;
+}
+
+#goro {
+    grid-column: 1 / 3;
+    grid-row: 6 / 9;
+    grid-gap: 30px;
+}
+
+#infoGoro{
+    grid-column: 3 / 5;
+    grid-row: 6 / 8;
+}
+
+#ichigo {
+    grid-column: 3 / 5;
+    grid-row: 8 / 11;
+    grid-gap: 30px;
+}
+
+#infoIchigo{
+    grid-column: 1 / 3;
+    grid-row: 9 / 11;
+    text-align: right;
+}
+
+/* Argentea, Miku, Zorome*/
+#argentea{
+    grid-column: 1 / 5;
+    grid-row: 11 / 16;
+}
+
+#zorome{
+    grid-column: 5 / 7;
+    grid-row: 11 / 14;
+    grid-gap: 30px;   
+}
+
+#infoZorume{
+    grid-column: 7 / 9;
+    grid-row: 11 / 13;
+}
+
+#miku{
+    grid-column: 7 / 9;
+    grid-row: 13 / 16;
+    grid-gap: 30px;
+}
+
+#infoMiku{
+    grid-column: 5 / 7;
+    grid-row: 14 / 16;
+    text-align: right;
+}
+
+/* Chlorophy, Ikuno, Mitsuru */
+#chlorophy {
+    grid-column: 5 / 9;
+    grid-row: 16 / 21;
+}
+
+#ikuno{
+    grid-column: 3 / 5;
+    grid-row: 16 / 19;
+    grid-gap: 30px;
+}
+
+#infoIkuno{
+    grid-column: 1 / 3;
+    grid-row: 16 / 18;
+    text-align: right;
+}
+
+#mitsuru{
+    grid-column: 1 / 3;
+    grid-row: 18 / 21 ;
+    grid-gap: 30px;
+}
+
+#infoMits{
+    grid-column: 3 / 5;
+    grid-row: 19 / 21;
+}
+
+/* Genista, Kokoro, Futoshi */
+#genista {
+    grid-column: 1 / 5;
+    grid-row: 21 / 26;
+}
+
+#futoshi {
+    grid-column: 7 / 9;
+    grid-row: 21 / 24;
+    grid-gap: 30px;
+}
+
+#infoFutoshi {
+    grid-column: 5 / 7;
+    grid-row: 21 / 23;
+    text-align: right;
+}
+
+#kokoro {
+    grid-column: 5 / 7;
+    grid-row: 23 / 26;
+    grid-gap: 30px;
+}
+
+#infoKokoro {
+    grid-column: 7 / 9;
+    grid-row: 24 / 25;
+}
