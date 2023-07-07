@@ -1,0 +1,262 @@
+/* Define um contêiner de navegação e centraliza seu conteúdo horizontalmente */
+#navContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Define uma div com largura de 100%, altura de 50px, cor de fundo cinza e centraliza o conteúdo horizontalmente */
+#primeiradiv {
+  width: 100%;
+  height: 50px; 
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+/* Define uma div com largura de 20%, altura de 50px e cor de fundo preta */
+#segundadiv {
+  width: 20%;
+  height: 50px;
+  background-color: black;
+}
+
+/* Aplica estilos a um elemento h1 dentro da div segundadiv:
+   remove as margens, define a cor do texto como branco e centraliza o texto horizontalmente */
+#segundadiv h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Define estilos para o elemento de texto luffy */
+#textoluffy {
+  width: 23%;
+  height: 40px;
+  text-align: justify;
+}
+
+/* Define estilos para o elemento de sonho luffy */
+#sonholuffy {
+  width: 23%;
+  height: 40px;
+  text-align: justify;
+}
+
+/* Define estilos para o elemento de texto zoro */
+#textozoro {
+  width: 23%;
+  height: 40px;
+  text-align: justify;
+}
+
+/* Define estilos para o elemento de sonho zoro */
+#sonhozoro {
+  width: 23%;
+  height: 30px;
+  text-align: justify;
+}
+
+/* Define estilos para o elemento de texto sanji */
+#textosanji {
+  width: 23%;
+  height: 40px;
+  text-align: justify;
+}
+
+/* Define estilos para o elemento de sonho sanji */
+#sonhosanji {
+  width: 23%;
+  height: 30px;
+  text-align: justify;
+}
+
+/* Define estilos para o elemento de texto nami */
+#textonami {
+  width: 23%;
+  height: 40px;
+  text-align: justify;
+}
+
+/* Define estilos para o elemento de sonho nami */
+#sonhonami {
+  width: 23%;
+  height: 30px;
+  text-align: justify;
+}
+
+/* Define estilos para o menu de navegação */
+#menu {
+  text-align: center;
+  width: 5%;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  float: right; /* Alinha o menu à direita */
+  background-color: black;
+  color: yellow; /* Texto em branco */
+}
+
+/* Define estilos para o submenu do menu de navegação */
+#submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+}
+
+/* Mostra o submenu quando o mouse passa sobre o menu principal */
+#menu:hover #submenu {
+  display: block;
+}
+
+/* Estilos para os links no submenu */
+#submenu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança da cor de fundo */
+}
+
+/* Altera a cor de fundo dos links no submenu ao passar o mouse */
+#submenu a:hover {
+  background-color: gray;
+}
+
+/* Define uma div com largura de 100%, altura de 50px, cor de fundo cinza e centraliza o conteúdo horizontalmente */
+#terceiradiv {
+  width: 100%;
+  height: 50px; 
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+/* Define uma div com largura de 20%, altura de 50px e cor de fundo vermelha */
+#quartadiv {
+  width: 20%;
+  height: 50px;
+  background-color: red;
+}
+
+/* Aplica estilos a um elemento h1 dentro da div quartadiv:
+   remove as margens, define a cor do texto como branco e centraliza o texto horizontalmente */
+#quartadiv h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Define uma div com largura de 100%, altura de 50px, cor de fundo cinza e centraliza o conteúdo horizontalmente */
+#quintadiv {
+  width: 100%;
+  height: 50px; 
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+/* Define uma div com largura de 20%, altura de 50px e cor de fundo verde */
+#sextadiv {
+  width: 20%;
+  height: 50px;
+  background-color: green;
+}
+
+/* Aplica estilos a um elemento h1 dentro da div sextadiv:
+   remove as margens, define a cor do texto como branco e centraliza o texto horizontalmente */
+#sextadiv h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Define uma div com largura de 100%, altura de 50px, cor de fundo cinza e centraliza o conteúdo horizontalmente */
+#setimadiv {
+  width: 100%;
+  height: 50px; 
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+/* Define uma div com largura de 20%, altura de 50px e cor de fundo amarela */
+#oitavadiv {
+  width: 20%;
+  height: 50px;
+  background-color: yellow;
+}
+
+/* Aplica estilos a um elemento h1 dentro da div oitavadiv:
+   remove as margens, define a cor do texto como branco e centraliza o texto horizontalmente */
+#oitavadiv h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Define uma div com largura de 100%, altura de 50px, cor de fundo cinza e centraliza o conteúdo horizontalmente */
+#nonadiv {
+  width: 100%;
+  height: 50px; 
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+/* Define uma div com largura de 20%, altura de 50px e cor de fundo amarela */
+#decimadiv {
+  width: 20%;
+  height: 50px;
+  background-color: yellow;
+}
+
+/* Aplica estilos a um elemento h1 dentro da div decimadiv:
+   remove as margens, define a cor do texto como branco e centraliza o texto horizontalmente */
+#decimadiv h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Define estilos para a navegação */
+#navegacao {
+  width: 10%;
+  height: 84px;
+  position: relative;
+  display: inline-block;
+  background-color: black;
+}
+
+/* Define estilos para a lista não ordenada dentro da navegação */
+#navegacao ul {
+  margin-top: 0px; /* Ajuste o valor conforme necessário */
+}
+
+/* Define estilos para a div sanjitodo com fundo amarelo */
+#divsanjitodo {
+  background-color: yellow;
+}
+
+/* Define estilos para o corpo da página com fundo azul claro */
+body {
+  background-color: #0074D9;
+}
+
+/* Estilos para a animação de saltar */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Classe para iniciar a animação */
+.animated {
+  animation: bounce 0.5s infinite;
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eu</title>
+
+  <style>
+    /* CSS interno */
+    body {
+      background-color: #0074D9; /* Define a cor de fundo do corpo da página */
+      transition: background-color 0.5s ease; /* Adiciona uma transição suave ao mudar a cor de fundo */
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'e' || event.key === 'E') {
+          rotateBackgroundColor(); // Chama a função rotateBackgroundColor() quando a tecla 'e' ou 'E' for pressionada
+        }
+      });
+    });
+
+    var currentColorIndex = 0;
+    var colors = ['#0074D9', '#FF4136', '#2ECC40', '#FFDC00', '#B10DC9', '#FF851B', '#7FDBFF', '#001f3f', '#39CCCC', '#01FF70'];
+
+    function rotateBackgroundColor() {
+      var body = document.body;
+      currentColorIndex = (currentColorIndex + 1) % colors.length; // Atualiza o índice da cor atual
+      body.style.backgroundColor = colors[currentColorIndex]; // Define a nova cor de fundo do corpo da página
+    }
+  </script>
+</head>
+<body>
+  <h1 style="display: flex; align-items: center; justify-content: center;">Dados do criador desse site bugado:</h1> <!-- Título com estilo de alinhamento centralizado -->
+  <div style="display: flex; align-items: center; justify-content: center;"> <!-- Div com estilo de alinhamento centralizado -->
+    <table border="1"> <!-- Tabela com borda -->
+      <tr>
+        <th>Nome</th> <!-- Cabeçalho da coluna Nome -->
+        <th>Telefone</th> <!-- Cabeçalho da coluna Telefone -->
+        <th>Email</th> <!-- Cabeçalho da coluna Email -->
+      </tr>
+      <tr>
+        <td>Erick de souza</td> <!-- Conteúdo da célula Nome -->
+        <td>41 9 8787-1733</td> <!-- Conteúdo da célula Telefone -->
+        <td>Erickdesouza567@gmail.com</td> <!-- Conteúdo da célula Email -->
+      </tr>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div style="text-align: center;"> <!-- Div com estilo de alinhamento centralizado -->
+    <a href="index.html"><button>Voltar</button></a> <!-- Botão "Voltar" com link para o arquivo index.html -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,422 @@
+body{
+
+    font-family: 'Hanalei Fill', cursive;
+}
+
+header{
+
+    background:#000000 ;
+    padding: 20px 0;
+}
+
+.caixa{
+
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+
+    display: inline ;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav a:hover{
+
+    color: #f8c566;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.produtos{
+
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.0%;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+}
+
+.produtos li:hover{
+
+    border-color: #f8c566;
+}
+
+.produtos li:active{
+
+    border-color: #b88629;
+
+
+}
+
+.produtos li:hover h2{
+
+    font-size: 34px;
+}
+
+
+.produtos h2{
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descriçao{
+
+    font-size: 18px;
+    
+}
+
+
+.produto-preço{
+
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+footer{
+
+    text-align: center;
+    background: #000000;
+    padding: 40px 0;
+}
+
+.copy {
+
+    font-size:15px ;
+    color: azure;
+    margin: 20px 0;
+}
+
+
+
+form{
+
+    
+    margin: 40px 0;
+}
+
+form label, form legend{
+  
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    
+}
+
+.input-padrao{
+   
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox{
+
+    padding: 25px 0;
+}
+
+.enviar{
+
+    width: 25%;
+    padding: 15px 0;
+    background: rgb(58, 57, 57);
+    color: azure;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.enviar:hover{
+
+    background: orange;
+    font-size: 20px;
+   
+}
+
+
+
+.select{
+
+   
+    width: 25%;
+    padding: 10px 0;
+    background: rgb(58, 57, 57);
+    color: azure;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+.select:hover{
+
+    background: orange;
+    color: #000000;
+}
+
+table{
+
+    margin: 20px 0 40px;
+    
+    }
+
+thead{
+
+    background:#474747 ;
+    color: white;
+    font-weight: bolder;
+}
+
+td, th{
+
+    border: 2px solid black ;
+    padding: 15px 8px;
+   
+
+}
+
+.banner{
+
+    width: 100%;
+
+}
+
+.titulo-principal{
+
+text-align: center;
+font-size: 2em;
+margin: 0 0 1em;
+clear: left;
+
+}
+
+.principal{
+
+    padding: 2em 0;
+    background:  rgba(209, 209, 209, 0.733);
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+
+    margin: 0 0 1em;
+}
+
+.principal strong {
+
+    font-weight: bold;
+}
+
+.utensilios{
+
+    width:120px ;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+  
+.mapa{
+
+    padding: 2em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+    
+    
+
+}
+
+.mapa p{
+
+    margin: 0 0 2em;
+    text-align: center;
+   
+
+}
+
+.mapa-conteudo{
+
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.beneficios{
+
+   padding: 3em 0;
+    background:#888888;
+}
+
+.conteudo-beneficio{
+
+    width: 640px;
+    margin: 0 auto;
+    
+}
+
+.lista-beneficio{
+
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+
+    line-height: 2.75;
+}
+
+.imagem-beneficios{
+
+    width: 60%;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+
+
+.videobarbearia{
+
+    width: 560px;
+    padding: 3em 0;
+    margin: 2em auto;
+}
+
+
+#formulario, table{
+
+    margin-left: 5%;
+   
+}
+
+#sessaoProprietario{
+
+    text-align: justify;
+    padding: 20px;
+
+
+    
+}
+
+.contProprietario{
+
+   
+    padding: 10px;
+    width: 60vh;
+    background-color: rgb(209, 209, 209);
+    border: none;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px 0 #000000;
+
+
+}
+
+.esterEGG{
+
+    color:rgb(209, 209, 209);
+    margin-top: 20px;
+    text-align: justify;
+    padding: 20px;
+     padding: 10px;
+    width: 60vh;
+    background-color: rgb(209, 209, 209);
+    border: none;
+    border-radius: 10px;
+    border: 3px solid rgb(209, 209, 209);; 
+    box-shadow: 10px 10px 10px 0 rgb(209, 209, 209); 
+
+}
+
+.esterEGG:hover{
+
+                              
+    
+    color:red;
+    border: 3px solid rgb(255, 0, 0);
+    box-shadow: 5px 5px 5px 0 red; 
+    
+    
+}
+
+@media screen and (max-width: 480px){
+
+    .caixa, .principal, .conteudo-beneficio, .mapa-conteudo, .videobarbearia{
+        width: auto;
+    }
+
+    h1{
+
+        text-align: center;
+    }
+
+    nav{
+
+        position: static;
+    }
+
+    .lista-beneficio, .imagem-beneficios{
+
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .caixa, .principal, .conteudo-beneficio, .mapa-conteudo, .videobarbearia{
+        width: auto;
+    }
+
+    h1{
+
+        text-align: center;
+    }
+
+    nav{
+
+        position: relative;
+    }
+
+    .lista-beneficio, .imagem-beneficios{
+
+        width: 100%;
+    }
+}
+
+

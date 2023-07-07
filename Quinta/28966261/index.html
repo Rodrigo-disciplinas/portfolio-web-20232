@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css"> <!-- Importa o arquivo de estilo externo styles.css -->
+  <script src="Js/script.js"></script> <!-- Importa o arquivo de script externo script.js -->
+  <title>Personagens de One Piece</title>
+  <style>
+    /* CSS interno */
+    body {
+      background-color: #0074D9; /* Define a cor de fundo do corpo da página */
+      font-size: 16px;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+
+    #Navp a {
+      font-size: 18px;
+    }
+
+    /* Estilos para telas menores que 600px */
+    @media (max-width: 600px) {
+      /* Estilos para elementos específicos quando a tela tem largura menor que 600px */
+      #primeiradiv {
+        text-align: center; /* Alinha o conteúdo ao centro */
+      }
+      #segundadiv {
+        display: inline-block; /* Faz com que a div se comporte como um elemento de bloco, mas permaneça alinhada ao lado */
+      }
+      #menu {
+        display: block; /* Faz com que o menu ocupe todo o espaço disponível */
+        text-align: center; /* Alinha o conteúdo ao centro */
+      }
+      #submenu {
+        display: none; /* Oculta o submenu */
+      }
+      #Navp {
+        text-align: center; /* Alinha o conteúdo ao centro */
+      }
+    }
+
+    /* Estilos para telas maiores que 600px */
+    @media (min-width: 601px) {
+      /* Estilos para elementos específicos quando a tela tem largura maior que 600px */
+      #primeiradiv {
+        display: flex; /* Cria um container flexível */
+        justify-content: center; /* Alinha os itens ao centro do container flexível */
+      }
+      #segundadiv {
+        margin: auto; /* Centraliza o elemento horizontalmente */
+      }
+      #menu {
+        display: inline-block; /* Faz com que o menu ocupe apenas o espaço necessário */
+        vertical-align: middle; /* Alinha verticalmente o conteúdo */
+        margin-left: 20px; /* Adiciona uma margem à esquerda para separar do título principal */
+      }
+      #submenu {
+        display: inline-block; /* Faz com que o submenu ocupe apenas o espaço necessário */
+      }
+      #Navp {
+        text-align: right; /* Alinha o conteúdo à direita */
+      }
+    }
+
+    /* Estilos para o modo escuro */
+    .dark-mode body {
+      background-color: #333333; /* Define a cor de fundo do corpo da página em modo escuro */
+      color: #ffffff; /* Define a cor do texto em modo escuro */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="primeiradiv">
+      <div id="segundadiv">
+        <h1>Personagens de One Piece</h1> <!-- Título principal -->
+      </div>
+    </div>
+
+    <div id="menu">
+      <span>Personagens</span> <!-- Texto do menu principal -->
+      <div id="submenu">
+        <a href="index.html">Início</a> <!-- Link para a página inicial -->
+        <a href="pagluffy.html">Monkey D. Luffy</a> <!-- Link para a página do personagem Monkey D. Luffy -->
+        <a href="pagzoro.html">Roronoa Zoro</a> <!-- Link para a página do personagem Roronoa Zoro -->
+        <a href="pagsanji.html">Vinsmoke Sanji</a> <!-- Link para a página do personagem Vinsmoke Sanji -->
+        <a href="pagnami.html">Nami</a> <!-- Link para a página do personagem Nami -->
+        <a href="todos.html">Todos</a> <!-- Link para a página com todos os personagens -->
+        <a href="eu.html">Criador</a> <!-- Link para a página do criador -->
+      </div>
+    </div>
+  </header>
+  <div id="navegacao">
+    <nav id="Navp">
+      <ul>
+        <li style="color: red;"><a href="#luffy" style="color: red;">Monkey D. Luffy</a></li> <!-- Item de navegação para a seção do personagem Monkey D. Luffy -->
+        <li style="color: green;"><a href="#zoro" style="color: green;">Roronoa Zoro</a></li> <!-- Item de navegação para a seção do personagem Roronoa Zoro -->
+        <li style="color: yellow;"><a href="#sanji" style="color: yellow;">Vinsmoke Sanji</a></li> <!-- Item de navegação para a seção do personagem Vinsmoke Sanji -->
+        <li style="color: orange;"><a href="#nami" style="color: orange;">Nami</a></li> <!-- Item de navegação para a seção do personagem Nami -->
+      </ul>
+    </nav>
+  </div>
+
+  <button id="dark-mode-toggle" onclick="toggleDarkMode()">Modo Escuro</button> <!-- Botão para alternar o modo escuro -->
+
+  <main>
+    <article id="luffy">
+      <h2 style="color: red;">Monkey D. Luffy</h2> <!-- Título da seção do personagem Monkey D. Luffy -->
+      <img src="imgs/Luffy.jpg" alt="Imagem de Monkey D. Luffy" style="max-width: 100%;" height="auto"> <!-- Imagem do personagem Monkey D. Luffy -->
+      <h3>Forma de Luta: Gomu Gomu no Mi</h3> <!-- Informações sobre a forma de luta do personagem Monkey D. Luffy -->
+      <h4>Recompensa atualizada: 3.000.000.000 berries</h4> <!-- Informações sobre a recompensa do personagem Monkey D. Luffy -->
+      <div id="sonholuffy">
+        <h4>Sonho: Encontrar o tesouro One Piece e se tornar o Rei dos Piratas.</h4> <!-- Sonho do personagem Monkey D. Luffy -->
+      </div>
+      <div id="textoluffy">
+        <p>Monkey D. Luffy é o protagonista da série. Ele é um jovem pirata com poderes de borracha, após comer a Gomu Gomu no Mi, e lidera o seu bando, os Piratas do Chapéu de Palha, em busca do tesouro One Piece.</p> <!-- Descrição do personagem Monkey D. Luffy -->
+      </div>
+      <br>
+      <br>
+      <br>
+    </article>
+
+    <article id="zoro">
+      <h2 style="color: purple;">Roronoa Zoro</h2> <!-- Título da seção do personagem Roronoa Zoro -->
+      <img src="imgs/zoro.png" alt="Imagem de Zoro" style="max-width: 100%;" height="auto"> <!-- Imagem do personagem Roronoa Zoro -->
+      <h3>Forma de Luta: Santoryu</h3> <!-- Informações sobre a forma de luta do personagem Roronoa Zoro -->
+      <h4>Recompensa atualizada: 1.111.000.000 berries</h4> <!-- Informações sobre a recompensa do personagem Roronoa Zoro -->
+      <div id="sonhozoro">
+        <h4>Sonho: Se tornar o maior espadachim do mundo.</h4> <!-- Sonho do personagem Roronoa Zoro -->
+      </div>
+      <div id="textozoro">
+        <p>Roronoa Zoro é o espadachim dos Piratas do Chapéu de Palha. Ele é conhecido por sua habilidade com a espada, carrega três delas em seu corpo e é um dos mais fortes membros do bando.</p> <!-- Descrição do personagem Roronoa Zoro -->
+      </div>
+      <br>
+      <br>
+      <br>
+    </article>
+
+    <article id="sanji">
+      <h2 style="color: yellow;">Vinsmoke Sanji</h2> <!-- Título da seção do personagem Vinsmoke Sanji -->
+      <img src="imgs/sanji.png" alt="Imagem de Sanji" style="max-width: 100%;" height="auto"> <!-- Imagem do personagem Vinsmoke Sanji -->
+      <h3>Forma de Luta: Black Leg Style</h3> <!-- Informações sobre a forma de luta do personagem Vinsmoke Sanji -->
+      <h4>Recompensa atualizada: 1.032.000.000 berries</h4> <!-- Informações sobre a recompensa do personagem Vinsmoke Sanji -->
+      <div id="sonhosanji">
+        <h4>Sonho: Encontrar o lendário mar "All Blue"</h4> <!-- Sonho do personagem Vinsmoke Sanji -->
+      </div>
+      <div id="textosanji">
+        <p>Sanji é o cozinheiro dos Piratas do Chapéu de Palha. Ele é conhecido por sua habilidade em artes marciais, especialmente em chutes, e por sua devoção às mulheres.</p> <!-- Descrição do personagem Vinsmoke Sanji -->
+      </div>
+      <br>
+      <br>
+      <br>
+    </article>
+
+    <article id="nami">
+      <h2 style="color: orange;">Nami</h2> <!-- Título da seção do personagem Nami -->
+      <img src="imgs/nami.jpg" alt="Imagem de Nami" style="max-width: 100%;" height="auto"> <!-- Imagem do personagem Nami -->
+      <h3>Forma de Luta: Clima Tact</h3> <!-- Informações sobre a forma de luta do personagem Nami -->
+      <h4>Recompensa atualizada: 66.000.000 berries</h4> <!-- Informações sobre a recompensa do personagem Nami -->
+      <div id="sonhonami">
+        <h4>Sonho: Mapear todo o mundo e desenhar um mapa completo.</h4> <!-- Sonho do personagem Nami -->
+      </div>
+      <div id="textonami">
+        <p>Nami é a navegadora dos Piratas do Chapéu de Palha. Ela é habilidosa em roubar e tem uma grande paixão por dinheiro, mas se preocupa profundamente com seus amigos.</p> <!-- Descrição do personagem Nami -->
+      </div>
+      <br>
+      <br>
+      <br>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 One Piece - Todos os direitos reservados</p> <!-- Texto do rodapé -->
+  </footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roronoa Zoro</title>
+    <style>
+        /* Estilos CSS */
+
+        /* Definições do layout da página */
+        body {
+            background-color: #0074D9;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+            gap: 20px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            width: 100%;
+            background-color: #FFF;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para a primeira div dentro do cabeçalho */
+        #quintadiv {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        /* Estilos para a segunda div dentro do cabeçalho */
+        #sextadiv {
+            margin-left: 10px;
+        }
+
+        /* Estilos para o menu */
+        #menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Estilos para o submenu */
+        #submenu {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        /* Estilos para o conteúdo principal */
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #FFF;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #FFF;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos responsivos para telas maiores */
+        @media (min-width: 768px) {
+            body {
+                grid-template-columns: 1fr 2fr;
+                align-items: flex-start;
+                justify-items: flex-start;
+                padding: 20px;
+            }
+
+            header {
+                grid-column: 1 / span 2;
+            }
+
+            #submenu {
+                grid-template-columns: repeat(4, auto);
+            }
+
+            main {
+                text-align: left;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Referência ao arquivo de estilo CSS externo -->
+</head>
+<body>
+    <header>
+        <div id="quintadiv">
+            <div id="sextadiv">
+                <h1 style="color: black;">Roronoa Zoro</h1> <!-- Título principal da página -->
+            </div>
+        </div>
+        <div id="menu">
+            <span>Personagens</span>
+            <div id="submenu">
+                <a href="index.html">Início</a> <!-- Links para outras páginas -->
+                <a href="pagluffy.html">Monkey D. Luffy</a>
+                <a href="pagzoro.html">Roronoa Zoro</a>
+                <a href="pagsanji.html">Vinsmoke Sanji</a>
+                <a href="pagnami.html">Nami</a>
+                <a href="todos.html">Todos</a>
+                <a href="eu.html">Criador</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img src="imgs/zoro.png" alt="Imagem de Zoro" width="300" height="400"> <!-- Imagem do personagem -->
+
+        <section>
+            <h2>Origem</h2>
+            <p>Zoro nasceu em Shimotsuki Village, localizada no East Blue.</p> <!-- Informações sobre a origem do personagem -->
+        </section>
+
+        <section>
+            <h2>Personalidade</h2>
+            <p>Zoro é um indivíduo sério e determinado, que se dedica inteiramente ao aprimoramento de suas habilidades como espadachim. Ele é muito leal a seus amigos e líderes e tem um senso de justiça forte.</p> <!-- Descreve a personalidade do personagem -->
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <p>Zoro é um espadachim muito habilidoso, que usa três espadas em suas lutas e possui uma técnica de espada conhecida como Santoryu. Além disso, ele tem uma força física excepcional e é capaz de suportar muitos ferimentos em combate.</p> <!-- Descreve as habilidades do personagem -->
+        </section>
+
+        <section>
+            <h2>Objetivo</h2>
+            <p>O sonho de Zoro é se tornar o maior espadachim do mundo e encontrar o lendário tesouro One Piece.</p> <!-- Descreve o objetivo do personagem -->
+        </section>
+
+        <section>
+            <h2>Bebidas Preferidas</h2>
+            <ul>
+                <li>Saquê</li> <!-- Lista as bebidas preferidas do personagem -->
+                <li>Chá</li>
+                <li>Cerveja</li>
+            </ul>
+        </section>
+
+        <center>
+            <video width="640" height="360" controls>
+                <source src="videos/videozoro.mp4" type="video/mp4"> <!-- Insere um vídeo do Zoro -->
+            </video>
+        </center>
+
+        <br>
+        <br>
+        <a href="index.html"><button>Voltar</button></a> <!-- Cria um botão para voltar à página inicial -->
+    </main>
+    <footer>
+        <p>&copy; [Coderick] 2023. Todos os direitos reservados.</p> <!-- Direitos autorais do criador do site -->
+        <p>Baseado no anime/mangá One Piece, criado por Eiichiro Oda.</p> <!-- Informação sobre a base do conteúdo -->
+    </footer>
+</body>
+</html>

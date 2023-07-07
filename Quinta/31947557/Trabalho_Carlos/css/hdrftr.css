@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Nunito:wght@300&display=swap');
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* HEADER*/
+
+header{
+    background-color: #2E3440;
+    margin-bottom: 100px ;
+}
+
+
+.caixa {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+
+}
+
+#logo{
+    width: 17%;
+}
+
+
+.pesquisar input{
+    padding: 1px 120px;
+    border-radius: 10px;
+    
+}
+
+.pesquisar button{
+    background-color: #2E3440;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 2vw;
+}
+
+.links li{
+    display: inline-block;
+    padding: 1.5vw;
+   
+}
+
+.links li :hover{
+    font-size: 25px ;
+    transition: 1s;
+}
+
+.links a {
+    text-decoration: none;
+    color: #F1F1F1;
+    font-size: 1.5em;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    background-color:#2E3440;
+    margin-top: 100px;
+}
+
+footer img{
+    width: 9vw;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* DARK-MODE */
+
+.light#main{
+    color: white;
+    background-color: #1E2229;
+    animation: dark-to-light 0.7s ease-in-out;
+}
+
+@keyframes light-to-dark{
+    0%{
+        background-color: white;
+    }
+
+    100%{
+        background-color: #1E2229;
+    }
+}
+
+@keyframes dark-to-light{
+    0%{
+        background-color:  #1E2229;
+    }
+
+    100%{
+        background-color: white;
+    }
+
+}

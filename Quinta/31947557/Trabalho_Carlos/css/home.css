@@ -1,0 +1,44 @@
+/*  MAIN HOME */
+
+main{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.counteiner_imagens{
+    display:flex;
+    justify-content: center;    
+    margin: 50px auto;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slide img{
+    width: 50%;
+    display: inline-block; 
+}
+
+.texto_principal{
+    padding-bottom: 200px;
+}
+
+.texto_principal  h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto_principal p {
+    font-size: 25px;
+    margin: 15px 0 45px 0;
+}
+
+iframe{
+    display: flex;
+    align-items: center;
+    
+}

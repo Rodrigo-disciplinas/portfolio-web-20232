@@ -1,0 +1,158 @@
+.body-dark-theme {
+  background: rgb(23, 23, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 23, 23, 1) 0%,
+    rgba(28, 28, 28, 1) 100%
+  );
+  color: #ffffff;
+
+  transition: all 1.5s;
+}
+
+.nav-dark-theme {
+  background: rgb(240, 240, 240);
+  color: #000;
+
+  transition: all 1.5s;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(190, 223, 224, 1) 100%
+  );
+
+  transition: all 1.5s;
+}
+
+header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(6, 68, 160, 1) 0%,
+    rgba(23, 23, 23, 1) 0%,
+    rgba(19, 19, 19, 1) 35%,
+    rgba(21, 21, 25, 1) 49%,
+    rgba(26, 28, 30, 1) 67%,
+    rgba(43, 43, 43, 1) 100%
+  );
+  padding: 20px;
+  text-align: center;
+}
+
+header #theme-switcher {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0284c7;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  padding: 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  transition: all 1.5s;
+}
+
+nav a {
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: #0284c7;
+  border-bottom: 1px solid #0284c7;
+  transition: all 0.1s;
+}
+
+main {
+  margin: 20px;
+}
+
+h1 {
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #c7c4c4;
+}
+
+.destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 1rem 2rem;
+}
+
+.destination {
+  border: 2px solid #c7c4c4;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  user-select: none;
+}
+
+.destination:hover {
+  border: 2px solid #0284c7;
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.destination a {
+  color: #0284c7;
+}
+
+.destination img {
+  width: 200px;
+}
+
+.destination-content {
+  flex: 1;
+}
+
+.destination-content p {
+  max-width: 200px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

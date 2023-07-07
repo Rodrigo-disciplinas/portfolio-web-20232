@@ -1,0 +1,71 @@
+/*Gerais*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-bottom: 50px;
+}
+
+/*Conteúdo da Página*/
+main {
+    margin: 20px;
+}
+section {
+    border: black 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: rgb(255, 187, 0);
+    text-decoration: none;
+
+}
+
+a:hover {
+    transition-duration: 1.5s;
+    color: rgb(0, 0, 0);
+}
+
+h2:nth-child(1) {
+    font-size: 20px; 
+    color: rgb(255, 187, 0); 
+    font-weight: bold;
+}
+
+/*Footer da página*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(36, 36, 35);
+    color: rgb(245, 203, 92);
+    text-align: center;
+  }
+
+  @media screen and (max-width: 700px){
+
+    main {
+        margin: 10px;
+    }
+    section {
+        border: black 2px solid;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    }
+
+
+
+
+
+
+  

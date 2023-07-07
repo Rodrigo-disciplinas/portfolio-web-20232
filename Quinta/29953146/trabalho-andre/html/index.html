@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cidades do Japão</h1>
+      <button id="theme-switcher">Mudar para o tema escuro</button>
+    </header>
+    <nav>
+      <a href="#">Início</a>
+      <a href="./destinations-general.html">Destinos</a>
+      <a href="./contact.html">Contato</a>
+    </nav>
+    <main>
+      <h2>Destinos Populares</h2>
+
+      <!-- 6 cards de destinos redirecionando para suas páginas correspondentes -->
+      <div class="destinations">
+        <div class="destination">
+          <img src="../assets/img/toquio.webp" alt="Imagem de Tóquio" />
+          <div class="destination-content">
+            <h2>Tóquio</h2>
+            <p>Tecnologia avançada e arquitetura futurista</p>
+            <a href="./destinations/tokyo.html">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="../assets/img/yokohama.webp" alt="Imagem de Yokohama" />
+          <div class="destination-content">
+            <h2>Yokohama</h2>
+            <p>Paisagem urbana moderna, vida noturna animada e belos parques</p>
+            <a href="./destinations/yokohama.html">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="../assets/img/osaka.webp" alt="Imagem de Osaka" />
+          <div class="destination-content">
+            <h2>Osaka</h2>
+            <p>Animada cena gastronômica</p>
+            <a href="./destinations/osaka.html">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="../assets/img/nagoya.webp" alt="Imagem de Nagoya" />
+          <div class="destination-content">
+            <h2>Nagoya</h2>
+            <p>Arquitetura moderna e rica herança cultural</p>
+            <a href="./destinations/nagoya.html">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="../assets/img/sapporo.jpg" alt="Imagem de Sapporo" />
+          <div class="destination-content">
+            <h2>Sapporo</h2>
+            <p>
+              Festivais de neve, cerveja, belas paisagens naturais e gastronomia
+              única
+            </p>
+            <a href="./destinations/sapporo.html">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="../assets/img/kobe.jpg" alt="Imagem de Kobe" />
+          <div class="destination-content">
+            <h2>Kobe</h2>
+            <p>
+              Paisagem montanhosa, rica história marítima, gastronomia
+              requintada e famoso bife de Kobe
+            </p>
+            <a href="./destinations/kobe.html">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- tabela com informações sobre cada um dos destinos populares -->
+      <h2>Tabela de Preços</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Cidade</th>
+            <th>Preço</th>
+            <th>Duração</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tóquio</td>
+            <td>R$ 1000</td>  
+            <td>7 dias</td>
+          </tr>
+          <tr>
+            <td>Yokohama</td>
+            <td>R$ 1500</td>
+            <td>10 dias</td>
+          </tr>
+          <tr>
+            <td>Osaka</td>
+            <td>R$ 1500</td>
+            <td>10 dias</td>
+          </tr>
+          <tr>
+            <td>Nagoya</td>
+            <td>R$ 1500</td>
+            <td>10 dias</td>
+          </tr>
+          <tr>
+            <td>Sapporo</td>
+            <td>R$ 1500</td>
+            <td>10 dias</td>
+          </tr>
+          <tr>
+            <td>Kobe</td>
+            <td>R$ 1500</td>
+            <td>10 dias</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Vídeo Destaque</h2>
+      <div class="video-container">
+        <iframe
+          width="1904"
+          height="792"
+          src="https://www.youtube.com/embed/R4PhcEE22AA"
+          title="FLYING OVER JAPAN (4K UHD) Amazing Beautiful Nature Scenery with Relaxing Music | 4K VIDEO ULTRA HD"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <audio
+      id="soundtrack"
+      src="../assets/audio/soundtrack.mp3"
+      preload="auto"
+    ></audio>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

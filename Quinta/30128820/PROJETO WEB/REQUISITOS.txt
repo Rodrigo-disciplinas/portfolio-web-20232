@@ -1,0 +1,21 @@
+-6 Páginas: Home, Contato, Ranking, Sobre, Trailers e Resenhas ✔️
+-Contato: ✔️
+-CSS externo: ✔️
+-CSS interno: no home.html ✔️
+-CSS inline: primeiro p no home.html ✔️
+-Vídeo: no trailers.html ✔️
+-5 Imagens: logo, 4 canais de inspiração ✔️
+-Tabelas: no Ranking ✔️
+-Listas: no header e nas inspirações ✔️
+-Menu: ✔️
+-Organização: Pastas CSS, HTML, Imagens e JavaScript ✔️
+-Flex: ✔️
+-Grid: no trailers.html✔️
+-Transições: no header ✔️
+-Animações: no easter egg✔️
+-Responsividade: ✔️
+-Boas práticas: ✔️
+-Comentários: ✔️
+-Modelo BOX: ✔️
+-Modo Escuro: ✔️
+-Easter egg: abaixo do botão downlaod✔️

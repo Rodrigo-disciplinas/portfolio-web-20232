@@ -1,0 +1,172 @@
+/* Altera o estilo de todos os links da página */
+a {
+    /* Retira a formatação dos textos de link */
+    text-decoration: none;
+    /* Adiciona essa cor ao texto de link */
+    color:#533f3f;
+}
+
+/* Altera o estilo dessa classe */
+.aescuro {
+    /* Adiciona essa cor aos textos dessa classe  */
+    color:rgb(207, 61, 61)
+}
+
+/* Altera os estilos dos links quando o mouse for passado por cima */
+a:hover{
+    /* Faz com o texto se "destaque" */
+    padding: 10px;
+    /* Adiciona um sublinhado ao texto */
+    text-decoration: underline;
+    /* Adiciona essa cor ao texto de link */
+    color:rgb(207, 61, 61)
+}
+
+/* Altera os cabeçalhos de nível 2 da página */
+h2{
+    /* Adiciona esse tamanho ao texto */
+    font-size: 30px;
+    /* Adiciona uma espessura maior para a fonte (Negrito)*/
+    font-weight: bold;
+}
+
+/* Altera o estilo dessa classe*/
+.conteudo-imgs{
+    /* Altera o display dela para grid */
+    display: grid;
+    /* Altera o tamanho do grid para duas colunas com tamanhos iguais em fração */
+    grid-template-columns: 1fr 1fr;
+    /* Adiciona um espaço entre as colunas */
+    grid-gap: 10px; 
+}
+
+/* Altera o estilo de todas as imagens dentro de determinada classe*/
+.conteudo-imgs>img{
+    /* Define o tamanho da imagem para preencher 100% da largura do tamanho do seu espaço no grid */
+    width: 100%; 
+    /* Define o tamanho da imagem para preencher 100% da altura do tamanho do seu espaço no grid */
+    height: 100%; 
+}
+
+/* Altera o estilo desse id*/
+#index{
+    /* Define a largura como 99% da largura total da tela*/
+    width: 99vw;
+    /* Define a altura como 90% da altura total da tela*/
+    height: 90vh;
+    /* Altera o display para flex */
+    display: flex;
+    /* Alinha os itens horizontalmente no centro */
+    justify-content: center;
+    /* Limita o tamanho da flex para o tamanho dela com sua borda */
+    box-sizing: border-box;
+    /* Alinha os itens verticalmente no centro */
+    align-items: center;
+    /* Retira a margem */
+    margin: 0;
+}
+
+/* Altera o estilo das imagens, dentro de links, dentro do id #index*/
+#index>a>img{
+    /* Adiciona uma animação com o tempo de duração de 1 segundo sendo infinita */
+    animation: imagemAleatorio 1s infinite;
+}
+
+/* Cria uma animação */
+@keyframes imagemAleatorio {
+    /* Define que a opacidade do elemento que receber a animação será 1, ou seja, irá aparecer, quando 0% e 100% da animação estiverem completos */
+    0%, 100% {
+        opacity: 1;
+    }
+    /* Define que a opacidade do elemento que receber a animação será 0, ou seja, irá desaparecer, quando 50% da animação estiverem completos */
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Altera o estilo dessa classe*/
+.claro{
+    /* Define o tipo de fonte */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define a cor dos textos */
+    color: rgb(207, 61, 61);
+    /* Define o tamanho dos textos */
+    font-size: 20px;
+    /* Define a cor de fundo  */
+    background-color: white;
+}
+
+/* Altera o estilo dessa classe*/
+.escuro{
+     /* Define o tipo de fonte */
+     font-family: Arial, Helvetica, sans-serif;
+     /* Define a cor dos textos */
+     color: rgb(207, 61, 61);
+     /* Define o tamanho dos textos */
+     font-size: 20px;
+     /* Define a cor de fundo  */
+    background-color: black;
+}
+
+/* Altera o estilo dessa classe*/
+.gifVisivel{
+    /* Define a visibilidade do elemento como visível */
+    visibility: visible;
+}
+
+/* Altera o estilo dessa classe */
+.gifInvisivel{
+    /* Define a visibilidade do elemento como invisível */
+    visibility: hidden;
+    /* Define a posição do elemento como absoluta, para ele desaparecer durante essa classe e não ocupar a tela */
+    position: absolute;
+}
+
+/* Altera o estilo dessa classe*/
+.video{
+    /* Define a largura como 100% da tela*/
+    width: 100%;
+    /* Define a altura como auto para se adequar ao seu conteúdo*/
+    height: auto;
+    /* Altera o display para flex */
+    display: flex;
+    /* Alinha os itens horizontalmente no centro */
+    justify-content: center;
+    /* Limita o tamanho da flex para o tamanho dela com sua borda */
+    box-sizing: border-box;
+    /* Alinha os itens verticalmente no centro */
+    align-items: center;
+}
+
+/* Altera o estilo desse id*/
+#div-tabela-contato{
+    /* Altera o display para inline block */
+    display: inline-block;
+}
+
+/* Altera o estilo desse id*/
+#div-contato{
+     /* Alinha os itens verticalmente no centro */
+     align-items: center;
+    /* Alinha os itens horizontalmente no centro */
+    justify-content: center;
+}
+
+/* Adiciona uma media que define os atributos que serão alterados quando os dispositivos que estiverem nas páginas
+tiverem tamanho entre 200px e 900px, caso contrário, irão seguir as regras padrão do CSS*/
+@media (min-width:200px) and (max-width: 900px) {
+    
+    /* Altera o estilo dessa class */
+    .conteudo-imgs {
+        /* Altera a dimensão do grid para possuir somente uma coluna */
+        grid-template-columns: 1fr;
+    }
+  }
+
+/* Altera o estilo dessa class */
+#videos{
+    /* Define a largura como 560px*/
+    width:560px; 
+    /* Define a altura como 315px*/
+    height:315px;
+}
