@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+  padding: 0.5rem;
+  border: 2px solid red;
+  background: transparent;
+}
+a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}

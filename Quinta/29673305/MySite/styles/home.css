@@ -1,0 +1,97 @@
+.new-color {
+    background-color: white;
+    color: black
+}
+.new-color header,
+.new-color ul,
+.new-color a,
+.new-color main,
+.new-color footer,
+.new-color button {
+    color: black;
+}
+header {
+    display: flex;
+    justify-content: center; 
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    font-size: larger;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;}
+.div-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    width: 70vw;
+    height: 15vh;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid red;
+}
+button {
+    padding: 0.5rem;
+    border: 2px solid red;
+    color: var(--cor-secundaria);
+    background: transparent;
+    margin-top: 20px;
+    height: 50px;
+}
+
+
+
+
+@keyframes rainbow {
+0% {
+    color: red;
+}
+16.66% {
+    color: orange;
+}
+33.33% {
+    color: yellow;
+}
+50% {
+    color: green;
+}
+66.66% {
+    color: blue;
+}
+83.33% {
+    color: indigo;
+}
+100% {
+    color: violet;
+}
+}
+.rainbow {
+animation: rainbow 1s infinite;
+}
+  

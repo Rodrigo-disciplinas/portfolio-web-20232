@@ -1,0 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+:root {
+  --cor-primaria: black;
+  --cor-secundaria: white;
+}
+body {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  height: 100%;
+}

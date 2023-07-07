@@ -1,0 +1,61 @@
+body {
+  background-color: silver;
+}
+/* definindo cor de fundo da nav */
+nav {
+  background-color: #333;
+}
+/* estilizando os elementos li no formato de linha */
+nav ul li {
+  display: inline-block;
+}
+/* estilizando a tag 'a', text decoration none para tirar a decoração padrao e adicionando
+    uma leve transição */
+nav ul li a {
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* definindo cor de fundo quando passar o mouse em cima das opcoes do menu */
+nav ul li a:hover {
+  background-color: #555;
+}
+#div2 {
+  display: flex;
+  justify-content: center;
+}
+#p1 {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+#div3 {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Cria duas colunas de tamanho igual */
+  gap: 10px; /* Define um espaçamento entre as imagens */
+}
+
+#div3 img {
+  width: 75%; /* Garante que as imagens ocupem 100% da largura das colunas */
+  height: auto; /* Mantém a proporção original da imagem */
+  margin-left: auto;
+  margin-right: auto;
+}
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #464646;
+}
+
+body.dark-mode .footerr {
+  background-color: #464646;
+  color: #ffffff;
+}

@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #1e7c2b;
+  color: #ffffff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(184, 184, 119);
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  display: block;
+  text-align: center;
+}
+
+img {
+  text-align: center;
+}
+
+
+div.egg a h2{
+
+  text-decoration: none;
+  outline: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  background-color: #1e7c2b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para o Modo Escuro */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.agropecuaria {
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.agropecuaria p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.question {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.answer {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 200px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+
+
+/* animaçao easteregg */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #e5eb92;
+}
+
+.image {
+  position: absolute;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  width: 390px;
+  height: 323px;
+}
+
+.image:nth-child(1) {
+  top: 0;
+  left: 0;
+  animation-name: moveImage1;
+}
+
+.image:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation-name: moveImage2;
+}
+
+.image:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  animation-name: moveImage3;
+}
+
+.image:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  animation-name: moveImage4;
+}
+
+@keyframes moveImage1 {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translate(-100%, -100%);
+  }
+}
+
+@keyframes moveImage2 {
+  0% {
+    transform: translate(100%, -100%);
+  }
+  50% {
+    transform: translate(-100%, 100%);
+  }
+  100% {
+    transform: translate(100%, -100%);
+  }
+}
+
+@keyframes moveImage3 {
+  0% {
+    transform: translate(-100%, 100%);
+  }
+  50% {
+    transform: translate(100%, -100%);
+  }
+  100% {
+    transform: translate(-100%, 100%);
+  }
+}
+
+@keyframes moveImage4 {
+  0% {
+    transform: translate(100%, 100%);
+  }
+  50% {
+    transform: translate(-100%, -100%);
+  }
+  100% {
+    transform: translate(100%, 100%);
+  }
+}

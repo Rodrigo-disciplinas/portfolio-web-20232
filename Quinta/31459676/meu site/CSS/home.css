@@ -1,0 +1,118 @@
+body {
+  background-color: silver;
+}
+#div-pai {
+  display: grid;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/* definindo cor de fundo da nav */
+nav {
+  background-color: #333;
+}
+/* estilizando os elementos li no formato de linha */
+nav ul li {
+  display: inline-block;
+}
+/* estilizando a tag 'a', text decoration none para tirar a decoração padrao e adicionando
+uma leve transição */
+nav ul li a {
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* definindo cor de fundo quando passar o mouse em cima das opcoes do menu */
+nav ul li a:hover {
+  background-color: #555;
+}
+
+#cao-e-gato-juntos {
+  width: 20vw;
+  height: 20vw;
+}
+
+#footer {
+  position: fixed; /* Posiciona o elemento de forma fixa na janela de visualização */
+  bottom: 0; /* Define a distância em relação ao rodapé (0 significa que o footer ficará colado no rodapé) */
+  left: 0; /* Alinha o footer à esquerda da janela de visualização */
+  width: 100%; /* Define a largura do footer para ocupar 100% da largura disponível */
+  background-color: #333; /* Define a cor de fundo do footer */
+  padding: 20px; /* Adiciona um espaçamento interno ao footer */
+  text-align: center; /* Centraliza o conteúdo do footer horizontalmente */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Define a transformação inicial da imagem */
+  }
+  100% {
+    transform: rotate(360deg); /* Define a transformação final da imagem */
+  }
+}
+#cao-e-gato-juntos {
+  margin-left: 86px;
+  margin-top: 67px;
+  animation: spin 6s linear infinite; /* Aplica a animação: spin é o nome, 2s é a duração, linear é o modo de transição, infinite é a repetição infinita */
+}
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #464646;
+}
+
+body.dark-mode .footerr {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 350px) {
+  nav ul li a {
+    padding: 5px 13px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  #cao-e-gato-juntos {
+    width: 116px;
+    height: 118px;
+    margin-top: 31px;
+  }
+}
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  #cao-e-gato-juntos {
+    width: 132px;
+    height: 143px;
+    margin-top: 17px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  #cao-e-gato-juntos {
+    width: 190px;
+    height: 186px;
+  }
+}

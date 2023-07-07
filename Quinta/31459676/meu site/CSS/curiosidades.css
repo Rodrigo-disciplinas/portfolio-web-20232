@@ -1,0 +1,82 @@
+body {
+  background-color: silver;
+}
+ol {
+  font-size: larger 40px;
+}
+/* definindo cor de fundo da nav */
+nav {
+  background-color: #333;
+}
+/* estilizando os elementos li no formato de linha */
+nav ul li {
+  display: inline-block;
+}
+/* estilizando a tag 'a', text decoration none para tirar a decoração padrao e adicionando
+  uma leve transição */
+nav ul li a {
+  color: #fff;
+  padding: 10px 20px;
+  /* organiza em blocos e permit outros elementos ao lado se tiver espaço */
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* definindo cor de fundo quando passar o mouse em cima das opcoes do menu */
+nav ul li a:hover {
+  background-color: #555;
+}
+
+#gatinhosDormindo {
+  width: 13vw;
+}
+#dogsEdonos {
+  width: 13vw;
+}
+#cerebroDoGato {
+  width: 13vw;
+}
+#cachorroPasseando {
+  width: 13vw;
+}
+#fucinho {
+  width: 13vw;
+}
+#japonesa-com-gato {
+  width: 13vw;
+}
+#homem-passeando-com-cachorro {
+  width: 15vw;
+}
+#idoso-com-filhote {
+  width: 15vw;
+}
+#cachorro-com-ciumes {
+  width: 17vw;
+}
+#cahorro-com-planta {
+  width: 15vw;
+}
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #464646;
+}
+
+body.dark-mode .footerr {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 350px) {
+  nav ul li a {
+    padding: 5px 13px;
+  }
+  ol li {
+    font-size: 15px;
+  }
+}

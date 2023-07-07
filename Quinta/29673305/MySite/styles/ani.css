@@ -1,0 +1,40 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  height: 100vh;
+  gap: 1rem;
+}
+button {
+  padding: 0.5rem;
+  border: 2px solid red;
+  background: transparent;
+}
+a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+.divv {
+  border: 2px solid red;
+  height: 50px;
+  width: 200px;
+}
+
+
+@keyframes loading {
+  0% {
+    background-position: 200px 0;
+  }
+  100% {
+    background-position: -200px 0;
+  }
+}
+
+.loading-animation {
+  background: linear-gradient(to right, red, blue); /* Cores da animação */
+  background-size: 200% 100%;
+  animation: loading 10s linear; /* Duração, velocidade e repetição da animação */
+}
+
+  

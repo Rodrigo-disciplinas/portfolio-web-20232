@@ -1,0 +1,614 @@
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #3AA6B9;
+      padding-left: 295px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 8px 16px 0 #FF9EAA, 0 3px 20px 0 #FF9EAA;
+      position: fixed;
+      top: 0px;
+      z-index: 2;
+
+    }
+    
+    .menu li {
+      display: inline-block;
+      margin-right: 0px;
+      margin-left: 50px;
+    }
+    
+    .menu li a {
+      display: block;
+      color: lightcoral;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 40px 30px;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .menu li a:hover {
+      color: coral;
+    }
+    
+    .menu li:first-child a {
+      border-left: none;
+    }
+    
+    .menu li:last-child a {
+      border-right: none;
+    }
+  
+    
+    /* fundo*/
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+    
+    /*Imagem da logo*/
+    .logo img {
+      width: 350px;
+      height: 97px;
+      position: fixed;
+      top: 0px;
+      margin-top: 1px;
+      margin-left: 1px;
+      z-index: 3;
+    }
+  
+    @keyframes animacao-logo {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    /* Aplicando a animação quando o mouse passa por cima */
+    .logo img:hover {
+      animation: animacao-logo 0.8s ease-in-out;
+    }
+
+    .frase-intro {
+        display: block;
+        text-align:center;
+        text-transform:none;
+        word-spacing: 3px;
+        margin-top: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    .intro p {
+        display: inline;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+
+    }
+
+
+    .container .destino .conteudo {
+        list-style: none;
+
+    }
+
+    .container .destino {
+        display: inline-block;
+        margin: 20px;
+        padding: 50px;
+    }
+
+
+    .container .destino img {
+        position: static;
+        width: 600px;
+        height: 440px;
+        /* width: 300px;
+        height: 220px; */
+        border-radius: 12px;
+        transition: 0.5s;
+    }
+
+    .container .destino:hover img {
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        transform: scale(1.1);
+    }
+
+    .botao-saiba {
+        display: block;
+        border-radius: 12px;
+        color: black;
+        padding: 16px 47px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 7px 0;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #176B87;
+        color: rgb(255, 255, 255); 
+      }
+      
+      .botao-saiba:hover {
+        background-color: #C1ECE4;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        
+      }
+
+      .sublinhado {
+        text-decoration: none;
+      }
+
+      ul {
+        display: block;
+        text-align: justify;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 50px;
+        padding-left: 0px;
+      }
+
+      li {
+        display: block;
+        text-align: justify;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      
+    /* rodapé */
+    footer {
+      background-color: #FFCDA8;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    #modoEscuro {
+      background-color: black;
+      color: #fff;
+      border: none;
+      padding: 20px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 100px;
+      height: 80px;
+    }
+    
+    #modoEscuro:hover {
+      background-color: #666;
+    }
+
+}
+  @media screen and (min-width: 900px) and (max-width: 1205px) {
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #3AA6B9;
+      padding-left: 295px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 8px 16px 0 #FF9EAA, 0 3px 20px 0 #FF9EAA;
+      position: fixed;
+      top: 0px;
+      z-index: 2;
+
+    }
+    
+    .menu li {
+      display: inline-block;
+      margin-right: 0px;
+      margin-left: 50px;
+    }
+    
+    .menu li a {
+      display: block;
+      color: lightcoral;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 40px 30px;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .menu li a:hover {
+      color: coral;
+    }
+    
+    .menu li:first-child a {
+      border-left: none;
+    }
+    
+    .menu li:last-child a {
+      border-right: none;
+    }
+  
+    
+    /* fundo*/
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+    
+    /*Imagem da logo*/
+    .logo img {
+      width: 350px;
+      height: 97px;
+      position: fixed;
+      top: 0px;
+      margin-top: 1px;
+      margin-left: 1px;
+      z-index: 3;
+    }
+  
+    @keyframes animacao-logo {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    /* Aplicando a animação quando o mouse passa por cima */
+    .logo img:hover {
+      animation: animacao-logo 0.8s ease-in-out;
+    }
+
+    .frase-intro {
+        display: block;
+        text-align:center;
+        text-transform:none;
+        word-spacing: 3px;
+        margin-top: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    .intro p {
+        display: inline;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+
+    }
+
+
+    .container .destino .conteudo {
+        list-style: none;
+
+    }
+
+    .container .destino {
+        display: inline-block;
+        margin: 20px;
+        padding: 50px;
+    }
+
+
+    .container .destino img {
+        position: static;
+        width: 600px;
+        height: 440px;
+        /* width: 300px;
+        height: 220px; */
+        border-radius: 12px;
+        transition: 0.5s;
+    }
+
+    .container .destino:hover img {
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        transform: scale(1.1);
+    }
+
+    .botao-saiba {
+        display: block;
+        border-radius: 12px;
+        color: black;
+        padding: 16px 47px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 7px 0;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #176B87;
+        color: rgb(255, 255, 255); 
+      }
+      
+      .botao-saiba:hover {
+        background-color: #C1ECE4;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        
+      }
+
+      .sublinhado {
+        text-decoration: none;
+      }
+
+      ul {
+        display: block;
+        text-align: justify;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 50px;
+        padding-left: 0px;
+      }
+
+      li {
+        display: block;
+        text-align: justify;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      
+    /* rodapé */
+    footer {
+      background-color: #FFCDA8;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    #modoEscuro {
+      background-color: black;
+      color: #fff;
+      border: none;
+      padding: 20px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 100px;
+      height: 80px;
+    }
+    
+    #modoEscuro:hover {
+      background-color: #666;
+    }   
+  }
+  @media screen and (min-width: 300px) and (max-width: 900px) {
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #3AA6B9;
+      padding-left: 295px;
+      flex-wrap: wrap;
+      /* display: flex; */
+      justify-content: center;
+      box-shadow: 0 8px 16px 0 #FF9EAA, 0 3px 20px 0 #FF9EAA;
+      position: fixed;
+      top: 0px;
+      z-index: 2;
+
+    }
+    
+    .menu li {
+      display: inline-block;
+      margin-right: 0px;
+      margin-left: 50px;
+    }
+    
+    .menu li a {
+      display: block;
+      color: lightcoral;
+      font-size: 16px;
+      text-decoration: none;
+      /* padding: 40px 30px; */
+      padding: 20px 10px;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .menu li a:hover {
+      color: coral;
+    }
+    
+    .menu li:first-child a {
+      border-left: none;
+    }
+    
+    .menu li:last-child a {
+      border-right: none;
+    }
+  
+    
+    /* fundo*/
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+    
+    /*Imagem da logo*/
+    .logo img {
+      width: 350px;
+      height: 97px;
+      position: fixed;
+      top: 0px;
+      margin-top: 1px;
+      margin-left: 1px;
+      z-index: 3;
+    }
+  
+    @keyframes animacao-logo {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    /* Aplicando a animação quando o mouse passa por cima */
+    .logo img:hover {
+      animation: animacao-logo 0.8s ease-in-out;
+    }
+
+    .frase-intro {
+        display: block;
+        text-align:center;
+        text-transform:none;
+        word-spacing: 3px;
+        margin-top: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    .intro p {
+        display: inline;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+
+    }
+
+
+    .container .destino .conteudo {
+        list-style: none;
+
+    }
+
+    .container .destino {
+        display: inline-block;
+        margin: 20px;
+        padding: 50px;
+    }
+
+
+    .container .destino img {
+        position: static;
+        width: 600px;
+        height: 440px;
+        /* width: 300px;
+        height: 220px; */
+        border-radius: 12px;
+        transition: 0.5s;
+    }
+
+    .container .destino:hover img {
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        transform: scale(1.1);
+    }
+
+    .botao-saiba {
+        display: block;
+        border-radius: 12px;
+        color: black;
+        padding: 16px 47px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 7px 0;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #176B87;
+        color: rgb(255, 255, 255); 
+      }
+      
+      .botao-saiba:hover {
+        background-color: #C1ECE4;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        
+      }
+
+      .sublinhado {
+        text-decoration: none;
+      }
+
+      ul {
+        display: block;
+        text-align: justify;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 50px;
+        padding-left: 0px;
+      }
+
+      li {
+        display: block;
+        text-align: justify;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      
+    /* rodapé */
+    footer {
+      background-color: #FFCDA8;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    #modoEscuro {
+      background-color: black;
+      color: #fff;
+      border: none;
+      padding: 20px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 100px;
+      height: 80px;
+    }
+    
+    #modoEscuro:hover {
+      background-color: #666;
+    }   
+
+}
+

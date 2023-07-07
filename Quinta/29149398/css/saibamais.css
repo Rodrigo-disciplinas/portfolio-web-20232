@@ -1,0 +1,598 @@
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3AA6B9;
+    padding-left: 295px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 #FF9EAA, 0 3px 20px 0 #FF9EAA;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 50px;
+  }
+  
+  .menu li a {
+    display: block;
+    color: lightcoral;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 40px 30px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .menu li a:hover {
+    color: coral;
+  }
+  
+  .menu li:first-child a {
+    border-left: none;
+  }
+  
+  .menu li:last-child a {
+    border-right: none;
+  }
+
+
+  /*Imagem da logo*/
+  .logo img {
+    width: 350px;
+    height: 97px;
+    position: fixed;
+    top: 0px;
+    margin-top: 1px;
+    margin-left: 1px;
+    z-index: 3;
+  }
+
+  @keyframes animacao-logo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Aplicando a animação quando o mouse passa por cima */
+  .logo img:hover {
+    animation: animacao-logo 0.8s ease-in-out;
+  }
+
+    .container {
+      display: grid;
+      /*  2 colunas: uma para o menu e outra para o conteúdo */
+      grid-template-columns: 180px 1fr; 
+      /* espaçamento entre as colunas */
+      grid-gap: 10px;
+      margin-top: 190px;
+    }
+    
+    .menu-vertical {
+      background-color: #C1ECE4;
+      width: 150px;
+      height: auto;
+      padding: 20px;
+      margin: 30px ;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 20px;
+    }
+    
+    .menu-vertical li {
+      margin-bottom: 15px;
+    }
+    
+    .menu-vertical a {
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s ease;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+    }
+    
+    .menu-vertical a:hover {
+      color:#FFD0D0;;
+    }
+      
+    
+     
+    .conteudo {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #FF9EAA;
+      padding: 120px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      display: block;
+      text-align: center;
+      margin-top: 0;
+      color: black;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h2 {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    p {
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .carrossel {
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+      }
+      
+      .imagem {
+        display: inline-block;
+        width: 100%;
+        scroll-snap-align: start;
+      }
+      
+      .imagem img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* rodapé */
+    footer {
+      background-color: #FFCDA8;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    #modoEscuro {
+      background-color: black;
+      color: #fff;
+      border: none;
+      padding: 20px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 100px;
+      height: 80px;
+    }
+    
+    #modoEscuro:hover {
+      background-color: #666;
+    }
+      
+  }
+  
+  @media screen and (min-width: 900px) and (max-width: 1205px) {
+    
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #3AA6B9;
+      padding-left: 295px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 8px 16px 0 #FF9EAA, 0 3px 20px 0 #FF9EAA;
+      position: fixed;
+      top: 0px;
+      z-index: 2;
+
+    }
+    
+    .menu li {
+      display: inline-block;
+      margin-right: 0px;
+      margin-left: 50px;
+    }
+    
+    .menu li a {
+      display: block;
+      color: lightcoral;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 40px 30px;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .menu li a:hover {
+      color: coral;
+    }
+    
+    .menu li:first-child a {
+      border-left: none;
+    }
+    
+    .menu li:last-child a {
+      border-right: none;
+    }
+  
+  
+    /*Imagem da logo*/
+    .logo img {
+      width: 350px;
+      height: 97px;
+      position: fixed;
+      top: 0px;
+      margin-top: 1px;
+      margin-left: 1px;
+      z-index: 3;
+    }
+  
+    @keyframes animacao-logo {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    /* Aplicando a animação quando o mouse passa por cima */
+    .logo img:hover {
+      animation: animacao-logo 0.8s ease-in-out;
+    }
+  
+      .container {
+        display: grid;
+        /*  2 colunas: uma para o menu e outra para o conteúdo */
+        grid-template-columns: 180px 1fr; 
+        /* espaçamento entre as colunas */
+        grid-gap: 10px;
+        margin-top: 190px;
+      }
+      
+      .menu-vertical {
+        background-color: #C1ECE4;
+        width: 150px;
+        height: auto;
+        padding: 20px;
+        margin: 30px ;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 20px;
+      }
+      
+      .menu-vertical li {
+        margin-bottom: 15px;
+      }
+      
+      .menu-vertical a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+      }
+      
+      .menu-vertical a:hover {
+        color:#FFD0D0;;
+      }
+        
+      
+       
+      .conteudo {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #FF9EAA;
+        padding: 120px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      h1 {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+  
+      h2 {
+          display: block;
+          text-align: center;
+          margin-top: 0;
+          color: black;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      
+      p {
+          color: black;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+  
+  
+      .carrossel {
+          width: 100%;
+          overflow-x: scroll;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          white-space: nowrap;
+        }
+        
+        .imagem {
+          display: inline-block;
+          width: 100%;
+          scroll-snap-align: start;
+        }
+        
+        .imagem img {
+          width: 100%;
+          height: auto;
+        }
+  
+        /* rodapé */
+      footer {
+        background-color: #FFCDA8;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+      }
+  
+      body.dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+      
+      #modoEscuro {
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 100px;
+        height: 80px;
+      }
+      
+      #modoEscuro:hover {
+        background-color: #666;
+      }
+    
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 900px) {
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #3AA6B9;
+      padding-left: 295px;
+      flex-wrap: wrap;
+      /* display: flex; */
+      justify-content: center;
+      box-shadow: 0 8px 16px 0 #FF9EAA, 0 3px 20px 0 #FF9EAA;
+      position: fixed;
+      top: 0px;
+      z-index: 2;
+
+    }
+    
+    .menu li {
+      display: inline-block;
+      margin-right: 0px;
+      margin-left: 50px;
+    }
+    
+    .menu li a {
+      display: block;
+      color: lightcoral;
+      font-size: 16px;
+      text-decoration: none;
+      /* padding: 40px 30px; */
+      padding: 20px 10px;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .menu li a:hover {
+      color: coral;
+    }
+    
+    .menu li:first-child a {
+      border-left: none;
+    }
+    
+    .menu li:last-child a {
+      border-right: none;
+    }
+  
+  
+    /*Imagem da logo*/
+    .logo img {
+      width: 350px;
+      height: 97px;
+      position: fixed;
+      top: 0px;
+      margin-top: 1px;
+      margin-left: 1px;
+      z-index: 3;
+    }
+  
+    @keyframes animacao-logo {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    /* Aplicando a animação quando o mouse passa por cima */
+    .logo img:hover {
+      animation: animacao-logo 0.8s ease-in-out;
+    }
+  
+      .container {
+        display: grid;
+        /*  2 colunas: uma para o menu e outra para o conteúdo */
+        grid-template-columns: 180px 1fr; 
+        /* espaçamento entre as colunas */
+        grid-gap: 10px;
+        margin-top: 190px;
+      }
+      
+      .menu-vertical {
+        background-color: #C1ECE4;
+        width: 150px;
+        height: auto;
+        padding: 20px;
+        margin: 30px ;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 20px;
+      }
+      
+      .menu-vertical li {
+        margin-bottom: 15px;
+      }
+      
+      .menu-vertical a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+      }
+      
+      .menu-vertical a:hover {
+        color:#FFD0D0;;
+      }
+        
+      
+       
+      .conteudo {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #FF9EAA;
+        padding: 120px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      h1 {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        color: black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+  
+      h2 {
+          display: block;
+          text-align: center;
+          margin-top: 0;
+          color: black;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      
+      p {
+          color: black;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+  
+  
+      .carrossel {
+          width: 100%;
+          overflow-x: scroll;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          white-space: nowrap;
+        }
+        
+        .imagem {
+          display: inline-block;
+          width: 100%;
+          scroll-snap-align: start;
+        }
+        
+        .imagem img {
+          width: 100%;
+          height: auto;
+        }
+  
+        /* rodapé */
+      footer {
+        background-color: #FFCDA8;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+      }
+  
+      body.dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+      
+      #modoEscuro {
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 100px;
+        height: 80px;
+      }
+      
+      #modoEscuro:hover {
+        background-color: #666;
+      }
+    
+  }
+  
+  
