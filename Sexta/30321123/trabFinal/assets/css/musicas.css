@@ -1,0 +1,49 @@
+/*   AJUSTANDO TAMANHO, ALINHAMENTO E MARGEM DO CONTEÚDO   */
+
+main{
+    margin-top: 1rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+p img{
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 15rem;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+main div{
+    margin: 2rem;
+    border: 0.5rem solid black;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1rem;
+}
+
+div.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.texto{
+    align-self: flex-start;
+}
+
+/*   TIVE QUE DIMINUIR O TAMANHO DO VÍDEO DO YTB   */
+
+@media screen and (max-width: 767px){
+    div.video iframe{
+        height: fit-content;
+        width: 90%;
+    }
+}

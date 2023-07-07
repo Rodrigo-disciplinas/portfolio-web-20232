@@ -1,0 +1,305 @@
+/*   SETUP INICIAL   */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+/*   TRATAMENTO DO HEADER EM TODAS AS PÁGINAS   */
+
+div.logo a img{
+    height: 10rem;
+}
+
+div.navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: grey;
+}
+
+div.logo{
+    margin: 2rem 4rem;
+}
+
+div nav{
+    margin-right: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div nav a{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}
+
+div nav a:hover{
+    color: black;
+}
+
+div.logo-and-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*   O TRATAMENTO DO TÍTULO PRINCIPAL DE TODAS PÁGINAS   */
+
+div.content h1{
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/*  FOOTER PADRÃO  */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+footer div.infos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer>img{
+    height: 7rem;
+    margin: 1rem;
+}
+
+footer p, footer a{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer a:visited, header a:visited{
+    color: white;
+}
+
+/*   ELEMENTO PARA SUBIR AO HEADER   */
+
+.sobe{
+    position: sticky;
+    bottom: 1rem;
+    left: 1rem;
+    display: inline-block;
+}
+
+.sobe img{
+    border-radius: 15rem;
+
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*   MODO ESCURO   */
+
+.modoEscuro{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+body{
+    transition: background-color 0.2s linear;
+}
+
+body.dark{
+    background-color: #232c35;
+    color: #fff; 
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #111;
+    border-radius: 5rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5rem;
+    position: relative;
+    height: 2.6rem;
+    width: 5rem;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(2.4rem);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+/*   ANIMAÇÃO DO BOTÃO DE SUBIR   */
+
+@keyframes girar{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*   MENOR QUE 900PX FIX O SITE FICAR EM COLUNA   */
+/*   ACHEI QUE ERA O MAIS ADEQUADO PARA DISPOSITIVOS MENORES   */
+
+@media screen and (max-width: 900px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.content{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.content p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    div.imagens{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*   PARA DISPOSITIVOS MENORES AINDA   */
+/*   DIMINUI ALGUMAS FONTES E TAMANHOS DE IMAGENS   */
+/*   ALTEREI BASTANTE O HEADER PARA ENTRA NA TELA   */
+
+@media screen and (max-width: 767px){
+    footer img{
+        height: 3rem;
+    }
+
+    footer p, footer a{
+        font-size: 1rem;
+    }
+
+    header>div.navegacao{
+        height: fit-content;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .modoEscuro{
+        margin: 0px;
+        margin-bottom: 2rem;
+    }
+
+    header div.logo>a>img{
+        height: 4rem;
+    }
+
+    div.logo-and-button{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav>a{
+        font-size: 1.4rem;
+        margin-top: 0.8rem;
+    }
+
+    div.content h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    div.content aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    div.content aside img{
+        width: 90%;
+    }
+
+    div.content main p{
+        font-size: 1.4rem;
+    }
+
+    div.content main{
+        width: 100%;
+    }
+}

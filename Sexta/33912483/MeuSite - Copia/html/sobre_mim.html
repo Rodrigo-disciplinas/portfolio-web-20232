@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="theme-style" href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\css\claro.css">
+    <title>Sobre Mim</title>
+<!--Inicia uma seção de estilo interna.-->    
+    <style>
+        .modo-noturno { /* Define uma classe chamada "modo-noturno" */
+            background-color: #333; /* Altera a cor de fundo para o modo noturno */
+            color: #fff; /* Altera a cor do texto para o modo noturno */
+        }
+        h1 { /* Estiliza os elementos <h1> (título principal) */
+            color: #00FF00; /* Define a cor do texto como verde */
+            font-family: Arial; /* Define a fonte do texto como Arial */
+        }
+        pre { /* Estiliza os elementos <pre> (texto pré-formatado) */
+            color: red; /* Define a cor do texto como vermelho */
+            font-size: 15px; /* Define o tamanho da fonte como 15 pixels */
+        }
+/* Finaliza a seção de estilo interna */    
+    </style>
+</head>
+<body>
+    <button id="alternar-modo">Alternar Modo</button>
+<!--Insere uma imagem com o caminho especificado e define seu tamanho como 200 pixels de largura e 200 pixels de altura-->    
+    <img src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\perf2.jpg" alt="Foto Perfil Andressa Lima" width='200px' height='200px'><br>
+<!--Define um título principal "<h1>" em negrito-->    
+    <h1><strong>Andressa Lima</strong><br></h1>
+<!--Define um texto em itálico-->    
+    <em>Interior Designer</em>
+<!--Inicia um parágrafo-->    
+    <p>
+<!--Inicia um bloco de texto pré-formatado-->        
+        <pre>Andressa Lima, formada em Design de Interiores e atua na área há 19 anos.
+            A empresa que leva seu nome, Lima´s, atua com foco em projetos residenciais,
+            comerciais e empreendimentos de médio e alto padrão, prezando pelos detalhes e conforto, 
+            afim de obter um ambiente de atmosfera de muito requinte, trazendo atualidades.
+             Nossa missão é apresentar projetos que ofereçam soluções inovadoras sem deixar de lado 
+             o conforto e a funcionalidade com atendimento exclusivo.
+            Atendemos de forma personalizada, estabelecendo um relacionamento transparente com o cliente, 
+            acompanhando em cada etapa do projeto.
+<!--Finaliza o bloco de texto pré-formatado-->        
+        </pre>
+<!--Finaliza o parágrafo-->
+    </p>
+<!--Inicia um script-->    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() { /* Adiciona um evento de escuta quando o documento é carregado */
+        var botaoAlternar = document.getElementById('alternar-modo'); /* Obtém o elemento do botão de alternar modo pelo seu ID */
+        var body = document.body; /* Obtém o elemento body (corpo) do documento */
+        botaoAlternar.addEventListener('click', function(){ /* Adiciona um evento de escuta ao botão de alternar modo para quando for clicado */
+        body.classList.toggle('modo-noturno'); /* Alterna a classe 'modo-noturno' do elemento body, alternando o estilo do modo claro para o modo noturno ou vice-versa */
+        });
+    });
+    </script>
+</body>
+</html>

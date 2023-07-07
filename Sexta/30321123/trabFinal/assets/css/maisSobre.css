@@ -1,0 +1,111 @@
+/*   AJUSTANDO AS FONTES E A MARGEM   */
+
+main p{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*   FAZENDO O PRIMEIRO PARÁGRAFO TER IDENTAÇÃO   */
+
+main p:nth-child(1){
+    margin-top: 1rem;
+    text-indent: 3rem;
+}
+
+/*   DANDO DESTAQUE A ESSE PARÁGRAFO   */
+
+main p:nth-child(6){
+    font-weight: 1000;
+}
+
+main a:visited{
+    color:black;
+}
+
+main a:hover{
+    color: red;
+}
+
+/*   TRATAMENTO DA TABELA   */
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td{
+    border: 0.1rem solid black;
+}
+
+th{
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+tbody tr td:nth-child(1){
+    text-decoration: underline;
+}
+
+td{
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+main div.extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*   EASTER EGG   */
+
+footer button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+
+.egg{
+    display: none;
+    justify-content: center;
+}
+
+/*   ALTEREI AS FONTES E A TABELA PARA CABER NA TELA   */
+
+@media screen and (max-width: 767px){
+    div.extra h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    div.extra table{
+        margin-left: 0.2rem;
+    }
+
+    div.extra tr{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    div.extra td{
+        padding: 0rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    footer button{
+        font-size: 1rem;
+    }
+
+    .egg img{
+        width: 90%;
+    }
+}

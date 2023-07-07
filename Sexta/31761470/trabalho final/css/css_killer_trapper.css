@@ -1,0 +1,67 @@
+#box{
+    background-color: rgba(146, 141, 141, 0.904);
+    padding: 20px;
+    margin: 100px;
+    margin-top: 350px;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+/*Trabalhei com minhas tabelas usando um plano de fundo*/
+table, th, td {
+    border: 1px solid lightyellow;
+    background: url("../imagens/planofundopreto.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: lightgoldenrodyellow;
+}
+#im1 {
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+table{
+    float: left;
+    margin-right: 20px;
+}
+#h21{
+    border-bottom: 1px solid black;
+    margin-left: 230px;
+}
+ul{
+    display: inline-block;/*para alinha todo o display em um bloco*/
+    
+}
+.perks{
+    width: 150px;
+    height: 150px;
+}
+.p1{
+    margin: 5px;
+}
+#h22{
+    border-bottom: 1px solid black;
+}
+p{
+    font-weight: bold;
+}
+#p2{
+    font-family: 'Courier New', Courier, monospace;
+}
+#carta{
+    background: url("../imagens/folha_antiga.webp") ;
+    background: cover;
+    border-radius: 5px 5px 5px 5px;
+}
+/*Ajustem o tamanho das imagens conforme o tamanho da tela para haver um melhor entendimento delas*/
+@media screen and (max-width: 1000px){
+    #im1 {
+        width: 100px;
+        height: 125px;
+        display: block;
+        margin: 0 auto;
+    }
+    .perks{
+        width: 75px;
+        height: 75px;
+    }}

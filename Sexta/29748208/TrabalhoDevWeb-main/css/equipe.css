@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: .2px;
+    background: #fff;
+    background-size: 100% auto;
+}
+
+.grid{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1.5fr));
+}
+
+.time{
+    display: grid;
+    justify-content: center;
+}
+
+.nome{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+  }
+
+.ferrari{
+    width: 350px;
+    height: 197px;
+}
+
+.equipeImg{
+    border-radius: 20px;
+    padding-bottom: 10px;
+}

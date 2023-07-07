@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_menu_killer.css">
+    <title>Killer menu</title>
+    <style>
+        /*para definir o background da página, incluindo o caminho da imagem,
+         a posição, repetição e tamanho.*/
+        body {
+         background: url("../imagens/dbd.jpg") no-repeat center center fixed;
+        background-size: cover;
+        /*"no-repeat" indica que a imagem não deve se repetir,
+         "center center" define a posição central da imagem*/
+         /*"background-size: cover;" é usada para garantir que a imagem ocupe todo o espaço*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <nav>
+        <ul>
+            <a href="./Menu.html"><li><h3>Menu.</h3></li></a>
+        </ul>
+        </nav>
+        <header>
+        <!--Criei uma tabela para haver um entendimento dos personagens antes de saber sobre o mesmo-->
+        <h1 id="inicio3">Esta pagina é sobre os personagens definidos como Sobreviventes pelo jogo.</h1>
+        </header>
+        <section>
+        <h2>Personagens:</h2>
+        </section>
+        <article>
+        <table >
+            <tr>
+                <th>Nome</th>
+                <th>Imagem</th>
+                <th>Perks</th>
+            </tr>
+            <tr>
+                <td id="dudu"><a href="./Sobre_Dwight.html">Dwight Fairfield</a></td>
+                <td><img id="img1"src="../imagens/dwight.webp" alt="Imagem do dwightr"></td>
+                <td><img id="img2" src="../imagens/perk1_dudu.webp" alt="perk1 dwight">
+                    <img id="img2" src="../imagens/perk2_dudu.webp" alt="perk2 dwight">
+                    <img id="img2" src="../imagens/perk3_dudu.webp" alt="perk3 dwight">
+                </td>
+            </tr>
+            <tr>
+                <td id="meg"><a href="./Sobre_Meg.html">Meg Thomas</a></td>
+                <td><img id="img1" src="../imagens/meg.webp" alt="Imagem da meg"></td>
+                <td>
+                    <img src="../imagens/perk1_meg.webp" alt="perk1 meg" id="img2">
+                    <img src="../imagens/perk2_meg.webp" alt="perk2 meg" id="img2">
+                    <img src="../imagens/perk3_meg.webp" alt="perk3 meg" id="img2">
+                </td>
+            </tr>
+            <tr>
+                <td id="clauclau"><a href="">Claudette Morel</a></td>
+                <td><img src="../imagens/Claudette.webp" alt="Imagem da Claudette" id="img1"></td>
+                <td>
+                    <img src="../imagens/perk1_clauclau.webp" alt="perk1 claudette" id="img2">
+                    <img src="../imagens/perk2_clauclau.webp" alt="perk2 claudette" id="img2">
+                    <img src="../imagens/perk3_clauclau.webp" alt="perk3 claudette" id="img2">
+                </td>
+            </tr>
+        </table>
+        </article>
+        <footer>
+        <h2>Segue um vídeo ensinando iniciantes a jogarem.</h2>
+        <p>Este vídeo foi criado pelo youtuber Flyrie.</p>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/fNJ5Yt_ZEAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </footer>
+    </div>
+</body>
+</html>

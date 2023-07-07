@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        /* O seletor body define o estilo do corpo da página, especificando que a cor de fundo será #b5c5ea (um tom de azul claro) */
+        body {
+            background-color: #b5c5ea;
+        }
+        /*O seletor div define o estilo dos elementos div presentes na página. Eles terão uma cor de fundo #476ECC (um tom de azul mais escuro), 
+        uma largura de 800 pixels, altura de 600 pixels, margem de 50 pixels no topo e na base e margem automática nos lados.
+        Também haverá um preenchimento interno de 30 pixels na vertical e 50 pixels na horizontal, considerando a caixa de conteúdo */
+        div {
+            background-color: #476ECC;
+            width: 800px;
+            height: 600px;
+            margin: 50px auto;
+            padding: 30px 50px; 
+            box-sizing: border-box;
+            flex-direction: 1;
+            flex: auto;
+            display: flex;
+            
+        }
+        /* Os seletores h1, p definem o estilo dos elementos h1 e p. 
+        Ambos terão um preenchimento interno de 30 pixels na vertical e 50 pixels na horizontal */
+        h1, p {
+            padding: 30px 50px;
+            
+            
+        }
+        /* O seletor h1 define estilos adicionais para os elementos h1. 
+        Eles terão uma borda de 10 pixels sólida na cor #fff (branca) e um raio de borda de 60 pixels, resultando em cantos arredondados. */
+        h1 {
+            border: 10px solid #fff;
+            border-radius: 60px;
+        }
+        /* Os seletores img e video definem estilos adicionais para os elementos img e video, respectivamente. 
+        Ambos terão a propriedade display definida como flex, o que permite que sejam centralizados horizontalmente com justify-content: center. 
+        Eles também terão uma borda de 10 pixels sólida na cor #fff (branca) e um raio de borda de 60 pixels, resultando em cantos arredondados. */
+        img {
+            display: flex;
+            justify-content: center;
+            border: 10px solid #fff;
+            border-radius: 60px;
+        }  
+        video {
+            display: flex;
+            justify-content: center;
+            border: 10px solid #fff;
+            border-radius: 60px;
+        }  
+    </style>
+</head>
+<body>
+    <div>
+<!--Um cabeçalho de nível 1 com a formatação em negrito e com elemento de citação em bloco, que indica uma seção de texto em formato de citação-->
+        <h1><b><blockquote>Projeto Executivo de Obra</blockquote></h1></b>
+<br>
+        <a href="https://www.aarquiteta.com.br/pacote-cad-e-bim-prefeitura-e-executivo/attachment/projeto-autocad-prefeitura/ " target="_blank">Projeto Executivo 1</a>
+<br>
+        <a href="https://www.aarquiteta.com.br/wp-content/uploads/2020/11/pref3.jpg" target="_blank">Projeto Executivo 2</a>
+<br>
+        <h1><b><blockquote>Projeto em 3D</blockquote></b></h1>
+<br>
+        <img src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\coz1.jpg" alt="Projeto Cozinha 1" width='400' height='177'>
+<br>
+        <img src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\coz2.jpg" alt="Projeto Cozinha 2" width='400' height='177'>
+<br>
+<!--insere um elemento de vídeo na página, onde "URL" é o caminho do vídeo e `width` e `height` definem as dimensões do vídeo em pixels. 
+O texto "Seu navegador não suporta videos!" será exibido caso o navegador não possa reproduzir o vídeo.-->
+        <p><video width="560" height="315" controls><source src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\video\projcond.mp4" type="video/mp4">Seu navegador não suporta videos!</video></p>
+    </div>
+</body>
+</html>
+    
+
+
+    

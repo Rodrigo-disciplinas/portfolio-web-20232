@@ -1,0 +1,94 @@
+/*   TRATAMENTO DA MINHA FOTO   */
+
+div.content aside img{
+    height: 50rem;
+    border-radius: 5rem;
+}
+
+/*   AJUSTANTO FONTE E COR DA LISTA PARA CONTATO   */
+
+p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+li{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+main a:visited{
+    color:black;
+}
+
+main a:hover{
+    color: blue;
+}
+
+/*   FAZENDO AS ÁREAS PARA O GRID   */
+
+main{
+    grid-area: infos;
+}
+
+aside{
+    grid-area: foto;
+}
+
+h1{
+    grid-area: titulo;
+}
+
+/*   AJUSTANDO O LAYOUT DO JEITO QUE EU GOSTEI   */
+
+div.content{
+    display: grid;
+
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        ". . . ."
+        "infos infos foto foto"
+        "infos infos foto foto"
+        "infos infos foto foto"
+        ". . . ."
+    ;
+
+    row-gap: 2rem;
+}
+
+/*   DEIXANDO OS ITEMS ALINHADOS   */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+}
+
+/*   AJUSTEI PARA O SITE FICAR EM COLUMN   */
+
+@media screen and (max-width: 767px){
+    div.content aside img{
+        height: fit-content;
+    }
+
+    div.content{
+        display: flex;
+        align-items: center;
+    }
+
+    div.content h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+}

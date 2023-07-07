@@ -1,0 +1,118 @@
+<!--Indica que este é um documento HTML-->
+<!DOCTYPE html> 
+<!--Início do elemento HTML com o atributo lang definido como "pt-BR", indicando o idioma do documento como português do Brasil-->
+<html lang="pt-BR">
+<!--Início da seção de cabeçalho do documento-->
+<head>
+<!--Define a codificação de caracteres como UTF-8, permitindo a exibição correta de caracteres especiais-->
+    <meta charset="UTF-8">
+<!--Define a compatibilidade do navegador com o Internet Explorer-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--Define a configuração de visualização do dispositivo, ajustando a largura inicial e a escala-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Importa um arquivo CSS externo para estilizar a página, definindo o caminho do arquivo CSS-->
+    <link rel="stylesheet" href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\css\global.css">
+<!--Define o título da página exibido na barra de título do navegador-->
+    <title>Home</title>
+<!--Fim da seção de cabeçalho do documento-->
+</head>
+<!--Início do corpo do documento-->
+<body>
+<!--Início da seção de cabeçalho do conteúdo principal da página-->  
+    <header> 
+<!--Título principal da página, possivelmente o nome do site ou o título do conteúdo-->       
+        <h1>Interior Design- Lima´s Creativity</h1>
+<!--Fim da seção de cabeçalho do conteúdo principal da página-->  
+    </header>
+<!--Início da seção de navegação do site-->
+    <nav>
+<!--Início de uma lista não ordenada-->     
+        <ul>
+<!--Lista de itens com links para as páginas do html-->          
+            <li><a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\html\home.html"target="blank">Home</a></li>
+            <li><a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\html\sobre_mim.html"target="blank">Sobre Mim</a></li>
+            <li><a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\html\como_funciona.html"target="blank">Como Funciona</a></li>
+            <li><a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\html\portfolio.html"target="blank">Portfólio</a></li>
+            <li><a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\html\servicos.html"target="blank">Serviços</a></li>
+            <li><a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\html\contato.html"target="blank">Contato</a></li>
+            <li><a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\html\surpresa.html"target="blank">Surpresa</a></li>
+<!--Fim da lista não ordenada-->        
+        </ul>
+<!--Fim da seção de navegação do site-->   
+    </nav>
+<!--Início de uma seção de conteúdo-->
+    <section>
+<!--Título de segundo nível-->       
+        <h2>Andressa Lima</h2>
+<!--Título de terceiro nível--> 
+        <h3>Interior Designer</h3>
+<!--Inserção de uma imagem com caminho do arquivo especificado, altura e largura definidas e uma descrição alternativa-->      
+        <img src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\perf1.jpg" alt="Foto Perfil Andressa Lima" width='200px' height='200px' border ><br>
+<!--Fim da seção de conteúdo-->     
+    </section>
+<!--Início de uma seção lateral de conteúdo-->
+    <aside>
+<!--Título de quarto nível-->
+        <h4>Fique por dentro:</h4>
+<!--Título de quinto nível-->
+        <h5>Evento Casa Cor Paraná</h5>
+<!--Título de sexto nível com um link para o site "https://casacor.abril.com.br/"-->
+        <h6><a href="https://casacor.abril.com.br/"target="blank">Casa Cor Paraná 2023</a></h6>
+<!--Fim de uma seção lateral de conteúdo-->
+    </aside>
+<!--Início da seção de rodapé-->
+    <footer>
+        <h4>Amplie a sua imaginação! Clique no link a seguir, cadastre-se e descubra inúmeras possibilidades</h4>
+        <ul>
+            <li><a href="https://www.sketchup.com/pt-BR"target="blank"><img src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\sketchup.jpg" width='50px' height='50px'></a></li>
+            <li><a href="https://www.promob.com/"target="blank"><img src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\promob.png" width='50px' height='50px'></a></li>
+            <li><a href="https://br.pinterest.com/login/"target="blank"><img src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\pinterest.png" width='50px' height='50px'></a></li>
+        </ul>
+<!--Botão que, quando clicado, chama a função "topFunction()" e tem o título "Voltar ao Topo"-->
+        <button onclick="topFunction()" id="myBtn" title="Voltar ao Topo">Topo</button>
+<!--Início do bloco de script JavaScript-->
+        <script>
+// Quando o usuário rolar a página, mostrar ou ocultar o botão
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+            }
+// Quando o usuário clicar no botão, rolar para o topo da página
+            function topFunction() {
+// Para navegadores Safari
+            document.body.scrollTop = 0; 
+// Para Chrome, Firefox, IE e Opera
+            document.documentElement.scrollTop = 0; 
+            }
+        </script>
+    </footer>
+</body>
+</html>
+
+        
+   
+   
+   
+    
+    
+   
+   
+   
+   
+    
+
+    
+   
+    
+    
+
+
+
+
+
+
+

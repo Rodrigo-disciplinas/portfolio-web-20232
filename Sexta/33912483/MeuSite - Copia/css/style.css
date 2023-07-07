@@ -1,0 +1,24 @@
+
+.container { /* É uma classe que define um contêiner */
+    display: flex; /* Define o container como um flex container */
+    justify-content: space-between; /* Alinha os itens horizontalmente com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+.item { /* É uma classe que define os estilos para os itens dentro do contêiner */
+    flex: 1; /* Define que os itens devem ocupar o espaço disponível igualmente */
+/* Possui uma margem de 10 pixels, um preenchimento de 10 pixels, uma cor de fundo palevioletred e um raio de borda de 15 pixels */
+    padding: 10px;
+    background-color: palevioletred;
+    margin: 10px;
+    border-radius: 15px; 
+}
+h1 { /* a margem é definida como zero para remover qualquer espaçamento indesejado e o alinhamento do texto é centralizado */
+    margin: 0;
+    text-align: center;
+}
+@media (max-width: 200px) { 
+/* É uma regra de mídia que define estilos específicos para dispositivos móveis quando a largura da tela é no máximo 200 pixels */
+  }
+@media (min-width: 960px) {
+/* É uma regra de mídia que define estilos específicos para tablets e desktops quando a largura da tela é no mínimo 960 pixels */
+  }

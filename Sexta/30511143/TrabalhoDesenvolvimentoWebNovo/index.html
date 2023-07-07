@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    var clickCount = 0;
+
+    function handleClick() {
+        clickCount++;
+
+        if (clickCount === 5) {
+            var image = document.getElementById("img-egg");
+            image.src = 'images/fallenmeme.png';
+
+            clickCount = 0;
+        }
+    }
+  </script>
+  <title>CS:GO Brasileiro</title>
+</head>
+<body onclick="handleClick()">
+  <header>
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Modo noturno</button>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="jogadores.html">Jogadores</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1 class="home-features">Bem-vindo ao CS:GO Brasileiro</h1>
+
+    <img src="" id="img-egg">
+    <!-- Conteúdo da página principal -->
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 CS:GO Brasileiro. Todos os direitos reservados.</p>
+  </footer>
+
+  
+
+</body>
+</html>

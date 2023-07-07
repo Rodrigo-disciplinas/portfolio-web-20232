@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_mapa.css">
+    <title>Menu</title>
+    <style>
+        /*para definir o background da página, incluindo o caminho da imagem,
+         a posição, repetição e tamanho.*/
+        body {
+         background: url("../imagens/dbd.jpg") no-repeat center center fixed;
+        background-size: cover;
+        /*"no-repeat" indica que a imagem não deve se repetir,
+         "center center" define a posição central da imagem*/
+         /*"background-size: cover;" é usada para garantir que a imagem ocupe todo o espaço*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <nav>
+        <ul>
+            <a href="./Menu.html"><li><h3>Menu.</h3></li></a>
+        </ul>
+        </nav>
+        <header>
+        <h1>Esta página é sobre os Mapas do jogo</h1>
+        </header>
+        <section>
+        <h2>Mapas:</h2>
+        </section>
+        <!--
+            para eu trabalhar com grid eu criei uma div pai chamada body2 coloquei as descrições do grid
+            no meu css e trabalhei com os grids nas divs filhas com id
+        -->
+        <article>
+        <div id="body2">
+            <div id="div_1">
+                <h3 id="h3_1">Propriedade MacMillan</h3>
+                <img src="../imagens/Propriedade_MacMillan.webp" alt="Propriedade MacMillan imagem">
+            </div>
+            <div id="div_2">
+                <h3 id="h3_1">Ferro Velho Autohaven</h3>
+                <img src="../imagens/Ferro_Velho_AutoHaven.webp" alt="Ferro Velho Autohaven imagem">
+            </div>
+            <div id="div_3">
+                <h3 id="h3_1">Fazenda Coldwind</h3>
+                <img src="../imagens/Fazenda Coldwind.webp" alt="Fazenda Coldwind imagem">
+            </div>
+        </div>
+        </article>
+        <footer></footer>
+    </div>
+</body>
+</html>

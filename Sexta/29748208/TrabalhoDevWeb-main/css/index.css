@@ -1,0 +1,245 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    transition: background 0,5s linear, color 0,5s linear;
+  }
+
+  body.dark {
+    background-color: #292c35;
+    color: white;
+  }
+
+  .containerDark{
+
+  }
+
+  label{
+    background-color: #292c35;
+    border-radius: 40%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0,5s linear;
+  }
+
+  body.dark label{
+    background-color: white;
+  }
+
+  input{
+    visibility: hidden;
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .icon{
+    transition: none;
+  }
+  
+  .icon:hover{
+    opacity: 1;
+  }
+
+  .logo {
+    width: 60px;
+    height: 25px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    background: #15151e;
+    height: 10vh;
+  }
+  
+  main {
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #15151e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  } 
+
+  .titulo {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Titillium Web', sans-serif;
+    color: #15151e;
+    padding: 50px;
+    line-height: 40px;
+  }
+
+  .grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr, 1fr;
+    /*align-items: center;*/
+  }
+
+  p {
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: 'Titillium Web', sans-serif;
+    color: #15151e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .container{
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .video{
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+  }
+
+  .video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,296 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #15202b;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para a página Home */
+.home-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-features .feature {
+  flex-basis: 30%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+/* Estilos para a página Sobre Nós */
+.about-section {
+  padding: 50px 0;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  text-align: justify;
+}
+
+/* Estilos para a página Contato */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a página História */
+.history-section {
+  padding: 50px 0;
+}
+
+.history-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.history-section p {
+  text-align: justify;
+}
+
+.history-section .timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.history-section .timeline .event {
+  flex-basis: 48%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+/* Estilos para a página Jogadores */
+.players-section {
+  padding: 50px 0;
+}
+
+.players-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.players-section .player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.players-section .player .player-image {
+  display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    border-color: #0056b3;
+    border: solid;
+}
+
+.players-section .player .player-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para a página Eventos */
+.events-section {
+  padding: 50px 0;
+}
+
+.events-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.events-section .event {
+  margin-bottom: 30px;
+}
+
+.events-section .event .event-image {
+  display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    border-color: #0056b3;
+    border: solid;
+}
+
+.events-section .event .event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.events-section .event .event-title {
+  font-weight: bold;
+}
+
+.events-section .event .event-description {
+  text-align: justify;
+}
+
+/* Modo noturno */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode header {
+  background-color: #222;
+}
+
+body.dark-mode nav ul li a {
+  color: #fff;
+}
+
+body.dark-mode main {
+  background-color: #222;
+}
+
+body.dark-mode footer {
+  background-color: #222;
+}
+
+/* Estilo padrão */
+header,
+nav ul li a,
+main,
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  color: #000000;
+  background-color: #00FF7F;
+  height: 92vh;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-mode-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode-button.dark-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode-button:hover {
+  opacity: 0.8;
+}
+
+/* Easter egg */
+
+img#img-egg {
+  border-radius: 0 !important;
+  display:block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.container{
+  width: 90%; 
+  margin: 10px auto;
+}
+.container #video{
+  text-align: center;
+}
+
+.container tr td img{
+  display: flex;
+  position: relative;
+  flex-direction: column; 
+  animation:fly 1s 0s infinite alternate;
+ 
+}
+

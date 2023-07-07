@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css_menu_killer.css">
+    <title>Killer menu</title>
+    <style>
+        /*para definir o background da página, incluindo o caminho da imagem,
+         a posição, repetição e tamanho.*/
+        body {
+         background: url("../imagens/dbd.jpg") no-repeat center center fixed;
+        background-size: cover;
+        /*"no-repeat" indica que a imagem não deve se repetir,
+         "center center" define a posição central da imagem*/
+         /*"background-size: cover;" é usada para garantir que a imagem ocupe todo o espaço*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <nav>
+        <ul>
+            <a href="./Menu.html"><li><h3>Menu.</h3></li></a>
+        </ul>
+        </nav>
+        <header></header>
+        <!--Criei uma tabela para haver um entendimento dos personagens antes de saber sobre o mesmo-->
+        <h1 id="inicio2">Esta pagina é sobre os personagens definidos como Assassinos no jogo.</h1>
+        </header>
+        <section>
+        <h2>Personagens:</h2>
+        </section>
+        <article>
+        <table >
+            <tr>
+                <th>Nome</th>
+                <th>Imagem</th>
+                <th>Perks</th>
+            </tr>
+            <tr>
+                <td id="trapper"><a href="./Sobre_Trapper.html">O Caçador</a></td>
+                <td><img id="img1"src="../imagens/trapper.webp" alt="Imagem de O Caçador"></td>
+                <td><img id="img2" src="../imagens/perk1.webp" alt="perk1">
+                    <img id="img2" src="../imagens/perk2.webp" alt="perk2">
+                    <img id="img2" src="../imagens/perk3.webp" alt="perk3">
+                </td>
+            </tr>
+            <tr>
+                <td id="wraith"><a href="./Sobre_Wraith.html">O Espectro</a></td>
+                <td><img id="img1" src="../imagens/wraith.webp" alt="Imagem de O Espectro"></td>
+                <td>
+                    <img src="../imagens/perk1_wraith.webp" alt="perk1 wraith" id="img2">
+                    <img src="../imagens/perk2_wraith.webp" alt="perk2 wraith" id="img2">
+                    <img src="../imagens/perk3_wraith.webp" alt="perk3 wraith" id="img2">
+                </td>
+            </tr>
+            <tr>
+                <td id="billy"><a href="./Sobre_Billy.html">O Caipira</a></td>
+                <td><img src="../imagens/hillybilly.webp" alt="Imagem de O Caipira" id="img1"></td>
+                <td>
+                    <img src="../imagens/perk1_billy.webp" alt="perk1 billy" id="img2">
+                    <img src="../imagens/perk2_billy.webp" alt="perk2 billy" id="img2">
+                    <img src="../imagens/perk3_billy.webp" alt="perk3 billy" id="img2">
+                </td>
+            </tr>
+        </table>
+        </article>
+    <footer></footer>
+    </div>
+</body>
+</html>

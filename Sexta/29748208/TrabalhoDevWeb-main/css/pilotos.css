@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: .2px;
+    background: #fff;
+    background-size: 100% auto;
+}
+
+.grid{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1.5fr));
+    transition: 0.5s;
+}
+
+.piloto{
+    display: grid;
+    justify-content: center;
+}
+
+.nome{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.icon {
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+.fotoPiloto{
+    border-radius: 70px;
+}

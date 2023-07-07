@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa</title>
+    <style>
+        @keyframes rotate { /* Define uma animação chamada "rotate" que será usada posteriormente */
+            0% {transform: rotate(0deg);} /* Define o estilo inicial da animação "rotate", onde o elemento está com rotação de 0 graus */
+            100% {transform: rotate(360deg);} /* Define o estilo final da animação "rotate", onde o elemento terá uma rotação completa de 360 graus */
+        }
+    </style>
+    <script>
+        function easterEgg() { /* Define uma função chamada "easterEgg" que será chamada quando o botão for clicado */
+        var egg = document.getElementById('easter-egg');  /*Obtém a referência do elemento HTML com o ID "easter-egg" e armazena-o na variável "egg" */
+        egg.style.animation = 'rotate 2s linear infinite'; /* Define a propriedade "animation" do elemento "egg" para iniciar a animação "rotate" com uma duração de 2 segundos, linearmente interpolada e repetida infinitamente */
+    }
+    </script>
+</head>
+<body>
+    <h1 style="color:blue; font-size: 15px;">Clique no botão abaixo e veja o aspiral circular aumentando e diminuindo de tamanho!</h1>
+<br>
+<br>
+<br>
+<!--Cria um botão que, quando clicado, chamará a função "easterEgg()"-->
+    <button onclick="easterEgg()">Botão</button>
+<br>
+<br>
+<br>
+<!--Cria uma imagem com o ID "easter-egg" e define o caminho da imagem como "C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\easter_egg_image.png"-->
+    <img id="easter-egg" src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\imagens\easter_egg_image.png">
+</body>
+</html>

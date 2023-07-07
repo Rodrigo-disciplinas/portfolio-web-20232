@@ -1,0 +1,153 @@
+body{
+    font-family: cursive;
+    background-color: antiquewhite;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .dark-mode-Egg {
+    background-color: black;
+    color: white;
+    background-image: url(https://pbs.twimg.com/media/E7aCBzYXEAYwuTF.jpg:large);
+  }
+
+.center{
+    text-align: center;
+}
+
+.tablecolor{
+    color: brown;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav>a{
+    text-decoration: none;
+}
+
+nav>a:hover{
+    font-size: 120%;
+    transition-duration: 200ms;
+}
+
+li>a{
+    color: brown;
+    text-decoration: none;
+}
+
+li>a:hover{
+    color: blue;
+}
+
+.b{
+    color: brown;
+}
+
+li{
+    border: 1px solid brown;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.li2{
+    display: inline-block;
+}
+
+p{
+    font-size: 15px;
+    font-family: cursive;
+}
+
+a{
+    padding: 5px;
+}
+
+table{
+    border:3px solid brown;
+    border-radius: 8px;
+}
+
+#chapeu{
+    padding: 4px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.textTable{
+    text-align: center;
+    font-weight: bold;
+}
+.ref{
+    width: 500px;
+    height: 200px;
+    overflow: auto;
+}
+.tableCenter{
+    display: flex;
+    justify-content: center;
+}
+.center.b{
+    color: brown;
+    text-align: center;
+}
+
+.teo{
+    display: inline-block;
+    color: antiquewhite;   
+    margin-top: 50px;
+}
+
+.teo-content{
+    background-color: brown;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 35px;
+}
+
+.teo h2{
+    font-size: 18px;
+}
+
+.capitulo {
+    position: relative;
+    color: antiquewhite;
+    text-align: center;
+    width: 271px;
+    height: 400px;
+    background: brown;
+    position: relative;
+    animation: capitulo-animation 10s infinite alternate;
+  }
+  
+@keyframes capitulo-animation{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(2200px);
+    }
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+nav {
+    margin-bottom: 0;
+  }
+
+  section{
+    float: left;
+  }
+
+  aside{
+    float: right;
+  }
+  .espac{
+    padding: 10px;
+  }
+
+ 

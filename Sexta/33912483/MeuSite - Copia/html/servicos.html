@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <style>
+    #circle{ /* Define um seletor de ID chamado "circle". Isso significa que o estilo a seguir será aplicado apenas a um elemento com o ID "circle" */
+            width: 100px; /* Define a largura como 100 pixels */
+            height: 100px; /* Define a altura como 100 pixels */
+            border-radius: 50%; /* Define o raio da borda como 50%, transformando o quadrado em um círculo perfeito */
+            border: 8px solid #f3f3f3; /* Define uma borda de 8 pixels de espessura, sólida e com cor #f3f3f3 */
+            border-top: 8px solid #3498db; /* Define uma borda adicional na parte superior do círculo com 8 pixels de espessura e cor #3498db */
+            animation: spin 2s linear infinite; /* Define uma animação chamada "spin" que será aplicada ao elemento "circle". A animação terá uma duração de 2 segundos, será linear (sem aceleração) e será repetida infinitamente */
+            margin: 20px auto; /* Define as margens do elemento, com 20 pixels na parte superior e inferior e "auto" nas laterais para centralizá-lo horizontalmente */
+        }
+        @keyframes spin { /* Isso indica o início da definição de uma animação chamada "spin" */
+            0% {transform: rotate(0deg);} /* Define o estado inicial da animação em 0%, com a transformação de rotação definida como 0 graus */
+            100% {transform: rotate(360deg);} /* Define o estado final da animação em 100%, com a transformação de rotação definida como 360 graus (uma volta completa) */
+        }
+    </style>
+</head>
+</html>
+<body>
+<!--Abre uma lista de definição e aplica a formatação em negrito-->
+    <dl><b>
+<!--Define um termo dentro da lista de definição-->
+        <dt>Serviços:</dt>
+<!--Define uma descrição dentro da lista de definição e o símbolo "&#10003" representa um "check"-->
+            <dd>&#10003 Consultoria;</dd>
+            <dd>&#10003 Projeto executivo de obra;</dd>
+            <dd>&#10003 Projeto em 3D;</dd>
+            <dd>&#10003 Execução de móveis;</dd>
+        </b></dl>
+<!--Abre um elemento de tabela (<table>) com uma borda definida como "1". As tabelas são usadas para exibir dados em linhas e colunas-->
+<table border="1">
+    <caption><b>TABELA DE COMPARAÇÃO DE PREÇO</b></caption>
+<br>
+<br>
+<!--Abre uma linha de tabela, indicando o início de uma nova linha de dados-->
+    <tr>
+<!--Define um cabeçalho de tabela. Os cabeçalhos são usados para descrever o conteúdo das colunas da tabela-->
+        <th>Tipo de Serviço</th>
+        <th>Preço do Concorrente</th>
+        <th>Preço da Lima's Creativity</th>
+        <th>Medidas</th>
+    </tr>
+    <tr>
+<!--Define uma célula de dados (<td>) com o texto "Armário de cozinha sob medida"-->
+        <td>Armário de cozinha sob medida</td>
+        <td>R$ 6.000,00</td>
+        <td>R$ 4.200,00</td>
+        <td>1.80x2.00m</td>
+    </tr>
+    <tr>
+        <td>Roupeiro sob medida</td>
+        <td>R$ 8.500,00</td>
+        <td>R$ 7.200,00</td>
+        <td>2.60x2.00m</td>
+    </tr>
+    <tr>
+        <td>Painel home teather sob medida</td>
+        <td>R$ 4.800,00</td>
+        <td>R$ 3.400,00</td>
+        <td>2.40x2.10m</td>
+    </tr>
+    <tr>
+        <td>Armário banheiro sob medida</td>
+        <td>R$ 2.000,00</td>
+        <td>R$ 1.120,00</td>
+        <td>0.80x0.60m</td>
+    </tr>
+</table>
+    <h1>Baixe arquivo para orçamento</h1>
+<!--Cria um link (<a>) para um arquivo Excel (.xlsx) localizado no caminho especificado no atributo href. O texto "Planilha para orçamento" será exibido como o texto do link-->
+    <a href="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\doc\Planilha para orçamento.xlsx" download>Planilha para orçamento</a>
+<!--Cria uma div (<div>) vazia com um atributo de identificação (id) definido como "circle". As divs são usadas para agrupar e estilizar elementos HTML-->    
+    <div id="circle"></div>
+<!--Importa um arquivo JavaScript (circ_carrg.js) localizado no caminho especificado no atributo src. O JavaScript é usado para adicionar funcionalidade e interatividade à página-->
+    <script src="C:\Users\andre\OneDrive\Ambiente de Trabalho\FinalSemestre\DesenvolvimentoWebBasico\MeuSite\js\circ_carrg.js"></script>
+</body>
+</html>

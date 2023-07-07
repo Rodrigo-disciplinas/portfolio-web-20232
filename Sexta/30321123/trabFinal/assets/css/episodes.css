@@ -1,0 +1,66 @@
+/*   FAZER TUDO FICAR NO CENTRO E EM COLUNA   */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*   TRATAMENTO DO CONTAINER DAS IMAGENS   */
+
+main div.imagens{
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: gray;
+    border-radius: 1.5rem;
+    width: fit-content;
+
+    margin-bottom: 1.5rem;
+}
+
+/*   TRATAMENTO DA IMAGEM   */
+
+main div.imagens img{
+    width: 65rem;
+    padding: 2rem;
+}
+
+/*   FAZENDO OS NOMES DOS EP E O RESUMO FICAREM NO COMEÇO E COLOCANDO MARGEM   */
+
+main h3, main p{
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/*   AJUSTANDO OS TAMANHOS DE FONTES   */
+
+main h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+main p{
+    font-size: 1.4rem;
+}
+
+/*   EM TELAS MENORES DECIDI DEIXAR AS IMAGENS EM COLUNA   */
+
+@media screen and (max-width: 1300px){
+    div.content div.imagens>img{
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    div.imagens{
+        height: fit-content;
+        width: fit-content;
+    }
+
+    div.content div.imagens>img{
+        width: 100%;
+    }
+}

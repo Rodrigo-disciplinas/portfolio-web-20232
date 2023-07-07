@@ -1,0 +1,15 @@
+#box{
+    background-color: rgba(146, 141, 141, 0.904);
+    padding: 20px;
+    margin: 100px;
+    margin-top: 350px;
+    border-radius: 10px 10px 10px 10px;
+}
+h1{
+    text-align: center;
+}
+#link{
+    color: black;
+}
+
+

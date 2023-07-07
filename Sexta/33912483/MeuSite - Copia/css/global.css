@@ -1,0 +1,73 @@
+section{
+    background-color: darkcyan; /* Essa linha define o estilo para a tag <section>. O fundo dessa seção será de cor "darkcyan" (um tom escuro de ciano) */
+    
+}
+/* Essas linhas definem estilos gerais para o corpo da página. A fonte do texto será "Arial, sans-serif".
+As margens e preenchimentos serão definidos como zero, o que significa que não haverá espaço em branco ao redor do corpo da página. 
+O texto será centralizado horizontalmente. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    flex-basis: 500px;
+}
+/* Essas linhas definem os estilos para o cabeçalho da página. O cabeçalho terá uma cor de fundo "#f2f2f2" (um tom claro de cinza). 
+Haverá um preenchimento interno de 20 pixels dentro do cabeçalho. O texto será centralizado horizontalmente dentro do cabeçalho */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align:center;
+}
+/* Essas linhas definem os estilos para os elementos <h1> (títulos de nível 1) na página. 
+Não haverá margem em torno do título e o texto será centralizado horizontalmente */
+h1 {
+    margin: 0;
+    text-align: center;
+}
+/* Essas linhas definem os estilos para uma lista não ordenada <ul> dentro da tag <nav>. 
+O tipo de estilo da lista será nenhum, o que significa que os marcadores de lista não serão exibidos. Não haverá margem ou preenchimento na lista e o fundo será da cor "aqua" (um tom claro de azul) */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+/* Essas linhas definem os estilos para os itens <li> dentro da lista. Haverá uma margem à direita de 10 pixels entre os itens da lista e eles serão exibidos como blocos em linha. */
+  nav ul li {
+      margin-right: 10px;
+      display: inline-block;
+}
+/* Essas linhas definem os estilos para os links <a> dentro dos itens da lista. Os links serão exibidos como blocos, terão um preenchimento interno de 10 pixels e não terão decoração de texto (como sublinhado). 
+A cor do texto será "#333" (um tom escuro de cinza) e haverá uma transição suave de cor de fundo com duração de 0,3 segundos. */
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+/* Essa linha define o estilo para quando o mouse estiver sobre um link dentro da tag <nav>. O fundo do link será alterado para "#ddd" (um tom claro de cinza). */
+nav a:hover {
+    background-color: #ddd;
+}
+/* Essa linha define os estilos para a tag <main>, que representa o conteúdo principal da página. Haverá um preenchimento interno de 20 pixels dentro do elemento <main>. */
+main {
+    padding: 20px;
+}
+/* Essa linha redefine os estilos para a tag <section>. Haverá uma margem inferior de 20 pixels e o texto será centralizado horizontalmente. */ 
+section {
+    margin-bottom: 20px;
+    text-align:center;
+}
+/* Essa linha define um estilo para as tags <img>, que são as imagens na página. As imagens terão um formato de borda arredondada com um raio de 50%. */
+img {
+    border-radius: 50%;
+}
+/* Essas linhas definem os estilos para o rodapé da página. O rodapé terá uma cor de fundo "#f2f2f2" (um tom claro de cinza). 
+Haverá um preenchimento interno de 20 pixels dentro do rodapé e o texto será centralizado horizontalmente. */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
