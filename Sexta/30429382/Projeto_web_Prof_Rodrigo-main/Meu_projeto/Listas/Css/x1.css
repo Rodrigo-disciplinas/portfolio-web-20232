@@ -1,0 +1,47 @@
+body {
+    background-image: url(../imagens/imgX1/ceu.jpeg); /* Define a imagem de fundo do body */
+    color: white; /* Define a cor do texto dentro do body como branco */
+}
+
+div {
+    background-image: url(../imagens/imgX1/back.jpg); /* Define a imagem de fundo do div */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-attachment: fixed; /* Fixa a imagem de fundo em relação à janela de visualização */
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir todo o div */
+    border: 2px solid; /* Define uma borda */
+    display: flex; /* Define o display do div como flexível */
+    justify-content: space-between; /* Distribui o espaço  entre os  filhos */
+    flex-wrap: wrap; /* Permite que os elementos filhos sejam organizados em várias linhas */
+    margin: 10px; /* Adiciona uma margem externa */
+    padding: 25px; /* Adiciona um espaçamento interno */
+    text-decoration: underline; /* Adiciona um sublinhado*/
+}
+div > div:nth-child(1) {
+    border: yellow 2px solid; /* Define uma borda com  cor para o primeiro filho do div */
+}
+
+div > div:nth-child(2) {
+    border: rosybrown 2px solid; /* Define uma borda com  cor para o segundo filho do div */
+}
+
+div > div:nth-child(3) {
+    border: orange 2px solid; /* Define uma borda com cor para o terceiro filho do div */
+}
+
+div > div:nth-child(4) {
+    border: pink solid 2px; /* Define uma borda com cor para o quarto filho do div */
+}
+
+h1 {
+    color: aqua; /* Define a cor do título h1 */
+    border: solid 2px gray; /* Define uma borda com  cor  para o título h1 */
+    padding: 5px; /* Adiciona um espaçamento interno  em todos os lados do título h1 */
+    background-color: rgba(99, 28, 158, 0.175); /* Define a cor de fundo do título h1  */
+    max-width: max-content; /* Define a largura máxima do título h1 como o conteúdo máximo */
+    text-decoration: underline red; /* Adiciona um sublinhado  no título h1 */
+}
+
+nav{
+text-align: center;
+
+}

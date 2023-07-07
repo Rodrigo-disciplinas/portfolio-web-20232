@@ -1,0 +1,30 @@
+td{
+    font-weight: bold;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 320px;
+}
+
+/* Animacao do background */
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+ body {
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../media/images/backgrounds/back3.jpg");
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 10s linear infinite alternate;
+  }

@@ -1,0 +1,290 @@
+body {
+  background-color: green;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+nav {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+nav>ul {
+  list-style-type: none;
+  /*deixa a lista sem marcador*/
+  overflow: auto;
+  background-color: green; /* Cor de fundo inicial */
+  transition: 1s;
+}
+
+nav>ul:hover {
+  background-color: brown; /* Cor de fundo ao passar o mouse */
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+}
+p {
+  color: white;
+}
+
+/*AREA PRA CONFIGURAR O MENU DE TROCA DE PAGINAS*/
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* esse "a" é para estilizar os botoes de direcionamento*/
+a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  /*deixa a lista sem marcador*/
+  overflow: auto;
+  background-color: green; /* Cor de fundo inicial */
+  transition: 1s;
+}
+
+ul:hover {
+  background-color: red; /* Cor de fundo ao passar o mouse */
+}
+
+/*CONFIGURAÇÃO DA PAGINA ELENCO.HTML
+
+.container>div configura o tamanho da caixa aonde a div está dentro*/
+.containerE {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /*grid-template-columns define as colunas do grid. repeat(auto-fit, minmax(250px, 1fr)) 
+  cria colunas automáticas com uma largura mínima de 250px e um tamanho máximo de 1fr */
+  grid-gap: 10px; /*adiciona um espaçamento entre as células do grid.*/
+  justify-content: center;
+  overflow: auto;
+}
+
+.containerE>div {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+/*esta div>img define o tamanho da imagem dentro da div*/
+div>img {
+  max-width: 100%; /*Redimensiona as imagens responsivamente  */
+  height: auto; /* Mantém a proporção da imagem ao diminuir a tela*/
+}
+
+/*esta div>p define o texto que está escrito dentro da div*/
+div>p {
+  text-align: center;
+  position: relative;
+  margin-left: 18px;
+  color: black;
+}
+
+/*CONFIGURAÇÃO DA TABELA DO TABELA_JOGOS.HTML*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  align-content: center;
+  align-items: center;
+}
+
+th,td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/*CONFIGURAÇÃO DA PAGINA TITULOS.HTML
+
+.container>div configura o tamanho da caixa aonde a div está dentro*/
+.containerT {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  overflow: auto;
+  position: relative;
+}
+
+.containerT>div {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+div>img {
+  max-width: 100%;
+  height: auto;
+  height: 400px;
+}
+
+/*CONFIGURAÇÃO DO CONTATO.HTML*/
+
+.containerC {
+  display: flex;
+  align-items: center;
+  /* alinha os textos ao lado da caixa*/
+  margin-top: 20px;
+}
+
+.containerC label {
+  width: 475px;
+  text-align: right;
+  /* Alinhamento a esquerda dos textos ao lado das caixas*/
+  padding-right: 10px;
+  /*Distancia entre a mesangem e a caixa para preencher*/
+  color: white;
+}
+
+.containerC input[type="text"],
+.containerC textarea {
+  width: 300px;
+  /* aumenta a largura da caixa de texto de mensagem*/
+}
+
+.containerC textarea {
+  height: 200px;
+  /* aumenta a altura da caixa de texto de mensagem*/
+}
+
+.submit-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.containerF {
+  text-align: center;
+}
+
+.containerF > p {
+  color: white;
+}
+
+/* MODO ESCURO */
+
+body.modo_escuro {
+  background-color: Black;
+  color: white;
+}
+
+.modo_escuro header {
+  background-color: Black;
+}
+
+.modo_escuro footer {
+  background-color: Black;
+}
+
+.modo_escuro a {
+  color: white;
+}
+.modo_escuro ul {
+  background-color: black;
+  color: white;
+}
+
+#escuro {
+  float: right;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+
+.modo_escuro table {
+  color: black;
+}
+
+.modo_escuro nav {
+  background-color: black;
+}
+
+/*AJUSTE DA PAGINA HISTÓRIA*/
+
+.s1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s1 img {
+  max-width: 50%;
+  height: auto;
+}
+
+.s2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s2 img {
+  max-width: 50%;
+  height: auto;
+}
+
+.s3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s3 img {
+  max-width: 50%;
+  height: auto;
+}
+
+.s4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s4 img {
+  max-width: 50%;
+  height: auto;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-image: url("../imagens/bola.gif");
+  background-size: cover;
+  position: absolute;
+  animation: roll 5s cubic-bezier(0, 1.26, 1, -0.18) infinite;
+  border-radius: 500px;
+}
+
+@keyframes roll {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 50px);
+  }
+}

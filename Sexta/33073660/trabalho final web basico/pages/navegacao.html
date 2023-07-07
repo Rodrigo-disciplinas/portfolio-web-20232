@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/content.css"> 
+    <link rel="stylesheet" href="../css/tab.css"> 
+    <link rel="stylesheet" href="../css/page.css"> 
+    <link rel="stylesheet" href="../css/navegacao.css"> 
+    <script type="module" src="../javascript/navigation.js" defer></script>
+    <style>
+        #myFrame {
+          width: 100%;
+          height: 100vh;
+          border: none;
+        }
+      </style>
+</head>
+<body>
+    
+    <!-- Aqui temos o nosso menu de tela, nele fazemos a troca de frames de acordo com interação com os botoes-->.
+                             
+    <div class="page">
+
+        <div class="navigation ">
+
+                <button id="home" class="tablinks" >Home</button>
+                <button id="historia" class="tablinks">Historia</button>
+                <button id="jogabilidade" class="tablinks">Jogabilidade</button>
+                <button id="personagens" class="tablinks">Personagens</button>
+                <button id="criadores" class="tablinks">Criadores</button>
+                <button id="contato" class="tablinks">Sobre</button>
+
+
+            <div class="endtab"></div>
+        </div>
+
+        <iframe id="myFrame" name="myFrame" src="../pages/home.html"></iframe>
+       
+    </div>
+
+
+    
+</body>
+</html>

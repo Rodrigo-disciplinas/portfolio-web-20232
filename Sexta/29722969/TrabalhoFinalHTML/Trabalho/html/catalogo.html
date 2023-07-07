@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="../javascript/catalogo.js"></script>
+</head>
+<body>
+  <!--Links-->
+  <header>
+    <h1>Catálogo das recomendações</h1>
+        <nav>
+            <ul class="menu">
+              <li id="menu-item1"><a href="../html/menu.html">Menu</a></li>
+              <li id="menu-item2"><a href="../html/contato.html">Contato</a></li>
+              <li id="menu-item3"><a href="../html/detalhes.html">Detalhes dos filmes</a></li>
+              <li id="menu-item4"><a href="../html/ranking.html">Ranking</a></li>
+              <button onclick="toggleColorsAndImage()">Alterar cores</button>
+            </ul>
+        </nav>
+  </header>
+
+  <div class="separador"></div>
+
+<!-- tem que clicar com o botão direito no vídeo para ele ser reproduzido-->
+<!-- carrossel dos filmes -->
+  <main>
+    <section>
+      <div class="carrossel">
+        <div class="filme">
+          <img src="../imgs/DrivePoster.jpg" alt="Filme 1">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-Drive - Movie Trailer (2011) HD-(1080p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/InterstellarPoster.jpg" alt="Filme 2">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-Interestelar - Trailer Oficial 1 (leg) [HD]-(1080p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/DjangoLivre.jpg" alt="Filme 3">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-Django Livre _ Trailer Legendado _ 18 de janeiro nos cinemas(720p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/NightcrawlerPoster.jpg" alt="Filme 4">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-Nightcrawler TRAILER 1 (2014) - Jake Gyllenhaal Crime Drama HD-(720p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/ClubeDaLutaPoster.jpg" alt="Filme 5">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-Clube da Luta _ 1999 _ Trailer Legendado _ Fight Club-(480p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/ScarfacePoster.jpg" alt="Filme 6">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-Scarface _ 1983 _ Trailer HD Legendado _ Scarface(720p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/BlackMirrorPoster.jpg" alt="Filme 7">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-BLACK MIRROR_ Bandersnatch Trailer (2018) Netflix(720p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/EraUmaVezEmHollywoodPoster.jpg" alt="Filme 8">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-ONCE UPON A TIME IN HOLLYWOOD - Official Trailer (HD)-(1080p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/InceptionPoster.jpg" alt="Filme 9">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-A Origem - Trailer Final (legendado) [HD](720p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="filme">
+          <img src="../imgs/BladeRunner2049Poster.jpg" alt="Filme 10">
+          <div class="overlay"></div>
+          <video class="trailer">
+            <source src="../videos/SnapSave.io-BLADE RUNNER 2049 - Official Trailer-(1080p).mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!--rodapé-->
+  <footer>
+    <p>&copy; Catálogo de Filmes</p>
+    <a href="https://www.instagram.com/morkgud_/" target="_blank">
+      <i class="fab fa-instagram"></i>
+  </footer>
+
+  <!--Script para mudar as cores e o fundo-->
+  <script>
+    var isAltered = false; // Variável de controle para rastrear o estado atual
+
+    function toggleColorsAndImage() {
+      var body = document.body;
+      var header = document.querySelector('header');
+      var footer = document.querySelector('footer');
+      var menuItems = document.querySelectorAll('.menu li a');
+
+      if (isAltered) {
+        // Restaurar cores e imagens originais
+        body.style.backgroundColor = '#221a3f';
+        body.style.color = '#fff';
+        header.style.backgroundColor = '#221a3f';
+        header.style.borderBottomColor = '#c31dd2';
+        footer.style.backgroundColor = '#221a3f';
+        footer.style.borderTopColor = '#c31dd2';
+        body.style.backgroundImage = 'url(https://images5.alphacoders.com/100/1001614.jpg)';
+
+        // Restaurar cores do menu
+        for (var i = 0; i < menuItems.length; i++) {
+          menuItems[i].style.color = '#fff';
+        }
+        // Alterar as cores
+        } else {
+        
+        body.style.backgroundColor = '#f1f1f1';
+        body.style.color = '#000';
+        header.style.backgroundColor = '#FF6C11';
+        header.style.borderBottomColor = '#000000';
+        footer.style.backgroundColor = '#FF6C11';
+        footer.style.borderTopColor = '#000000';
+        footer.style.color = '#fff';
+        body.style.backgroundImage = 'url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU6B8gq7_LO1Vlvvv1jIjpWtR1Z0fHif91oWGr9H-SQfAf-1ogM2QTsC93v4jPeFOwbADNZrJHXWZGL7zLAxLo5hXhYkc32R4CuTkZYw72ldm9nMtImjh8BE_C2pI8YnF-rg38Kg7nr-27XVK2LNEMmiLHl5nacXoP1w1qHxppAPuIGCVW7SmGaiHUbQ/s0/synth-sunset-lake-162023.png)';
+      }
+
+      isAltered = !isAltered; // Alternar o estado da variável de controle
+    }
+</script>
+
+</body>
+</html>

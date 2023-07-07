@@ -1,0 +1,207 @@
+body{
+    background-color: burlywood;
+    text-align: center;
+    text-decoration: underline blue;
+}
+.div_toda{
+    display: grid;
+    grid-template-columns: repeat(10, 20%) ;
+    grid-template-rows: repeat(10, 10%);
+
+}
+h1{
+    color: aquamarine;
+}
+h2{
+    border: solid green 2px;
+    max-width: max-content;
+    background-color:slategrey;
+    justify-items: center;
+    
+}
+.img_1{
+    display: grid;
+    grid-template-columns: repeat(10, 29%) ;
+    grid-template-rows: repeat(10, 200%);
+    grid-area: 1/1;
+}
+.img_1>p{
+    color: palevioletred;
+    grid-area: 1/6 ;
+}
+.sakura{
+    grid-area: 2/6;
+}
+
+.img_2{
+    grid-area: 1/3;
+}
+.img_2>p{
+    color: orange;
+    
+}
+
+    
+.img_3{
+    grid-area: 1/4;
+    
+    
+}
+.img_3>p{
+    color: blue;
+}
+.div_questionario{
+    display: grid;
+    grid-template-columns: repeat(10, 17%) ;
+    grid-template-rows: repeat(10, 50%);
+}
+div>p{
+    grid-area: 1/2/5/8;
+}
+.div_botao{
+display: grid;
+grid-template-columns: repeat(10, 31%);
+grid-template-rows: repeat(10, 40%);
+
+}
+div>button{
+    width: max-content;
+    grid-area: 7/10/10/10;
+}
+.meu_formulario{
+display: grid;
+grid-template-columns: repeat(5, 35%);
+grid-template-rows: repeat(5, 50%);
+
+}
+
+.questao{
+    border: solid 2px gray;
+    border-radius: 5px;
+    height: max-content;
+    max-width: max-content;
+    background-color: black;
+    color: green;
+    grid-area: 1/3/2/7;
+}
+.meu_form{
+    width: 30vw;
+    grid-area: 1/2/3/5;
+}
+fieldset{
+    background-color: black;
+    color: blueviolet;
+}
+.fieldset_1{
+    display: none;
+}
+.fieldset_2{
+    display: none;
+}
+.fieldset_3{
+    display: none;
+}
+.fieldset_4{
+    display: none;
+}
+.fieldset_5{
+    display: none;
+}
+.fieldset_6{
+    display: none;
+}
+input{
+    cursor: pointer;
+
+}
+@media screen and (max-width: 420px) {
+    body{
+        background-size: 100vw 100vh;
+    }
+.div_toda{
+    display: grid;
+    grid-template-columns: repeat(10, 20%) ;
+    grid-template-rows: repeat(10, 1%);
+
+}
+ 
+    .img_1{
+        grid-template-columns: repeat(10, 31px);
+        grid-template-rows: repeat(10, 35px);
+     
+    }
+    .sakura{
+    width: 60px;
+    height: 80px;
+    grid-area: 3/2;
+ } 
+ .img_1>p{
+    
+    grid-area: 1/2 ;
+}
+
+ .naruto{
+    width: 100px;
+    height: 100px;
+ }
+ 
+ .img_2{
+    grid-area: 1/3 ;
+ }
+ .sasuke{
+  width: 65px;
+  height: 100px;
+  
+ }
+ .img_3{
+    grid-area: 1/5 ;
+ }
+ .div_form{
+    position: relative;
+    bottom: 200px;
+    right: 30px;
+    font-size: 10px;
+ }
+ .fieldset_1{
+    
+    position: relative;
+    right: 50px;
+    width: max-content;
+    font-size: 15px;
+ }
+ .fieldset_2{
+    position: relative;
+    right: 70px;
+    width: max-content;
+    font-size: 15px;
+ }
+ .fieldset_3{
+    position: relative;
+    right: 90px;
+    width: max-content;
+    font-size: 15px;
+ }
+ .fieldset_4{
+
+    position: relative;
+    right: 60px;
+    width: max-content;
+    font-size: 15px;
+ }
+ .fieldset_5{
+    position: relative;
+    right: 50px;
+    width: max-content;
+    font-size: 15px;
+ }
+ .fieldset_6{
+    position: relative;
+    right: 50px;
+    width: max-content;
+    font-size: 15px;
+ }
+ h1{
+    font-size: 10px;
+ }
+
+}

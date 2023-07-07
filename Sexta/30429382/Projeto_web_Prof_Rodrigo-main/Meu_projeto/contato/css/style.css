@@ -1,0 +1,48 @@
+body{
+background-color: indigo;
+text-align: center;
+color: darkgoldenrod;
+/*Aqui eu seleciono a body do meu html para definir o background, cor do texto dentro desse background e o posicionamento do texto tbm*/
+}
+
+div{
+display: flex;
+/*Aqui definimos o tipo de display que a div da pagina tera  ! */
+}
+
+div:nth-child(1){
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px
+/*Aqui selecionamos a div filha para fazermos atribuiçoes de direcionamentos e posicionamentos dentro da pagina*/
+}
+
+img{
+    padding: 20px;/*usado para dar espaçamento dos demais elementos da pagina*/
+    border-radius: 200px;/*faz com que a borda fique arredondada*/
+    transition: 0.3s ease;/*atribui um tempo de execução da transição suave */
+/* Aqui é selecionado o elemento img nativo da página HTML para aplicarmos transições à imagem */
+}
+img:hover{
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+/*Aqui nos definimos oque vai ocorrer durante a transição!*/
+}
+h4{
+    text-decoration: underline black;/*esta linha adiciona o underline no textos que estão dentro do h4 e adiciona cor a essa underline*/
+    color: aquamarine;/*colore o texto especificamente*/
+    /*Aqui pegamos o h4 para determinar algumas personalizações nos textos!*/
+}
+fieldset {
+    transition: 0.5s ease; /* Define uma transição suave com uma duração de 0,5 segundos */
+    background-color: blue; /* Define a cor de fundo do fieldset como azul */
+    /* Aqui estamos estilizando o elemento fieldset */
+}
+
+fieldset:hover {
+    background-color: transparent; /* Define a cor de fundo do fieldset como transparente durante o hover */
+    /* Aqui estamos aplicando estilos quando o cursor do mouse está em cima do fieldset */
+}

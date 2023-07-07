@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/animacoes.js" defer></script>
+    <link rel="stylesheet" href="../css/animacoes.css" />
+    <title>Animações em CSS</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Animações em CSS</h1>
+      </header>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#config">Configurando Animações</a></li>
+          <li><a href="#key">Keyframes</a></li>
+          <li><a href="../../home/html/index.html">Voltar</a></li>
+        </ul>
+      </nav>
+      <span id="botao"><button id="modos">Modo Escuro</button></span>
+      <section>
+        <h2 id="introducao">Introdução</h2>
+        <p>
+          Animações CSS tornam possível animar transições de um estilo CSS para
+          outro. Animações se consistem de dois componentes: um estilo
+          descrevendo a animação e um set de keyframes que indicam o estado
+          final e inicial do estilo CSS da animação, bem como possíveis
+          waypoints intermediários ao longo do caminho. Existem três vantagens
+          chave para animações CSS além das técnicas tradicionais de animação
+          dirigidas por script:
+        </p>
+        <ol>
+          <li>
+            São de fácil utilização para animações simples; você pode criá-las
+            sem mesmo ter que conhecer JavaScript.
+          </li>
+          <li>
+            As animações executam bem, mesmo sobre moderada carga do sistema.
+            Animações simples podem normalmente ser executadas precariamente em
+            JavaScript (a não ser que sejam bem feitas). A ferramenta de
+            renderização pode usar frame-skipping e outras técnicas para manter
+            a performance o mais estável possível.
+          </li>
+          <li>
+            Deixando o navegador controlar a sequência de animação permite ao
+            navegador otimizar a performance e eficiência em, por exemplo,
+            reduzir a frequência de update de animações correndo em abas que não
+            estão visíveis no momento.
+          </li>
+        </ol>
+        <h2 id="config">Configurando Animações</h2>
+        <p>
+          Para criar uma sequência de animação CSS, você estiliza o elemento que
+          deseja animar com a propriedade animation ou suas sub-propriedades.
+          Isso permite que você configure a sincronização da animação, bem como
+          outros detalhes de como a de como a sequência de animação deveria
+          progredir. Isso não configura a aparência atual da animação, que é
+          feita usando a regra com parênteses (at-rule) @keyframes como descrito
+          em Defining the animation sequence using keyframes abaixo.
+        </p>
+        <p>As sub-propriedades da propriedade animation são:</p>
+        <h3>animation-delay</h3>
+        <p>
+          Configura o delay entre o tempo em que o elemento é carregado e o
+          inicio da sequência de animação.
+        </p>
+
+        <h3>animation-direction (en-US)</h3>
+        <p>
+          Configura se a animação deve ou nao alternar a direção em cada
+          execução durante a sequência ou voltar ao ponto inicial e se repetir.
+        </p>
+
+        <h3>animation-duration (en-US)</h3>
+        <p>
+          Configura o tempo que uma animação deveria levar para completar um
+          ciclo.
+        </p>
+
+        <h3>animation-iteration-count (en-US)</h3>
+        <p>
+          Configura o numero de vezes que uma animação deveria se repetir; você
+          pode especificar infinito para repetir a animação indefinidamente.
+        </p>
+
+        <h3>animation-name (en-US)</h3>
+        <p>
+          Especifica o nome da regra com parênteses (at-rule) @keyframes at-rule
+          descrevendo os keyframes da animação.
+        </p>
+
+        <h3>animation-play-state (en-US)</h3>
+        <p>Permite voce pausar e resumir a sequência da animação.</p>
+
+        <h3>animation-timing-function (en-US)</h3>
+        <p>
+          Configura a sincronização da animação; que é, como a animação transita
+          por keyframes, por estabilizar curvas de aceleração.
+        </p>
+
+        <h3>animation-fill-mode</h3>
+        <p>
+          Configura que valores são aplicados pela animação antes e depois de se
+          executar.
+        </p>
+
+        <h2 id="key">Definindo a sequência de animação usando keyframes</h2>
+        <p>
+          Uma vez que você configurou a sincronização da animação, você precisa
+          definir a aparência da animação. Isso é feito por estabelecer duas ou
+          mais keyframes usando a regra com parênteses (at-rule) @keyframes.
+          Cada keyframe descreve como o elemento animado deveria se renderizar a
+          um tempo dado durante a sequência de animação. Como a sincronização da
+          animação é definida por um estilo CSS que configura a animação,
+          keyframes usam uma percentage (en-US) para indicar o tempo durante a
+          sequência de animação que eles fazem parte. 0% indica o primeiro
+          momento da sequência de animação, enquanto 100% indica o estado final
+          da animação. Esses dois tempos devem ser especificados para que o
+          navegador então saiba onde a animação deve começar e parar; por serem
+          tão importantes, esses dois tempos tem expressões equivalentes
+          especiais: from e to. Você pode opcionalmente incluir keyframes
+          adicionais que descrevem passos intermediários ao longo do caminho do
+          ponto inicial ao ponto final da animação.
+        </p>
+      </section>
+      <aside>
+        <p>
+          Veja mais sobre animações no site oficial do <em>Mozilla</em> clicando
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_animations/Using_CSS_animations"
+            target="_blank"
+            >aqui</a
+          >
+        </p>
+        <p>
+          O canal do YouTube do curso-em-video tem muitas informações sobre
+          estilizações e animações em CSS.
+          <a
+            href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s"
+            target="_blank"
+            >Confira!</a
+          >
+        </p>
+      </aside>
+      <footer>
+        <p>
+          Todos os direitos reservados &copy;
+          <em>2023 Lucas Cardoso de Carvalho</em>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

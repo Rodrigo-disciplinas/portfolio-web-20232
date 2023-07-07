@@ -1,0 +1,659 @@
+body {
+    background-image: url("../imagens/kakaroto.jpg");
+    background-color: yellow;
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-size: cover; /* Redimensiona a imagem de fundo em toda a pagina */
+    text-align: center; /* Centraliza o conteúdo */
+    overflow: hidden;
+}
+div {
+    display: flex; /* Define o elemento div como flex  */
+    flex-direction: column; /* Define a direção como coluna */
+}
+.input{
+  display: flex;
+  align-items: center;
+  }
+div > nav {
+    position: absolute; /* Define a posição como absoluta */
+    top: 0; /* Alinha o elemento no topo */
+    left: 0; /* Alinha o elemento à esquerda */
+    margin: 10px; /* Adiciona margem */
+}
+
+div > nav > a {
+    padding: 5px; /* Adiciona preenchimto */
+    transition: 0.3s ease; /* Adiciona uma transição*/
+}
+
+div > nav > a:hover {
+    -webkit-text-stroke: 1px blue; /* Adiciona um contorno ao texto */
+     /* Aumenta o tamanho da fonte ao passar o mouse */
+}
+
+div:nth-child(1) {
+    padding-bottom: 20px; /* Adiciona um preenchimento */
+}
+
+.div_imagens {
+    justify-content: space-around; /* Distribui o espaço igualmente */
+    flex-direction: row; /* Define a direção como linha */
+}
+
+.div_imagens > div:nth-child(1) {
+    padding: 10px; /* Adiciona preenchimento */
+    align-items: center; /* Centraliza  os itens */
+}
+
+.div_imagens > div:nth-child(2) {
+    text-align: center; /* Centraliza o texto */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 10px; /* Adiciona preenchimento */
+}
+
+.div_imagens > div:nth-child(3) {
+    align-items: center; /* Centraliza os itens */
+    padding: 10px; /* Adiciona preenchimento */
+}
+.kakaroto>img{
+  
+  transition: 0.5s ease;
+}
+
+#minha_tabela {
+    background-color: rgba(255, 255, 0, 0.495);
+    color: orangered;
+    display: none; /* Esconde o elemento */
+    border: 2px solid orange; /* Define uma borda*/
+    position: relative; /* Define a posição como relativa */
+
+}
+
+.minha_tabela {
+    color: blue;
+    border: 2px solid orangered; /* Define uma borda */
+}
+
+#minha_Naruto {
+    border: 2px solid orangered; /* Define uma borda*/
+    background-color: rgba(255, 166, 0, 0.495);
+    position: relative; /* Define a posição como relativa */
+    top: 3px; /* Desloca o elemento para cima*/
+    display: none; /* Esconde o elemento */
+}
+
+.minha_tabN {
+
+    border: 2px solid blue; /* Define uma borda */
+    color: aqua; /* Define a cor do texto */
+}
+
+#minha_Luffy {
+    border: solid 2px palevioletred; /* Define uma borda */
+    background-color: rgba(240, 248, 255, 0.532);
+    position: relative; /* Define a posição como relativa */
+    top: 28px; /* Desloca o elemento para baixo*/
+    padding: 2px; /* Adiciona um preenchimento*/
+    display: none; /* Esconde o elemento */
+}
+
+.minha_tabL {
+    border: 2px solid pink; /* Define uma borda */
+    color: darkmagenta;
+}
+
+img {
+    transition: 0.2s ease; /* Adiciona uma transição suave */
+}
+
+imgL:hover {
+    width: 80px; /* Define a larguraao passar o mouse */
+}
+
+.pag {
+    border: 2px blue solid; /* Define uma borda  */
+    background-color: black; /* Define a cor de fundo*/
+    color: aqua; /* Define a cor do texto */
+}
+
+/*===========transição das imagens das  tabelas !=================*/
+.img{
+transition: 0.4s ease;
+
+}
+.img:hover{
+
+transform: scale(1.5);
+
+}
+
+.imgN{
+
+  transition: 0.4s ease;
+  
+}
+.imgN:hover{
+
+  transform: scale(1.5);
+}
+.imgL{
+  transition: 0.4s ease;
+}
+.imgL:hover{
+
+  transform: scale(1.5);
+
+}
+/*==============Fim================*/
+
+
+  /* Classe .load */
+.load {
+    display: none; /* Oculta o elemento inicialmente */
+    width: 100px;
+    border: 2px solid blue;
+    background-color: blanchedalmond;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    
+    
+  }
+  
+  /* Classe .load_green */
+  .load_green {
+    background-color: greenyellow;
+    width: 60px; /* Define a largura inicial do elemento */
+    display: none; /* Oculta o elemento inicialmente */
+    position: absolute;
+    animation: progress 1s alternate-reverse infinite; /* Aplica a animação progress ida e volta*/
+  }
+  
+  
+  /* Classe .loadN */
+  .loadN {
+    display: none; /* Oculta o elemento inicialmente */
+    width: 100px;
+    border: 2px solid blue;
+    background-color: blanchedalmond;
+    position: relative;
+    top: 34px;
+    overflow: hidden;
+  }
+  
+  /* Classe .load_greenN */
+  .load_greenN {
+    background-color: greenyellow;
+    width: max-content; /* Define a largura inicial do elemento */
+    display: none; /* Oculta o elemento inicialmente */
+    position: absolute;
+    animation: progress 1s alternate-reverse infinite; /* Aplica a animação progress */
+  }
+  
+  /* Classe .loadL */
+  .loadL {
+    display: none; /* Oculta o elemento inicialmente */
+    width: 100px;
+    border: 2px solid blue;
+    background-color: blanchedalmond;
+    position: relative;
+    top: 27px;
+    overflow: hidden;
+  }
+  
+  /* Classe .load_greenL */
+  .load_greenL {
+    background-color: greenyellow ;
+    width: 60px; /* Define a largura inicial do elemento */
+    display: none; /* Oculta o elemento inicialmente */
+    position: absolute;
+    animation: progress 1s alternate-reverse infinite; /* Aplica a animação progress */
+  }
+  
+  @keyframes progress {
+    0% { left: -80%; } /* Define a posição inicial  */
+    100% { left: 100%; } /* Define a posição final  */
+  }
+  /*Praticamente sobre a animação eu defini uma div dentro de outra div e então a classe .load_green representa a caixa da animação de progresso dentro da classe .load /
+e a div com a classe .load contém a div .load_green que realiza o percurso da animação em si */
+
+.botao>div:nth-child(1){
+  
+  flex-direction: row;
+
+}/*aqui é definido a div filha como linha para fins esteticos da pagina*/
+
+.fuck{
+  display: none ;
+}
+
+.fuck2{
+
+  display: none;
+
+}/*fuck 1 e 2 se refere as divs que sao definidas como invisiveis para que seja utilizado um meio pelo javascript para que elas voltem a serem visiveis */
+.fuck3{
+
+  display: none;
+
+}/*fuck 3 se refere a div que temos o personagem luffy !*/
+
+.animação{
+  display: grid;
+  grid-template-columns: repeat(5, 2%);
+  grid-template-rows: repeat(5, 4%);
+/*aqui nos mechemos com as animações da pagina que no caso são posicionadas utilizando grid ! */  
+}
+
+.goku {
+  grid-area: 5 /1 ;
+/*posicionando com o grid */
+}
+.goku > img {
+  transition: 1s ease;
+}/*usando essa transição  na imagem*/
+
+.goku > img.new-image {
+  content: url('../imagens/goo.png'); /* Nova imagem */
+}
+
+.animaçãoN{
+display: grid;
+grid-template-columns: repeat(5, 1%);
+grid-template-rows: repeat(5, 32%);
+
+
+
+}
+
+.naruto{
+grid-area: 2/1;
+z-index: 1;
+
+}
+.rasen{
+
+  grid-area: 1/2/1/2;
+  z-index: 0;
+
+}
+.rasen>img{
+  
+  animation: spin 1ms linear infinite, opa 2s linear forwards,scale 2s linear forwards ;
+  transition: 2s ease;
+  transform-origin: center;
+
+    
+}
+@keyframes spin {
+0%{
+    
+    transform: rotate(0deg);
+
+}
+100%{
+    
+    transform: rotate(360deg);
+} 
+}
+@keyframes opa {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0%{
+   width: 100px; 
+   
+
+  }
+  100%{
+   width: 500px;
+  }
+}
+.poder {
+  grid-area: 1 / 3;
+  position: static;
+  animation: poder 8s linear forwards;
+  transform-origin:left ;
+
+}
+
+@keyframes poder {
+  0% {
+    transform: scaleX(0);
+    
+  }
+  100% {
+    transform: scaleX(5);
+    
+  }
+}
+.animaçãoL{
+  display: grid;
+  grid-template-columns: repeat(2, 0%) ;
+  grid-template-rows: repeat(3, 12%);
+
+}
+
+.m_luffy{
+  
+grid-area: 2/1;
+z-index: 1;
+}
+.m_luffy>img{
+  
+  animation: luffy 1s alternate forwards ;
+}
+@keyframes luffy {
+  0%{
+
+    width: 320px ;
+
+  }
+  100%{
+
+    width: 240px;
+
+  }
+  
+}
+.gear>img{
+  display: none;
+
+}
+
+.gear{
+  width: 0px;
+  grid-area: 1/2;
+  transition: 10s ease;
+  animation: gear 6s linear infinite, tamanho 6s linear infinite;
+}
+@keyframes gear {
+  0%{
+    
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;  
+      
+    }
+
+}     
+@keyframes tamanho {
+  0%{
+
+    transform: scaleX(1);
+    
+  }
+  50%{
+    opacity: 1;
+  }
+100%{
+
+  transform: scaleX(2);
+   opacity: 0;
+
+}
+
+} 
+
+.escondido{
+  display: none;
+  padding: 320px;
+}
+.escondidoT{
+  display: none;
+  padding: 30px;
+}
+/*Responsividade para telas maiores*/
+  @media screen and ( min-width: 2000px ) {
+    body{
+      overflow: auto;
+    }
+    img{
+    position: relative;
+    top:300px;
+   
+    
+  }
+  .img{
+    transition:  0.3s ease;
+    transform: scale(6);
+  }
+  .img:hover{
+    transform: scale(6.5);
+  }
+  .imgN{
+    transition:  0.3s ease;
+    transform: scale(6);
+  }
+  .imgN:hover{
+    transform: scale(6.5);
+  }
+  .imgL{
+    transition:  0.3s ease;
+    transform: scale(6);
+  }
+  .imgL:hover{
+    transform: scale(6.5);
+  }
+  h1{
+
+  font-size: 150px;
+  }
+  h2{
+    font-size: 100px;
+  }
+  table{
+    transform: scale(1.75);
+  }
+  .load{
+    transform: scale(2);
+  }
+  .loadN{
+    transform: scale(2);
+  }
+  .loadL{
+    transform: scale(2);
+  }
+  .escondido{
+    display: block;
+  }
+  .escondidoT{
+    display: block;
+  }
+  .nav{
+    
+    font-size: 65px;
+    transition: 1s ease;
+
+  }
+  input{
+    position: absolute;
+    transform: scale(2.3);
+  }
+
+}
+/*Responsividade*/
+@media screen and (max-width: 420px) {
+  body{
+    overflow: scroll;
+  }
+
+.img{
+  margin-left: 70px;
+  transition:  0.3s ease;
+  transform: scale(0.8);
+}
+.img:hover{
+  transform: scale(0.6);
+}
+.imgN{
+  transition:  0.3s ease;
+  transform: scale(0.8);
+}
+.imgN:hover{
+  transform: scale(0.6);
+}
+.imgL{
+  
+  transition:  0.3s ease;
+  transform: scale(0.8);
+}
+.imgL:hover{
+  transform: scale(0.6);
+}
+h1{
+
+font-size: 20px;
+position: relative;
+left: 40px;
+}
+h2{
+
+  font-size: 5px;
+}
+.load{
+  margin-left: 70px;
+  scale: 0.3;
+}
+.nome_s{
+margin-left:  70px; ;
+}
+.load_green{
+  
+  
+  }
+.loadN{
+  scale: 0.3;
+}
+.loadL{
+scale: 0.3;
+}
+.nav{
+  position: relative;
+  left: 90px;
+  font-size: 10px;
+  transition: 1s ease;
+
+}
+table{
+ font-size:2px ;
+}
+input{
+  scale: 0.4;
+  position: relative;
+  left: 50px;
+}
+.table{
+  margin-left: 75px ;
+}
+
+.div_imagens > div:nth-child(1) {
+  padding-left: 10px; /* Adiciona preenchimento */
+  align-items: center; /* Centraliza  os itens */
+}
+#goku-image{
+  width: 20px;
+}
+#goku-kame{
+  width: 110px;
+}
+#naruto-image{
+  width: 20px;
+}
+#naruto-kame{
+  width: 10px;
+}
+
+.rasen>img{
+  
+  animation: spin 1ms linear infinite, opa 2s linear forwards,scale 2s linear forwards ;
+  transition: 2s ease;
+  transform-origin: center;
+
+    
+}
+@keyframes spin {
+0%{
+    
+    transform: rotate(0deg);
+
+}
+100%{
+    
+    transform: rotate(360deg);
+} 
+}
+@keyframes opa {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0%{
+   width: 5px; 
+   
+
+  }
+  100%{
+   width: 80px;
+  }
+}
+.m_luffy>img{
+  scale: 0.2;
+  position: relative;
+  bottom: 50px;
+  right: 100px;
+}
+
+
+.gear{
+  position: relative;
+  bottom: 50px;
+  scale: 0.65;
+  grid-area: 1/2;
+  transition: 10s ease;
+  animation: gear 6s linear infinite, tamanho 6s linear infinite;
+}
+@keyframes gear {
+  0%{
+    
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;  
+      
+    }
+
+}     
+@keyframes tamanho {
+  0%{
+
+    transform: scaleX(2);
+    
+  }
+  50%{
+    opacity: 1;
+  }
+100%{
+
+  transform: scaleX(3);
+   opacity: 0;
+
+}
+
+}
+}

@@ -1,0 +1,48 @@
+body {
+    background-image: url(../imagens/imgTime/wall.jpg); /* Define a imagem de fundo do body */
+    color: white; /* Define a cor do texto */
+    
+}
+
+div {
+    background-image: url(../imagens/imgTime/wall.jpg); /* Define a imagem de fundo do div */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-attachment: fixed; /* Fixa a imagem de fundo em relação à janela */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo a div */
+    border: 2px solid; /* Define uma borda */
+    border-radius: 20px; /* Faz a borda ficar com cantos arredondados */
+    display: flex; /* Define o display do div como flex*/
+    justify-content: space-between; /* Abre o espaço entre os elementos filhos */
+    flex-wrap: wrap; /* Permite que os  filhos sejam organizados em várias linhas */
+    margin: 10px; /* Adiciona uma margem externa em todos os lados do div */
+    padding: 25px; /* Adiciona um espaçamento interno em tdos os lados do div */
+    text-decoration: underline; /* Adiciona um sublinhado nos textos */
+}
+
+div > div:nth-child(1) {
+    border: orange 2px solid; /* Define uma borda de com cor  primeiro filho do div */
+    border-radius: unset; /* Remove a borda arredondada */
+}
+
+div > div:nth-child(2) {
+    border: yellow 2px solid; /* Define uma borda  com  cor para o segundo  filho do div */
+    border-radius: unset; /*  Remove a borda arredondada */
+}
+
+div > div:nth-child(3) {
+    border: pink 2px solid; /* Define uma borda  com  cor para terceiro  filho do div */
+    border-radius: unset; /* Remove a borda arredondada  */
+}
+
+h1 {
+    color: aqua; /* Define a cor do título h1 */
+    border: solid 2px gray; /* Define uma borda com  cor  para o título h1 */
+    padding: 5px; /* Adiciona um espaçamento interno  em todos os lados do título h1 */
+    background-color: black; /* Define a cor de fundo do título h1  */
+    max-width: max-content; /* Define a largura máxima do título h1 como o conteúdo máximo */
+    text-decoration: underline red; /* Adiciona um sublinhado  no título h1 */
+}
+nav{
+text-align: center;
+
+}

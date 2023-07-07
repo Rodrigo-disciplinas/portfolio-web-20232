@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens Desenvolvimento Web</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="stylesheet" href="/css/modoescuro.css">
+    <link rel="stylesheet" href="/css/transicoes.css">
+    <link rel="shortcut icon" href="/favicons/devweb.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>HTML/CSS/JS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li>            
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <figure>
+                <img src="/img/devweb.png" alt="Html css javascript logo">
+            </figure>
+            <h2>HTML</h2>
+            <p>HTML (HyperText Markup Language) e CSS (Cascading Style Sheets) são duas linguagens essenciais para o desenvolvimento de páginas da web. Ambas desempenham papéis diferentes, mas complementares, na estruturação e estilização do conteúdo web.</p>
+
+            <article>
+                <h3>O que é HTML?</h3>
+                <p>HTML é a linguagem de marcação utilizada para criar a estrutura e o conteúdo de uma página web. Ele permite definir elementos como títulos, parágrafos, imagens, links, tabelas, formulários e muito mais. A estrutura do HTML é baseada em tags, que são marcadores utilizados para identificar e agrupar diferentes partes do conteúdo. As tags são compostas por elementos e atributos, que fornecem informações adicionais sobre o conteúdo e a aparência dos elementos.</p>
+                <h3>Aqui está um exemplo de tag HTML</h3>
+                <pre><code>&lt;p&gt;Isto é um parágrafo.&lt;/p&gt;</code></pre>
+                <h3>Aqui está um exemplo de tabela em HTML</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Cidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João</td>
+                            <td>25</td>
+                            <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>30</td>
+                            <td>Rio de Janeiro</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>35</td>
+                            <td>Brasília</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>CSS</h3>
+                <p>CSS, por sua vez, é uma linguagem de estilo utilizada para definir a aparência e o layout dos elementos HTML em uma página web. Com o CSS, é possível controlar aspectos como cores, fontes, tamanhos, espaçamentos, posicionamentos e muito mais. Ele separa a apresentação visual do conteúdo estrutural, permitindo um maior controle e flexibilidade sobre o design da página.</p>
+
+                <p>Para aplicar estilos a elementos HTML, é necessário associar as regras de estilo definidas no CSS aos elementos HTML correspondentes. Isso pode ser feito através de seletores CSS, que especificam quais elementos devem receber o estilo. Os seletores podem ser baseados em tags, classes, IDs, hierarquia de elementos e outros critérios.</p>
+                <h3>Aqui está um exemplo de um trecho de código CSS</h3>
+                <pre><code>
+p {
+color: blue;
+font-size: 16px;
+}
+                </code></pre>
+            </article>
+            <article>
+                <h3>JavaScript</h3>
+                <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Ela foi criada originalmente como uma linguagem de script para ser executada no navegador, mas ao longo dos anos, expandiu-se para outras áreas, como desenvolvimento de servidores, aplicativos de desktop e até mesmo desenvolvimento mobile.</p>
+
+                <p>JavaScript é uma linguagem de alto nível, interpretada e de tipagem dinâmica. Isso significa que você não precisa declarar explicitamente o tipo de uma variável, pois o próprio JavaScript determinará o tipo durante a execução do programa.</p>
+
+                <p>Uma das características mais poderosas do JavaScript é sua capacidade de interagir com o HTML e o CSS, permitindo a criação de sites interativos e dinâmicos. Com JavaScript, você pode manipular o conteúdo do documento HTML, alterar estilos, responder a eventos do usuário e criar animações.</p>
+
+                <p>Além disso, o JavaScript possui uma ampla biblioteca padrão que oferece recursos para manipulação de strings, arrays, datas, expressões regulares e muito mais. Também existem muitas bibliotecas e frameworks populares, como React, Angular e Vue.js, que ampliam as funcionalidades do JavaScript e facilitam o desenvolvimento de aplicações complexas.</p>
+
+                <p>Outro aspecto interessante do JavaScript é o suporte a programação assíncrona. Com recursos como callbacks, Promises e async/await, você pode lidar com operações demoradas, como requisições de rede, de forma eficiente, evitando bloqueios no fluxo principal do programa.</p>
+
+                <p>JavaScript é suportado por todos os principais navegadores e também pode ser executado em outros ambientes, como servidores Node.js. Com o Node.js, você pode criar aplicativos de servidor completos usando apenas JavaScript.</p>
+            </article>
+            <article>
+                <h3>Exemplo de "Hello World" em JavaScript</h3>
+                <pre><code>
+console.log("Hello, World!");
+                </code></pre>
+            </article>
+            <h2>Aqui está um vídeo de um projeto com HTML, CSS e JavaScript</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r9buAwVBDhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div> 
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Projeto final de Desenvolvimento Web Básico.</p>
+  </footer>   
+  <script src="/js/script.js"></script>
+</body>
+</html>

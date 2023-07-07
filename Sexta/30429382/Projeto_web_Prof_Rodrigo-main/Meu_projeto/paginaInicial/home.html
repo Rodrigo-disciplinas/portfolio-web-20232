@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<style>
+   body {
+    background-image: url(imagens/itachi.jpg); /* Define a imagem de fundo do body */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir todo o body */
+    background-attachment: fixed; /* Mantém a imagem fixa*/
+
+}
+
+div {
+    display: flex; /* Define o display do div como flex*/
+    justify-content: center; /* Centraliza os elementos dentro do div */
+    padding: 20px; /* Adiciona um espaçamento interno em todos os lados do div */
+}
+
+div > a {
+    font-size: 30px; /* Define o tamanho da fonte*/
+    color: aquamarine; /* Define a cor do texto que estao dentro da div*/
+    padding: 10px; /* Adiciona um espaçamento interno em todos os lados */
+    position: relative; /* Define a posição dos elementos como reltiva */
+    border: solid 2px black; /* Define uma borda com cor */
+    transition: 0.4s ease-out; /* Adiciona uma transição suave de 0.4 segundos */
+}
+
+div > a:hover {
+    background-color: blue; /* Define a cor de fundo ao passar o mouse sobre*/
+    color: yellow; /* Define a cor do texto ao passar o mouse sobre*/
+    font-size: 40px; /* Define o tamanho da fonte ao passar o mouse sobre*/
+    background-attachment: fixed; /* Fixa o fundo ao passar o mouse sobre*/
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto */
+    color: royalblue; /* Define a cor do texto */
+}
+
+h2 {
+    background-color: black; /* Define a cor de fundo*/
+    background-image: url(imagens/sharing.jpg); /* Define a imagem de fundo */
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-position-x: 270px; /* Define a posição horizontal da imagem*/
+    background-position-y: -118px; /* Define a posição vertical da imagem */
+    color: chocolate; /* Define a cor do texto como chocolate */
+    border: 2px solid red; /* Define uma borda com cor*/
+    border-radius: 20px; /* Define uma borda arredondada */
+    text-align: center; /* Centraliza o texto*/
+    padding: 5px; /* Adiciona um espaçamento interno em todos os lados */
+    margin-left: 30vw; /* Define a margem esquerda  */
+    margin-right: 30vw; /* Define a margem direita */
+    transition: 0.05s ease; /* Adiciona uma transição suave de 0.05 segundos */
+}
+
+h2:hover {
+    color: red; /* Define a cor do texto ao passar o mouse sobre*/
+    text-decoration: underline solid blue 2px; /* Adiciona um sublinhado com cor*/
+}
+
+footer {
+    border: 2px dashed greenyellow; /* Define uma borda tracejada com cor*/
+    max-width: max-content; /* Define a largura máxima como o conteúdo máximo */
+    padding: 10px; /* Adiciona um espaçamento interno em todos os lados */
+    border-radius: 20px; /* Define uma borda arredondada */
+    position: relative; /* Define a posição como relativa */
+    top: 180px; /* Define a posição na parte de baixo da pagina */
+    padding: 5px; /* Adiciona um espaçamento interno em todos os lados */
+    color: greenyellow; /* Define a cor do texto */
+    transition: 0.5s ease-out; /* Adiciona uma transição suave de 0.5 segundos */
+}
+
+footer:hover {
+    background-color: aqua; /* Define a cor de fundo ao passar o mouse */
+    color: black; /* Define a cor do texto ao passar o mouse*/
+}
+
+section{
+    text-align: center;/*centraliza o texto*/
+    position: relative;/*define como posição relativa*/
+    top: 100px;/*da espaçamento da parte de cima pra baixo*/
+}
+.animação{
+    opacity: 0;/*inicia a classe transparente*/
+    animation-name: animação; /*nomeia a animação para ser utilizada com o keyframes*/
+    animation-duration: 5s; /*duração da animação*/
+    animation-delay: 0.3s; /*tempo ate começar a animação*/
+    animation-fill-mode: forwards; /* o tipo de animação*/
+    color: red;/*cor da animação no caso texto*/
+    font-size: 20px;
+}
+@keyframes animação {
+    from{
+        opacity: 0;
+
+    }to{
+        opacity: 1;
+
+    }
+    /*Basicamente o que acontece aqui é que de 0 de opacidade  vai para 1 o que torna possivel a animação!*/
+}
+@media screen and (max-width: 420px) {
+    body{
+        background-size: 100vw 100vh;
+    }
+    h2{
+        font-size: 20px;
+    }
+    section{
+
+        top: -30px; 
+      
+    }
+    footer{
+        font-size: 10px;
+        top:-30px;
+        
+        left: 50px;
+    }
+}
+
+
+</style>
+<script src="javascript/index.js" defer></script> <!-- Inclui um arquivo JavaScript com o atributo "defer" -->
+</head>
+<body class="body">
+    <h1>Home</h1> <!-- Título principal -->
+    <h2>Site de animes totalmente interativo</h2> <!-- Subtítulo -->
+<nav>
+    <div>
+        <a href="../paginaMenu/menu.html">Menu</a> <!-- Link para a página menu.html -->
+        <a href="../contato/aluno.html">Aluno</a> <!-- Link para a página aluno.html -->
+    </div>
+</nav>
+
+<section>
+
+    <p class="animação">Bem Vindo!</p>
+
+</section>
+
+    
+<footer>
+    <p> &#64; Todos os direitos do autor Rafael Maylon &copy;</p> <!-- Texto de direitos autorais -->
+</footer>
+
+
+
+</body>
+</html>

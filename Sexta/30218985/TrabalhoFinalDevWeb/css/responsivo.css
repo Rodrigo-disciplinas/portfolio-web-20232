@@ -1,0 +1,99 @@
+/* Responsividade */
+
+/* Telas com largura menor que 576px */
+@media (max-width: 575px) {
+  header {
+    height: 10vh;
+    width: 100%;
+    padding: 5px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  main {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  section {
+    margin: auto;
+    width: 100%;
+  }
+  img {
+    height: 20vw;
+  }
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-list li {
+    text-align: center;
+    padding: 10px 0;
+  }
+  footer {
+    height: 10vh;
+    font-size: 15px;
+  }
+}
+
+/* Telas com largura entre 576px e 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  header h1 {
+    font-size: 22px;
+  }
+  section {
+    margin: auto;
+    width: 90%;
+  }
+  img {
+    height: 15vw;
+  }
+}
+
+/* Telas com largura entre 768px e 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  section {
+    margin: auto;
+    width: 80%;
+  }
+  img {
+    height: 16vw;
+  }
+  .menu-list li {
+    width: 50%;
+  }
+}
+
+/* Telas com largura entre 992px e 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+  section {
+    margin: auto;
+    width: 60%;
+  }
+}
+
+/* Telas grandes com largura maior que 1200px */
+@media (min-width: 1200px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  header {
+    width: 100%;
+  }
+  section {
+    margin: auto;
+    width: 60%;
+  }
+  img {
+    height: 200px;
+  }
+  .menu-list li {
+    width: 33.33%;
+  }
+}

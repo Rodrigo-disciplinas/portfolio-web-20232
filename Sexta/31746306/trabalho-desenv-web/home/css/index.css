@@ -1,0 +1,271 @@
+:root {
+  --cor1: #3d3d3d;
+  --cor2: #84b026;
+  --cor3: #217373;
+  --cor4: #173540;
+  --cor5: #161f30;
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --background: #cccccc84;
+  --text-shadow: rgb(197, 195, 195);
+}
+
+/*! Dark Mode */
+
+.dark-mode {
+  background-color: var(--cor5);
+  color: white;
+}
+
+.dark-mode a {
+  color: aqua;
+}
+
+#modos {
+  cursor: pointer;
+  width: 70px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--cor4);
+  color: white;
+}
+
+#modos:hover {
+  width: 75px;
+  height: 50px;
+  background-color: var(--cor5);
+  transition-property: width, height;
+  transition-duration: 200ms, 200ms;
+  transition-delay: 50ms, 50ms;
+  transition-timing-function: infinite;
+}
+
+#button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  position: relative;
+  top: 60px;
+}
+/*! Global */
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 7px; /* Largura da barra de rolagem */
+}
+
+/* Estilo do polegar */
+::-webkit-scrollbar-thumb {
+  background-color: #888888; /* Cor do polegar */
+}
+
+/* Estilo da trilha */
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Cor da trilha */
+}
+
+body {
+  background-color: var(--background);
+}
+
+header {
+  margin-bottom: 10px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-family: var(--fonte-padrao);
+  text-shadow: 1px 1px 1px rgb(197, 195, 195);
+}
+
+header > img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+nav {
+  background-image: linear-gradient(25deg, var(--cor2), var(--cor3));
+  border-radius: 10px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--fonte-padrao);
+  z-index: 1;
+}
+
+.sub-menu {
+  list-style: none;
+}
+
+nav ul.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul.menu li {
+  border-radius: 4px;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul.menu li:hover .sub-menu {
+  display: block;
+  background-color: var(--cor2);
+}
+
+nav ul.menu li:hover {
+  background-color: var(--cor3);
+  border-radius: 15px;
+  width: max-content;
+}
+
+nav ul.menu .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  text-align: left;
+  border-radius: 20px;
+  width: fit-content;
+  text-align: center;
+}
+
+nav ul.menu .sub-menu li {
+  padding: 10px;
+  width: fit-content;
+}
+
+nav ul.menu .sub-menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  position: fixed;
+  left: 50%;
+}
+
+/* !DISPOSITIVO MOVEL G - MAX 425 */
+@media screen and (max-width: 425px) {
+  nav {
+    min-width: 390px;
+    max-width: 400px;
+    font-size: 19px;
+    z-index: 2;
+  }
+
+  section {
+    display: grid;
+    grid-template: auto / 400px;
+    position: relative;
+    top: 80px;
+    z-index: 1;
+  }
+
+  section > img {
+    width: min(170px, 100%);
+    min-width: 90px;
+    margin: 10px;
+    align-self: start;
+    justify-self: center;
+  }
+
+  img:nth-child(1) {
+    grid-row: 1;
+  }
+
+  img:nth-child(2) {
+    grid-row: 2;
+  }
+
+  img:nth-child(3) {
+    grid-row: 3;
+  }
+}
+
+/* ! TABLET - MAX 768 */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  nav {
+    min-width: 400px;
+    max-width: 430px;
+    font-size: 22px;
+  }
+
+  section {
+    display: grid;
+    grid-template: 200px / repeat(3, 33.3%);
+    position: relative;
+    top: 100px;
+    z-index: 0;
+  }
+
+  section > img {
+    width: min(180px, 100%);
+    min-width: 90px;
+    align-self: start;
+    /* verticalmente */
+    justify-self: center;
+  }
+}
+
+/* ! LEPTOP - MAX 1024 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    min-width: 500px;
+    max-width: 530px;
+    font-size: 22px;
+  }
+
+  section {
+    display: grid;
+    grid-template: 200px / repeat(3, 33.3%);
+    position: relative;
+    top: 200px;
+    z-index: 0;
+  }
+
+  section > img {
+    width: min(250px, 100%);
+    min-width: 200px;
+    align-self: flex-start;
+    /* verticalmente */
+    justify-self: center;
+    /* horizontalmente */
+  }
+}
+
+/* !MAIOR QUE 1024 */
+@media screen and (min-width: 1025px) {
+  nav {
+    min-width: 550px;
+    max-width: 630px;
+    font-size: 24px;
+  }
+
+  section {
+    display: grid;
+    grid-template: 650px / repeat(3, 33.3%);
+    position: relative;
+    top: 200px;
+    z-index: 0;
+  }
+
+  section > img {
+    width: min(400px, 100%);
+    min-width: 200px;
+    align-self: flex-start;
+    /* verticalmente */
+    justify-self: center;
+    /* horizontalmente */
+  }
+}

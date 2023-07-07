@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto final</title>
+    <!--Links Para CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="stylesheet" href="/css/modoescuro.css">
+    <link rel="stylesheet" href="/css/transicoes.css">
+    <!--Link para Favicon-->
+    <link rel="shortcut icon" href="/favicons/home.ico" type="image/x-icon">
+    <!--Estilo interno-->
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+        }
+        .botao{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul {
+            list-style-type: none;
+            width: 70%;
+        }
+        li{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Estilo In-Line -->
+        <h1 style="text-align: center;">Projeto de Desenvolvimento Web</h1>
+        <a id="contato" href="contato.html">Contato</a>
+    </header>
+        <div class="index">
+            <section>
+                <h2>Página inicial</h2>
+                <p>Bem-Vindo ao meu projeto de Desenvolvimento Web! Clique abaixo em alguma logo e conheça um pouco sobre cada linguagem de programação, seus recursos e aplicações. Clique também nesse botão abaixo para testar o modo escuro. Aproveite!</p>
+                <div class="botao">
+                     <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </section>
+            <!--Menu-->
+            <nav>
+                <ul class="menu-list">
+                <li><a href="java.html"><abbr title="Java"><img src="/img/java.png" alt="Java Logo"></abbr></a></li>
+                <li><a href="devweb.html"><abbr title="HTML/CSS/JS"><img src="/img/devweb.png" alt="Html Css JavaScipt Logo"></abbr></a></li>
+                <li><a href="csharp.html"><abbr title="C#"><img src="/img/csharp.png" alt="Csharp logo"></abbr></a></li>
+                </ul>
+            </nav>  
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="python.html"><abbr title="Python"><img src="/img/python.png" alt="Python Logo"></abbr></a></li>
+                    <li><a href="php.html"><abbr title="PHP"><img src="/img/php.png" alt="Php Logo"></abbr></a></li>
+                </ul>
+            </nav>
+        </div>  
+    <footer>
+        <p>&copy; 2023 Projeto final de Desenvolvimento Web Básico.</p>
+    </footer> 
+    <!--JavaScript para o modo escuro-->
+    <script src="/js/script.js"></script> 
+    <!--JavaScript para o easteregg. Para mostrar o easteregg clique 3 vezes em qualquer lugar dessa página-->
+    <script src="/js/easteregg.js"></script>
+</body>
+</html>

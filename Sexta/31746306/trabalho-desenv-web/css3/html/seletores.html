@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/seletores.css" />
+    <script src="../js/seletores.js" defer></script>
+    <title>Seletores em CSS3</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Seletores em CSS</h1>
+      </header>
+      <nav>
+        <ul class="menu">
+          <li><a href="./animacoes.html">Animações</a></li>
+          <li><a href="../../home/html/index.html">Voltar</a></li>
+        </ul>
+      </nav>
+      <span id="botao"><button id="modos">Modo Escuro</button></span>
+      <section>
+        <h2>Seletores Basícos</h2>
+        <table id="seletores">
+          <tr>
+            <!--Cabeçalho-->
+            <th>Nome do Seletor</th>
+            <th>Exemplo</th>
+            <th>Descrição</th>
+            <th>Exemplo</th>
+          </tr>
+          <!--Corpo da tabela-->
+          <tr>
+            <!-- Linha 2 -->
+            <td>Seletor por tag</td>
+            <td>A</td>
+            <td>Escolhe todos os elementoscom a tag definida (A)</td>
+            <td>p{color: #FFFFFF;}</td>
+          </tr>
+          <tr>
+            <!-- Linha 3 -->
+            <td>Seletor por classe</td>
+            <td>.classe</td>
+            <td>Seleciona todos os elementoscom a classe "classe"</td>
+
+            <!-- Utilização de CSS inline -->
+            <td>
+              <span style="color: rgb(129, 194, 32)">.vermelho</span> {<span
+                style="color: turquoise"
+                >color:</span
+              >
+              <span
+                style="background-color: black; color: white; font-weight: 900"
+                >#FF0000</span
+              >;}
+            </td>
+          </tr>
+          <tr>
+            <!-- Linha 4 -->
+            <td>Seletor por ID</td>
+            <td>#botao_1</td>
+            <td>Seleciona apenas o elementocom o id "botao_1"</td>
+            <td>#botao_1 {color: #FF0000;}</td>
+          </tr>
+          <tr>
+            <!-- Linha 5 -->
+            <td>Seletores universais</td>
+            <td>*</td>
+            <td>Seleciona todos os elementos da página</td>
+            <td>* {color: #FF0000;}</td>
+          </tr>
+          <tr>
+            <!-- Linha 6 -->
+            <td>Seletores por atributo</td>
+            <td>a[href="link"]</td>
+            <td>
+              Seleciona com base no valorde um atributo. Ex: Todos oslinks para
+              o google.
+            </td>
+            <td>a[href="https://www.google.com"] { color: #FF0000; }</td>
+          </tr>
+        </table>
+        <p>
+          Dentre esses seletores básicos, o seletor de atributo se apresenta de
+          diferentes maneiras, detalhadas
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Attribute_selectors"
+            target="_blank"
+            >aqui.</a
+          >
+        </p>
+
+        <!--Diferenças entre ID e CLASS-->
+        <p>Diferenças entra id e class:</p>
+        <iframe
+          src="https://www.youtube.com/embed/zXfTjPrMC_0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <aside>
+        <p>
+          Veja mais sobre seletores clicando
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Selectors"
+            target="_blank"
+            >aqui</a
+          >
+        </p>
+        <p>
+          Confira como funciona a seleção por atribuição
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors"
+            target="_blank"
+            >aqui</a
+          >
+        </p>
+      </aside>
+      <footer>
+        <address>
+          <p>Referência:</p>
+          <p>
+            <cite>SOKULSKI, Rodrigo Machniewicz.</cite>
+            <span>Aula 4 - Resumo de seletores</span>
+            Disponível:
+            <a href="../../pdfs/Resumo de seletores.pdf" target="_blank"
+              >Clicando aqui</a
+            >.
+          </p>
+          <p>Acesso em: <time datetime="2023-06-02">03-06-2023</time>.</p>
+        </address>
+        <p>
+          Todos os direitos reservados &copy;
+          <em>2023 Lucas Cardoso de Carvalho</em>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

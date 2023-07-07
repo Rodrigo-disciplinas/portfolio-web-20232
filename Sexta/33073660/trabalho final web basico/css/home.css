@@ -1,0 +1,44 @@
+.second{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80vw;
+    height: 100vh;
+}
+
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: black solid;
+    height: max-content;
+    border-radius: 10px;
+    height: 95%;
+    margin: 10px;
+    opacity: 95%;
+    background-color: white;
+    padding: 15px;
+}
+
+/* Animacao do background */
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+ body {
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../media/images/backgrounds/back2.jpg");
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 10s linear infinite alternate;
+  }

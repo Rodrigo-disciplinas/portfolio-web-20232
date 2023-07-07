@@ -1,0 +1,99 @@
+:root {
+  --cor1: #3d3d3d;
+  --cor2: #84b026;
+  --cor3: #217373;
+  --cor4: #173540;
+  --cor5: #161f30;
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --background: #cccccc84;
+  --text-shadow: rgb(197, 195, 195);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  /*Quando é definido overflow: hidden; em um elemento, qualquer conteúdo que ultrapasse os limites desse elemento será ocultado, cortado ou escondido. Ou seja, o conteúdo que excede a área do elemento não será visível para o usuário.*/
+}
+
+p {
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  animation: animacao 40s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animacao {
+  0% {
+    font-size: 44px;
+  }
+  50% {
+    font-size: 92px;
+  }
+
+  100% {
+    font-size: 44px;
+  }
+}
+
+/* Código para o plano de fundo com gradiente em mudança automática */
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right, var(--cor2), var(--cor3));
+  /*A sintaxe to bottom right indica que o gradiente começa no canto superior esquerdo e vai em direção ao canto inferior direito.*/
+
+  background-size: cover;
+  /*background-size: cover;: É uma propriedade que especifica como o plano de fundo deve ser dimensionado para cobrir todo o elemento. Com cover, o plano de fundo será dimensionado para preencher todo o corpo (body) do elemento HTML, garantindo que o gradiente ocupe toda a tela.*/
+
+  animation: alterarFundo 10s infinite;
+}
+
+@keyframes alterarFundo {
+  0% {
+    background: linear-gradient(to bottom right, #ff5f6d, #ffc371);
+  }
+  50% {
+    background: linear-gradient(to bottom right, #a5fecb, #20bdff);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #ffd26f, #3677ff);
+  }
+}
+
+nav {
+  width: fit-content;
+  background-image: linear-gradient(25deg, var(--cor2), var(--cor3));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--fonte-padrao);
+  margin: 5px;
+}
+
+nav ul.menu {
+  list-style: none;
+  padding: 2px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul.menu li a:hover {
+  color: var(--cor4);
+  font-style: italic;
+}

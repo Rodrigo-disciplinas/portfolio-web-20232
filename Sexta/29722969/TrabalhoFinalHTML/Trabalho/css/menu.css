@@ -1,0 +1,130 @@
+/* Estilo externo */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #221a3f;
+  color: #fff;
+  background-image: url(https://images5.alphacoders.com/100/1001614.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.38s ease-in-out, color 0.38s ease-in-out, background-image 0.38s ease-in-out;
+}
+
+header {
+  background-color: #221a3f;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #c31dd2;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+.filme-destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.filme-destaque img {
+  width: 450px;
+  height: auto;
+  border: 4px solid #c31dd2;
+}
+
+.filme-destaque:hover {
+  transform: scale(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ffffff;
+}
+
+footer {
+  background-color: #221a3f;
+  padding: 20px;  
+  text-align: center;
+  color: #fff;
+  border-top: 4px solid #c31dd2;
+  transition: background-color 1s, border-color 1s;
+}
+
+/* Regras de mídia queries para telas menores */
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+
+  .filme-destaque img {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  .filme-destaque {
+    margin-bottom: 20px;
+  }
+
+  table th,
+  table td {
+    padding: 5px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}

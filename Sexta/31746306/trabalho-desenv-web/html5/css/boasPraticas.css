@@ -1,0 +1,280 @@
+:root {
+  --cor1: #3d3d3d;
+  --cor2: #84b026;
+  --cor3: #217373;
+  --cor4: #173540;
+  --cor5: #161f30;
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --background: #cccccc84;
+  --text-shadow: rgb(197, 195, 195);
+}
+
+/*! Dark Mode */
+
+.dark-mode {
+  background-color: var(--cor5);
+  color: white;
+}
+
+.dark-mode a {
+  color: aqua;
+}
+
+#modos {
+  cursor: pointer;
+  width: 70px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--cor4);
+  color: white;
+}
+
+#modos:hover {
+  width: 75px;
+  height: 50px;
+  background-color: var(--cor5);
+  transition-property: width, height;
+  transition-duration: 200ms, 200ms;
+  transition-delay: 50ms, 50ms;
+  transition-timing-function: infinite;
+}
+
+#botao {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  position: absolute;
+  top: 8%;
+  left: 90%;
+}
+
+/*! Global */
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 7px; /* Largura da barra de rolagem */
+}
+
+/* Estilo do polegar */
+::-webkit-scrollbar-thumb {
+  background-color: #888888; /* Cor do polegar */
+}
+
+/* Estilo da trilha */
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Cor da trilha */
+}
+
+main {
+  display: grid;
+  grid-template: 100px 60px 650px 1fr / 2fr 2fr 1fr 1px;
+  gap: 5px;
+  font-family: var(--fonte-padrao);
+}
+
+header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+  text-align: center;
+}
+
+nav {
+  grid-column: 1 / 4;
+  grid-row: 2 / 2;
+  font-size: 21px;
+  width: fit-content;
+  background-image: linear-gradient(25deg, var(--cor2), var(--cor3));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--fonte-padrao);
+  margin-left: 10px;
+}
+
+nav ul.menu {
+  list-style: none;
+  padding: 2px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul.menu li a:hover {
+  color: var(--cor4);
+  font-style: italic;
+}
+
+section {
+  grid-column: 1 / 3;
+  grid-row: 3 / 3;
+  overflow: auto;
+  width: 95%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+aside {
+  grid-column: 3 / 4;
+  grid-row: 3 / 3;
+  border: 1px solid rgba(101, 97, 97, 0.443);
+  overflow: hidden;
+  margin: 5px;
+  padding: 5px;
+}
+
+footer {
+  border: 1px solid rgba(101, 97, 97, 0.443);
+  grid-column: 1 / 4;
+  grid-row: 4 / 4;
+  overflow: hidden;
+}
+
+/* !DISPOSITIVO MOVEL G - MAX 425 */
+@media screen and (max-width: 425px) {
+  #modos {
+    width: 110px;
+    height: 37px;
+  }
+
+  #modos:hover {
+    width: 111px;
+    height: 40px;
+  }
+
+  #botao {
+    top: 7%;
+    left: 70%;
+  }
+
+  header {
+    font-size: 12px;
+  }
+
+  nav {
+    font-size: 17px;
+  }
+
+  section * {
+    font-size: 14px;
+  }
+
+  aside > p {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  footer * {
+    font-size: 14px;
+  }
+
+  aside > img {
+    width: min(50px, 100%);
+    min-width: 25px;
+  }
+}
+
+/* ! TABLET - MAX 768 */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #botao {
+    top: 7%;
+    left: 82.5%;
+  }
+
+  header {
+    font-size: 16px;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  section > p {
+    font-size: 15px;
+  }
+
+  section > h3 {
+    font-size: 16px;
+  }
+
+  aside > p {
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
+
+/* ! LEPTOP - MAX 1024 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #botao {
+    top: 7%;
+    left: 90%;
+  }
+
+  header {
+    font-size: 18px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  section > p {
+    font-size: 16px;
+  }
+
+  section > h3 {
+    font-size: 17px;
+  }
+
+  aside > p {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+/* !MAIOR QUE 1024 */
+@media screen and (min-width: 1025px) {
+  #botao {
+    top: 7%;
+    left: 92%;
+  }
+
+  header {
+    font-size: 20px;
+  }
+
+  nav {
+    font-size: 21px;
+  }
+
+  section > p {
+    font-size: 17px;
+  }
+
+  section > h3 {
+    font-size: 18px;
+  }
+
+  aside > p {
+    font-size: 17px;
+  }
+
+  footer {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="./css/tabela.css">
+    <script src="javascript/javascript.js" defer>Pagina</script>
+    <script src="javascript/animação.js" defer>Animação</script>
+</head>
+<body>
+    <center><h1>Tabelas de personagens</h1></center>
+    <!--nosso input é atribuida a função de pagina escura onde ao ser clicado são atribuidos mudanças na pagina para que as suas cores fique escuras -->
+    <div class="escondidoT"></div>
+    <div class="input">
+    <input type="button" value="pag_escura" onclick="pag_escura()" ></input>
+    </div>
+    <div class="escondidoT"></div>
+    
+<div>
+   
+    <div class="nav">
+        <!--nosso nav para navegar entre as paginas!-->
+        <nav>
+        <a style="color: green"  href="../paginaMenu/menu.html">Menu inicial</a>
+        <a style="color: peru;" href="../historiaAnime/historia.html">Historia dos Animes</a>
+        </nav>
+    </div>
+    <div class="escondidoT"></div>
+    
+
+<div class="div_imagens">
+    
+    <div class="kakaroto">
+        <!--Aqui é o inicio das nossas tabelas que quando clicado nas imagens faz com que elas apareçam-->
+        <h2 class="nome_s">Son_Goku</h2>
+        <img onclick="Goku('minha_tabela')" class="img" src="imagens/son_goku.webp" alt="Kakaroto" width="60px">
+        <div class="escondido"></div>
+
+        <div class="load">
+
+            <div class="load_green">
+                Guerreiro
+            </div>
+    
+        </div>
+        <div class="escondidoT"></div>
+        <div class="table">
+    <table id="minha_tabela">
+
+        <tr>
+            <th class="minha_tabela" >Nome</th>
+            <th class="minha_tabela">Raça</th>
+            <th class="minha_tabela">Poder de luta</th>
+            <th class="minha_tabela">Habilidade</th>
+    
+            </tr>
+            <tr>
+    
+            <td class="minha_tabela">Kakaroto</td>
+            <td class="minha_tabela">Sayajin</td>
+            <td class="minha_tabela">Mais de 8 mil</td>
+            <td class="minha_tabela">Kamehameha</td>
+        </tr>
+        <tr>
+    
+            <td class="minha_tabela">Goku</td>
+            <td class="minha_tabela">Terraqueo</td>
+            <td class="minha_tabela">183 mil</td>
+            <td class="minha_tabela">Genk-Dama</td>
+        </tr>
+        </table>
+    
+    </div>   
+    </div>
+    
+    
+
+    <div>
+        <h2>Naruto Uzumaki</h2>
+        <img onclick="Naruto('minha_Naruto')" class="imgN" src="./imagens/char_naruto.webp" alt="Narutin" width="60px">
+        <div class="escondido"></div>
+        <div class="espaco">
+        <div class="loadN">
+            
+            <div class="load_greenN">
+                    Hokage
+            </div>
+    
+        </div>
+    </div>
+        <p></p>
+        <div class="escondidoT"></div>
+        <table id="minha_Naruto">
+
+            <tr>
+                <th class="minha_tabN" >Nome</th>
+                <th class="minha_tabN">Caracteristica</th>
+                <th class="minha_tabN">Nivel</th>
+                <th class="minha_tabN">Habilidades</th>
+        
+                </tr>
+                <tr>
+        
+                <td class="minha_tabN">Naruto</td>
+                <td class="minha_tabN">Ninja</td>
+                <td class="minha_tabN">lvl.Sabio dos 6 caminhos</td>
+                <td class="minha_tabN">Rasengan</td>
+            </tr>
+            <tr>
+        
+                <td class="minha_tabN">Nanadaime</td>
+                <td class="minha_tabN">Sennin</td>
+                <td class="minha_tabN">lvl.Lendario</td>
+                <td class="minha_tabN">Futon-Rasen-Shuriken</td>
+            </tr>
+            </table>
+        
+
+    </div>
+
+    <div class="margen_l">
+        <h2 class="nome_l">Monkey D. Luffy</h2>
+        <img onclick="Luffy('minha_Luffy')" class="imgL" src="imagens/luffy.png" alt="Luffy" width="60px" >  
+        <div class="escondido"></div>
+        <div class="espaco_L">
+        <div class="loadL">
+
+            <div class="load_greenL">
+                Rei
+            </div>
+    
+        </div>
+        </div>
+
+        <div class="escondidoT"></div>
+
+        <table id="minha_Luffy">
+
+            <tr>
+                <th class="minha_tabL" >Nome</th>
+                <th class="minha_tabL">Caracteristica</th>
+                <th class="minha_tabL">Nivel</th>
+                <th class="minha_tabL">Habilidades</th>
+        
+                </tr>
+                <tr>
+        
+                <td class="minha_tabL">Luffy</td>
+                <td class="minha_tabL">Pirata</td>
+                <td class="minha_tabL">Yonkou</td>
+                <td class="minha_tabL">Gomu-Gomu-no</td>
+            </tr>
+            <tr>
+        
+                <td class="minha_tabL">Chapeu de Palha</td>
+                <td class="minha_tabL">Haki</td>
+                <td class="minha_tabL">Pior-geração</td>
+                <td class="minha_tabL">Gear-5</td>
+            </tr>
+            </table>
+        
+
+    </div>
+
+
+</div >
+<!--aqui começam as animações da pagina!-->
+<div class="botao">
+
+    <div>
+        <div style="padding-right: 10px;">
+    <button onclick="kamehameha1()" style="width: max-content; display: none;">Kamehame</button>
+    </div>
+
+    <div>
+    <button onclick="kamehameha2()" style="width: max-content; display: none;">ha</button> 
+    </div>
+
+    
+
+    </div>
+
+</div>
+
+<div class = "fuck">
+<div class="animação">
+
+    <div class="goku">
+        <audio id="meu_audio">
+                    <source src="audio/gokukameham_4b6d1ba34657630.mp3" type="audio/mp3" >
+        </audio>
+        <img   src="imagens/prepara.png" alt="Preparando" width="100px" id="goku-image"> 
+    </div>
+    
+        <div class="poder">
+        <img  src="imagens/Kamehameha.gif" alt="Kamehameha" width="500px" id="goku-kame" style="display: none;">
+    </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="botao">
+
+    <div>
+
+        <div style="padding-right: 10px;">
+            <button onclick="rasengan1()" style="width: max-content; display: none;">Oodama</button>
+        </div>
+
+        <div>
+            <button onclick="rasengan2()" style="width: max-content; display: none;">Rasengan</button> 
+        </div>
+    
+    </div>
+
+</div>
+
+    <div class = "fuck2">
+    <div class="animaçãoN">
+    
+        <div class="naruto">
+            <audio  id="rasengan">
+                <source src="audio/Rasengan.mp3" type="audio/mp3">
+            </audio>
+            <img src="imagens/Futon.png" alt="Preparando" width="140px" id="naruto-image"> 
+        </div>
+        
+            <div class="rasen">
+            <img  src="imagens/onega.png" alt="Kamehameha" width="200px" id="naruto-kame">
+        </div>
+    
+        </div>
+    
+    </div>
+
+    <div class="botao">
+
+        <div>
+            <div style="padding-right: 10px;">
+                <button onclick="gear1()" style="width: max-content; display: none;">Gear</button>
+            </div>
+    
+            <div>
+                <button onclick="gear2()" style="width: max-content; display: none;">Second</button> 
+            </div>
+        
+        </div>
+    
+    </div>
+    
+        <div class = "fuck3">
+        <div class="animaçãoL">
+        
+            <div class="m_luffy">
+                <audio id="second">
+                <source src="audio/luffy_gear_second.mp3" type="audio/mp3">
+                </audio>
+                <img src="imagens/M-luffy.png" alt="Preparando" width="240px" id="luffy_image1"> 
+            </div>
+            
+                <div class="gear">
+                <img  src="imagens/fumaça.png" alt="Kamehameha" width="200px" id="luffy_image">
+            </div>
+        
+            </div>
+        
+        </div>
+    
+
+</div>
+
+
+
+
+<div>
+    
+    <footer>
+
+
+    </footer>
+
+</div>
+
+</div>
+
+
+</body>
+</html>

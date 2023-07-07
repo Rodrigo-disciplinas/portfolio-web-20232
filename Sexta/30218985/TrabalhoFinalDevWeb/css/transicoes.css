@@ -1,0 +1,38 @@
+/* Transições e Animações */
+body {
+  transition: background 0.2s linear;
+}
+
+nav ul li a {
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6600;
+  }
+  #contato:hover{
+    border-radius: 10px;
+    background-color: #ddd;
+    color:#ff6600;
+}
+  section {
+    transition: background-color 0.3s ease;
+  }
+  
+  section:hover {
+    background-color: #ddd;
+  }
+  
+  /*Animação*/
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  section {
+    animation: fade-in 1.5s ease;
+  }

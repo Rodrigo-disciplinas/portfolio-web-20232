@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Interativo
+    </title>
+    <link rel="icon" href="imagens/son-32x32.png" type="image/png">
+    <link rel="stylesheet" href="css/pagina.css">
+    <script src="javascript/javascript.js" defer >minha_interação</script>
+</head>
+<body>
+    <!--Aqui é uma página mais para interaçãoe no caso fazemos um questionário para verificarmos se o usuário tem a mesma personalidade de algum dos personagens-->
+    <h1>Interação</h1>
+    <h2></h2>
+    <div>
+        <nav>
+            <button onclick="history.back()">Voltar Menu</button><!--botao de voltar-->
+        </nav>
+</div>
+    <hr>
+    <section><!--minha section conteudo principal da pagina-->
+     <!--varias divs para o melhor posicionamento dos elementos e organização-->
+        <div class="div_toda">
+                
+            <div class="img_1">
+                <p>Sakura</p>
+                <img class="sakura" src="imagens/sakura.png" alt="Testuda" width="80px" height="190px">
+            </div>
+            <div class="img_2">
+                <p>Naruto</p>
+                <img class="naruto" src="imagens/naruto.png" alt="Naruto" width="200px">
+            </div>
+            <div class="img_3">
+                <p>Sasuke</p>
+                <img  class="sasuke" src="imagens/sasuke.png" alt="Renegado" width="95px">
+            </div>
+
+        </div>
+
+    <div class="div_form">
+        <!--uma div com os questionarios para criados e utilizados com javascript-->
+        <div class="div_questionario">
+            <p class="questao">Com qual personagem voce tem a personalidade mais parecida? </p>
+            <div class="div_botao">
+            <button onclick="botao()">Começar?</button>
+        </div>
+        </div>
+        
+        <div class="meu_formulario">
+            <div class="meu_form">
+                <fieldset class="fieldset_1">
+                    <p>Oque faria se encontrasse alguem ferido?</p>
+                    <input type="radio" onclick="q1_op1()">Não abandonaria e tentaria ajudar!<br>
+                    <input type="radio" onclick="q1_op2()">Procuraria por ajuda!<br>
+                    <input type="radio" onclick="q1_op3()">Ignoraria!<br>
+                </fieldset>
+                
+                <fieldset class="fieldset_2">
+                    <p>No meio de uma batalha dificil oque faria?</p>
+                    <input type="radio" onclick="q2_op1()">Estrategicamente pensaria em um plano!<br>
+                    <input type="radio" onclick="q2_op2()">Lutaria até o fim!<br>
+                    <input type="radio" onclick="q2_op3()">Pediria ajuda!<br>
+                </fieldset>
+
+                
+                <fieldset class="fieldset_3">
+                    <p>Escolha um objetivo?</p>
+                    <input type="radio" onclick="q3_op1()">Alcançar sua ambição independente dos ideais!<br>
+                    <input type="radio" onclick="q3_op2()">Ser reconhecido por seus feitos!<br>
+                    <input type="radio" onclick="q3_op3()">Não desistir nunca!<br>
+                </fieldset>
+
+                
+                <fieldset class="fieldset_4">
+                    <p>Escolha um que mais combine com você!</p>
+                    <input type="radio" onclick="q4_op1()">Silencio!<br>
+                    <input type="radio" onclick="q4_op2()">Comida!<br>
+                    <input type="radio" onclick="q4_op3()">Flores!<br>
+                </fieldset>
+
+                
+                <fieldset class="fieldset_5">
+                    <p>Se podesse escolher um qual você teria?</p>
+                    <input type="radio" onclick="q5_op1()">Super-Força!<br>
+                    <input type="radio" onclick="q5_op2()">Agilidade!<br>
+                    <input type="radio" onclick="q5_op3()">Poder!<br>
+                </fieldset>
+
+                   
+                <fieldset class="fieldset_6">
+                    O resultado está em empate!<br>
+                        Desempate
+                    <p>Escolha uma cor!</p>
+                    <input type="radio" onclick="q6_op1()">vermelho!<br>
+                    <input type="radio" onclick="q6_op2()">Rosa!<br>
+                    <input type="radio" onclick="q6_op3()">Azul!<br>
+                </fieldset>
+
+            </div>
+        </div>
+    </div> 
+    </section>
+       
+</body>
+</html>

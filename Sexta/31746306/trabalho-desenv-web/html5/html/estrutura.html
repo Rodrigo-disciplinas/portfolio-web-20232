@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estrutura.css" />
+    <script src="../js/estrutura.js" defer></script>
+    <style>
+      @keyframes giro {
+        0% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(180deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+      aside > img {
+        animation-name: giro;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        animation-iteration-count: 2;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+      }
+    </style>
+    <title>Estrutura de uma Paǵina HTML</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Estrutura padrão de uma pagina HTML</h1>
+        <img src="../../img/simbolos/html5.png" alt="Simbolo HTML5" />
+        <span id="botao"><button id="modos">Modo Escuro</button></span>
+      </header>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="./boasPraticas.html">Boas Práticas</a></li>
+          <li><a href="./tagsSemanticas.html">Tags Semânticas</a></li>
+          <li><a href="../../home/html/index.html">Voltar</a></li>
+          <li><button id="ativar">Ativar grade</button></li>
+        </ul>
+      </nav>
+      <section>
+        <div id="section1">
+          <h2>Section</h2>
+
+          <p>
+            A tag HTML <strong>&lt;section&gt;</strong> é um elemento usado para
+            agrupar um conteúdo relacionado em uma página da web. Ela fornece
+            uma maneira semântica de dividir e organizar o conteúdo, tornando-o
+            mais estruturado e legível tanto para desenvolvedores quanto para
+            usuários. A <strong>&lt;section&gt;</strong> é uma das muitas tags
+            de seção disponíveis em HTML5 e é amplamente usada para criar
+            layouts e estruturas de página mais claras.
+          </p>
+
+          <h3>
+            Aqui estão algumas das principais razões para usar a tag
+            <strong>&lt;section&gt;</strong>:
+          </h3>
+        </div>
+        <div id="razoes">
+          <div id="motivos">
+            <span>
+              <p>
+                <strong>Organização do conteúdo:</strong> A tag
+                <strong>&lt;section&gt;</strong> permite que você agrupe e
+                organize partes específicas do seu conteúdo. Por exemplo, você
+                pode usar uma <strong>&lt;section&gt;</strong> para agrupar os
+                recursos de um produto em um site, as etapas de um tutorial, os
+                serviços oferecidos por uma empresa, etc. Isso facilita a
+                leitura e a compreensão do conteúdo.
+              </p>
+            </span>
+
+            <span>
+              <p>
+                <strong>Separação semântica:</strong> Usar a tag
+                <strong>&lt;section&gt;</strong> em vez de &lt;div&gt; genérico
+                ajuda a fornecer uma estrutura semântica ao seu código HTML. A
+                semântica adequada do HTML é importante para os mecanismos de
+                busca, ajudando-os a entender o conteúdo e melhorar a
+                classificação nos resultados de pesquisa.
+              </p>
+            </span>
+
+            <span>
+              <p>
+                <strong>Acessibilidade:</strong> O uso adequado da tag
+                <strong>&lt;section&gt;</strong> também pode melhorar a
+                acessibilidade do seu site. Ao agrupar o conteúdo relacionado em
+                uma <strong>&lt;section&gt;</strong>, você está criando uma
+                estrutura clara que permite que os leitores de tela e outros
+                dispositivos de assistência naveguem pelo seu site de forma mais
+                eficiente.
+              </p>
+            </span>
+
+            <span>
+              <p>
+                <strong>Estilização e manipulação:</strong> A tag
+                <strong>&lt;section&gt;</strong> também pode ser útil ao aplicar
+                estilos CSS específicos ou ao manipular o conteúdo com
+                <code>JavaScript</code>. Você pode adicionar classes ou
+                identificadores à <strong>&lt;section&gt;</strong> para
+                segmentar e estilizar o conteúdo de maneira mais específica.
+              </p>
+            </span>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <p>
+          Este site utiliza a especificação HTML5 desenvolvida e mantida pelo
+          <a
+            href="https://www.w3.org/standards/webdesign/htmlcss"
+            target="_blank"
+            >W3C</a
+          >
+          (World Wide Web Consortium).
+        </p>
+        <img src="../../img/icons/icon-w3c.png" alt="Icone do W3C" />
+        <p>
+          Veja mais sobre <strong>estruturas de paginas html</strong
+          ><a
+            href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure"
+            target="_blank"
+          >
+            clicando aqui</a
+          >
+        </p>
+      </aside>
+      <footer>
+        <p>
+          &copy; 2023 Lucas Cardoso de Carvalho. Todos os direitos reservados.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

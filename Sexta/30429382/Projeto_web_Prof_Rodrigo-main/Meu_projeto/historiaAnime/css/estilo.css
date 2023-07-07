@@ -1,0 +1,156 @@
+body{
+background-color: blueviolet;
+transition:  2s ease  ;
+
+}
+
+  
+div {
+    display: flex; /* Define o display do div como flexível */
+    align-items: center; /* Centraliza verticalmente os elementos dentro do div */
+    flex-direction: column; /* Define a direção dos elementos como coluna */
+    padding: 20px; /* Adiciona um espaçamento interno em todos os lados do div */
+    /* Aqui estamos personalizando o elemento div */
+}
+
+p {
+    font-size: 20px; /* Define o tamanho da fonte */
+    /* Aqui estamos personalizando o elemento p */
+}
+
+.div_1 {
+    width: 79vw;
+    border: solid orange 2px; /* Define uma borda e cor da borda  */
+    background-color: rgb(55, 138, 66); /* Define a cor de fundo da div com transparência */
+    /* Aqui estamos personalizando a classe div_1 */
+}
+
+.div_2 {
+    width: 79vw;
+    border: solid yellow 2px; /* Define uma borda e cor da borda  */
+    background-color: darkblue; /* Define a cor de fundo da div */
+    /* Aqui estamos personalizando a classe div_2 */
+}
+
+.div_3 {
+    width: 79vw;
+    border: solid pink 2px; /* Define uma borda cor da borda */
+    background-color: brown; /* Define a cor de fundo da div */
+    /* Aqui estamos personalizando a classe div_3 */
+}
+
+.dragon {
+    color: rgb(255, 179, 0); /* Define a cor do texto */
+    text-decoration: underline blue; /* Adiciona um sublinhado azul ao texto */
+    /* Aqui estamos personalizando a classe dragon */
+}
+
+.naruto {
+    color: aqua; /* Define a cor do texto  */
+    text-decoration: underline black; /* Adiciona um sublinhado preto ao texto  */
+    /* Aqui estamos personalizando a classe naruto */
+}
+
+button {
+    color: purple; /* Define a cor do texto dos botões */
+    background-color: black; /* Define a cor de fundo dos botões */
+    transition : 0.3s ease;/*Executa uma transição de 0.3seg*/
+    /* Aqui estamos personalizando os botões */
+}
+button:hover{
+
+    font-size: 15px;/*aqui e o que vai acontecer quando a transição for acionada*/
+
+}
+
+.nav {
+
+   /* Centraliza  os elementos*/
+    text-align: center; /* Centraliza o texto*/
+ /* Aqui estamos personalizando a classe nav */
+}
+
+
+
+.lu {
+    color: pink; /* Define a cor do texto  */
+    text-decoration: underline palevioletred; /* Adiciona um sublinhado e cor*/
+    /* Aqui estamos personalizando a classe lu */
+}
+nav>button{
+    
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 2px;
+    
+
+}
+
+footer>div>p{
+    font-size: 35px;
+    color:  aqua;
+    -webkit-text-stroke: 1px  blue;
+    text-decoration: 1px solid underline blue;
+
+}
+
+@media screen and (max-width: 420px) {
+    
+    .paginacao{
+        position:absolute;
+        top: 80px;
+        left: 45px;
+    }
+    h1{
+        font-size: 7vw;
+     }
+     nav{
+
+        font-size: 15px;
+     }
+    .div_1{
+        width: 50vw;
+        
+    }
+    .dragon{
+        font-size: 15px;
+   }
+   img{
+    width: 50vw;
+   }
+   video{
+    width: 50vw;
+   }
+   .div_2{
+    width: 50vw;
+    
+   }
+   img:nth-child(3){
+    width: 180px;
+   }
+   .naruto{
+    font-size: 15px;
+   }
+   .div_3{
+    width: 50vw;
+    
+   }
+   .lu  {
+    font-size: 15px;
+   }
+   button{
+    font-size: 10px;
+    width: max-content;
+    transition: 0.2s ease;
+   }
+   .valor{
+    font-size: 7px;
+    height: 20px;
+   }
+button:hover{
+
+    font-size: 8px;/*aqui e o que vai acontecer quando a transição for acionada*/
+
+}
+}

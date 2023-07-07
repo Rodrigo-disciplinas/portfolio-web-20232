@@ -1,0 +1,277 @@
+:root {
+  --cor1: #3d3d3d;
+  --cor2: #84b026;
+  --cor3: #217373;
+  --cor4: #173540;
+  --cor5: #161f30;
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --background: #cccccc84;
+  --text-shadow: rgb(197, 195, 195);
+}
+
+/*! Dark Mode */
+
+.dark-mode {
+  background-color: var(--cor5);
+  color: white;
+}
+
+.dark-mode a {
+  color: aqua;
+}
+
+#modos {
+  cursor: pointer;
+  width: 70px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--cor4);
+  color: white;
+}
+
+#modos:hover {
+  width: 75px;
+  height: 50px;
+  background-color: var(--cor5);
+  transition-property: width, height;
+  transition-duration: 200ms, 200ms;
+  transition-delay: 50ms, 50ms;
+  transition-timing-function: infinite;
+}
+
+#botao {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  position: absolute;
+  top: 8%;
+  left: 90%;
+}
+
+/*! Global */
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 7px; /* Largura da barra de rolagem */
+}
+
+/* Estilo do polegar */
+::-webkit-scrollbar-thumb {
+  background-color: #888888; /* Cor do polegar */
+}
+
+/* Estilo da trilha */
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Cor da trilha */
+}
+
+nav {
+  width: fit-content;
+  background-image: linear-gradient(25deg, var(--cor2), var(--cor3));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--fonte-padrao);
+  margin: 5px;
+}
+
+nav ul.menu {
+  list-style: none;
+  padding: 2px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul.menu li a:hover {
+  color: var(--cor4);
+  font-style: italic;
+}
+
+body {
+  display: grid;
+  grid-template: 50px 1fr / 5fr 100px;
+}
+
+nav {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  justify-content: end;
+  text-align: center;
+}
+
+section {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  margin-left: 10px;
+  align-content: center;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid rgba(101, 97, 97, 0.443);
+}
+
+img {
+  display: inline;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 650px;
+  transform: scale(0.7);
+  transition: 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+  border-radius: 40%;
+}
+
+a {
+  position: relative; /* para usar a posição absoluta no elemento filho */
+  text-decoration: none; /* remove o sublinhado */
+}
+
+a::before {
+  content: ""; /* cria um elemento antes do link */
+  position: absolute; /* posiciona o elemento em relação ao pai */
+  bottom: -2px; /* posiciona o elemento abaixo do texto */
+  left: 0; /* alinha o elemento à esquerda do pai */
+  width: 100%; /* faz o elemento ter a mesma largura do pai */
+  height: 2px; /* altura da linha */
+  background-color: #122be4b3; /* cor da linha */
+  transform: scaleX(0); /* inicia a animação com a linha invisível */
+  transition: transform 0.6s ease; /* define a animação */
+}
+
+a:hover::before {
+  transform: scaleX(1); /* faz a linha aparecer na animação */
+}
+
+/* !DISPOSITIVO MOVEL G - MAX 425 */
+@media screen and (max-width: 425px) {
+  img {
+    width: 60px;
+    height: 60px;
+    top: 13%;
+    left: 54%;
+  }
+
+  img:hover {
+    transform: scale(2);
+    border-radius: 40%;
+  }
+
+  #modos {
+    width: 110px;
+    height: 37px;
+  }
+
+  #modos:hover {
+    width: 111px;
+    height: 40px;
+  }
+
+  #botao {
+    top: 1.5%;
+    left: 70%;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  section {
+    width: 330px;
+    margin-left: 5%;
+  }
+
+  section > p {
+    font-size: 13px;
+  }
+}
+
+/* ! TABLET - MAX 768 */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  img {
+    width: 100px;
+    height: 100px;
+    top: 7%;
+    left: 70%;
+  }
+
+  #botao {
+    top: 1%;
+    left: 89%;
+  }
+
+  nav {
+    font-size: 17px;
+  }
+
+  section {
+    font-size: 16px;
+    width: 620px;
+    margin-left: 5%;
+  }
+}
+
+/* ! LEPTOP - MAX 1024 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  img {
+    width: 105px;
+    height: 105px;
+    top: 7%;
+    left: 67%;
+  }
+
+  #botao {
+    top: 0.5%;
+    left: 87%;
+  }
+
+  nav {
+    font-size: 17px;
+  }
+
+  section {
+    font-size: 16px;
+    width: 820px;
+    margin-left: 7%;
+  }
+}
+
+/* !MAIOR QUE 1024 */
+@media screen and (min-width: 1025px) {
+  img {
+    width: 110px;
+    height: 110px;
+    top: 6.5%;
+    left: 60%;
+  }
+
+  #botao {
+    top: 1%;
+    left: 90%;
+  }
+
+  nav {
+    font-size: 17px;
+  }
+
+  section {
+    font-size: 16px;
+    margin-left: 10%;
+    width: 1080px;
+  }
+}

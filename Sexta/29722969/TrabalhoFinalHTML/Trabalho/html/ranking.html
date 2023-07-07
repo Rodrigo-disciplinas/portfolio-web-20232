@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking</title>
+  <link rel="stylesheet" href="../css/ranking.css">
+  
+</head>
+<body>
+  <!--cabeçalho-->
+  <header>
+    <h1>Ranking Pessoal</h1>
+    <nav>
+      <ul class="menu">
+        <li id="menu-item1"><a href="../html/menu.html">Menu</a></li>
+        <li id="menu-item2"><a href="../html/contato.html">Contato</a></li>
+        <li id="menu-item3"><a href="../html/detalhes.html">Detalhes dos filmes</a></li>
+        <li id="menu-item4"><a href="../html/catalogo.html">Catálogo</a></li>
+        <button onclick="toggleColorsAndImage()">Alterar cores</button>
+      </ul>
+    </nav>
+  </header>
+
+  <!--conteúdo-->
+  <main>
+    <section class="ranking">
+      <h2>Top 10 Filmes</h2>
+      <ol>
+        <li>
+          <div class="filme">
+            <img src="../imgs/DrivePoster.jpg" alt="Filme 1">
+            <span class="ranking-numero">1ª.</span>
+            <span class="filme-nome">Drive</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/BlackMirrorPoster.jpg" alt="Filme 2">
+            <span class="ranking-numero">2ª.</span>
+            <span class="filme-nome">Black Mirror Bandersnatch</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/BladeRunner2049Poster.jpg" alt="Filme 3">
+            <span class="ranking-numero">3ª.</span>
+            <span class="filme-nome">BladeRunner 2049</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/ScarfacePoster.jpg" alt="Filme 4">
+            <span class="ranking-numero">4ª.</span>
+            <span class="filme-nome">Scarface</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/ClubeDaLutaPoster.jpg" alt="Filme 5">
+            <span class="ranking-numero">5ª.</span>
+            <span class="filme-nome">Clube da Luta</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/InterstellarPoster.jpg" alt="Filme 6">
+            <span class="ranking-numero">6ª.</span>
+            <span class="filme-nome">Intestellar</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/DjangoLivre.jpg" alt="Filme 7">
+            <span class="ranking-numero">7ª.</span>
+            <span class="filme-nome">Django Livre</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/EraUmaVezEmHollywoodPoster.jpg" alt="Filme 8">
+            <span class="ranking-numero">8ª.</span>
+            <span class="filme-nome">Era Uma Vez em Hollywood</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/NightcrawlerPoster.jpg" alt="Filme 9">
+            <span class="ranking-numero">9ª.</span>
+            <span class="filme-nome">Nightcrawler</span>
+          </div>
+        </li>
+        <li>
+          <div class="filme">
+            <img src="../imgs/InceptionPoster.jpg" alt="Filme 9">
+            <span class="ranking-numero">10ª.</span>
+            <span class="filme-nome">Inception</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!--Rodapé-->
+  <footer>
+    <p>&copy; Catálogo de Filmes</p>
+    <a href="https://www.instagram.com/morkgud_/" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </footer>
+
+  <script>
+    var isAltered = false; // Variável de controle para rastrear o estado atual
+
+function toggleColorsAndImage() {
+  var body = document.body;
+  var header = document.querySelector('header');
+  var footer = document.querySelector('footer');
+  var menuItems = document.querySelectorAll('.menu li a');
+  var h2 = document.querySelectorAll('h2');
+
+  if (isAltered) {
+    // Restaurar cores e imagens originais
+    body.style.backgroundColor = '#221a3f';
+    body.style.color = '#fff';
+    header.style.backgroundColor = '#221a3f';
+    header.style.borderBottomColor = '#c31dd2';
+    footer.style.backgroundColor = '#221a3f';
+    footer.style.borderTopColor = '#c31dd2';
+    body.style.backgroundImage = 'url(https://images5.alphacoders.com/100/1001614.jpg)';
+
+    // Restaurar cores do menu
+    for (var i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.color = '#fff';
+    }
+
+    // Restaurar cor do h2
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].style.color = '#fff';
+    }
+  } else {
+    // Alterar as cores
+    for (var i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.color = '#fff';
+    }
+    body.style.backgroundColor = '#f1f1f1';
+    body.style.color = '#fff';
+    header.style.backgroundColor = '#FF6C11';
+    header.style.borderBottomColor = '#000';
+    footer.style.backgroundColor = '#FF6C11';
+    footer.style.borderTopColor = '#000';
+    footer.style.color = '#fff';
+    body.style.backgroundImage = 'url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU6B8gq7_LO1Vlvvv1jIjpWtR1Z0fHif91oWGr9H-SQfAf-1ogM2QTsC93v4jPeFOwbADNZrJHXWZGL7zLAxLo5hXhYkc32R4CuTkZYw72ldm9nMtImjh8BE_C2pI8YnF-rg38Kg7nr-27XVK2LNEMmiLHl5nacXoP1w1qHxppAPuIGCVW7SmGaiHUbQ/s0/synth-sunset-lake-162023.png)';
+
+    // Alterar cor do h2
+    for (var i = 0; i < h2.length; i++) {
+      h2[i].style.color = '#fff';
+    }
+  }
+
+  isAltered = !isAltered; // Alternar o estado da variável de controle
+}
+
+  </script>
+
+</body>
+</html>
